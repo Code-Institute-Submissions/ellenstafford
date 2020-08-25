@@ -8,173 +8,192 @@ body {
 }
 
 
-/* NAVBAR FULLSCREEN OVERLAY */
+/* NAVBAR */
 
-.navbar {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
-}
 
-    .navbar-brand {
-        text-transform: uppercase;
-        font-weight: 700;
+    /* NAVBAR BRAND */
+
+    .navbar {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
     }
 
-    @media (max-width:375px) {
         .navbar-brand {
-            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 700;
         }
-        
-        .navbar-brand img {
-            width: 100px;
-            height: 50px;
+
+        @media (max-width:375px) {
+            .navbar-brand {
+                font-size: 15px;
+            }
+            
+            .navbar-brand img {
+                width: 100px;
+                height: 50px;
+            }
         }
-    }
 
-    @media (max-width:320px) {
-        .navbar-brand {
-            font-size: 14px;
+        @media (max-width:320px) {
+            .navbar-brand {
+                font-size: 14px;
+            }
+            .navbar-brand img {
+                width: 80px;
+                height: 40px;
+            }
         }
-        .navbar-brand img {
-            width: 80px;
-            height: 40px;
-        }
-    }
+
+    /* NAVBAR BRAND */
 
 
 
-/* The following code was 
-    based upon:
-    "https://stackoverflow.com/questions/57429572/how-to-style-fullscreen-menu-under-default-bootstrap-toggler" */
+    /* NAVBAR FULLSCREEN OVERLAY */
 
-.navbar .navbar-toggler {
-    z-index: 5;
-  }
-  
 
-@media (max-width:991.98px) {
-    .navbar .navbar-collapse {
+    /* The following code was 
+        based upon:
+        "https://stackoverflow.com/questions/57429572/how-to-style-fullscreen-menu-under-default-bootstrap-toggler" */
 
-        background-image: url("../img/Vn75gs.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
 
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-
-        transition: 0.35s ease;
-
-        display: flex;
-        flex-direction: column;
-
-        align-content: center;
-        text-align: center !important;
-      
-        overflow-y: scroll;
-        overflow-x: hidden
-    }
-
-    .navbar .navbar-collapse.collapse {
-        display: flex;
-        opacity: 0;
-        pointer-events: none
-    }
-
-    .navbar .navbar-collapse.collapsing[style*="height"] {
-        opacity: 1;
-        height: 100vh !important
-    }
-
-    .navbar .navbar-collapse.collapsing {
-        opacity: 0;
-        height: 100vh
-    }
-
-    .navbar .navbar-collapse.collapse.show {
-        opacity: 1;
-        pointer-events: auto
-    }
-
-    .navbar .navbar-collapse .navbar-nav {
-        margin-right: initial !important;
-        margin-top: auto;
-        margin-bottom: auto
-    }
-
-    .navbar-nav {
-        margin-left: initial !important; 
-    }
-
-    .navbar-collapse ul {
-        background-color: #ffffffd9;
-        padding: 100px 20px;
-        border-radius: 15px;
+    .navbar .navbar-toggler {
+        z-index: 5;
     }
     
-}
 
-/* NAVBAR FULLSCREEN OVERLAY */
+    @media (max-width:991.98px) {
+        .navbar .navbar-collapse {
+
+            background-image: url("../img/Vn75gs.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            transition: 0.35s ease;
+
+            display: flex;
+            flex-direction: column;
+
+            align-content: center;
+            text-align: center !important;
+        
+            overflow-y: scroll;
+            overflow-x: hidden
+        }
+
+        .navbar .navbar-collapse.collapse {
+            display: flex;
+            opacity: 0;
+            pointer-events: none
+        }
+
+        .navbar .navbar-collapse.collapsing[style*="height"] {
+            opacity: 1;
+            height: 100vh !important
+        }
+
+        .navbar .navbar-collapse.collapsing {
+            opacity: 0;
+            height: 100vh
+        }
+
+        .navbar .navbar-collapse.collapse.show {
+            opacity: 1;
+            pointer-events: auto
+        }
+
+        .navbar .navbar-collapse .navbar-nav {
+            margin-right: initial !important;
+            margin-top: auto;
+            margin-bottom: auto
+        }
+
+        .navbar-nav {
+            margin-left: initial !important; 
+        }
+
+        .navbar-collapse ul {
+            background-color: #ffffffd9;
+            padding: 100px 20px;
+            border-radius: 15px;
+        }
+        
+    }
+
+    /* NAVBAR FULLSCREEN OVERLAY */
+
+
+/* NAVBAR  */
 
 
 
 
 /* HOMEPAGE */
 
-.hero-container {
 
-    height: 100vh;
-    height: 100%;       /* A fallback for browsers that do not support vh */
+    /* HERO IMAGE */
 
-    /* The following code snippet 
-        was taken from:
-        "https://css-tricks.com/perfect-full-page-background-image/" */
+    .hero-container {
 
-    background: url("../img/BW_DSC_0662.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+        height: 100vh;
+        height: 100%;       /* A fallback for browsers that do not support vh */
 
+        /* The following code snippet 
+            was taken from:
+            "https://css-tricks.com/perfect-full-page-background-image/" */
 
-.jumbotron {
-    background-color: #ffffffe8;
-    font-weight: bold;
-    text-align: center;
-
-    padding: 25px;
-}
-
-/* This code snippet 
-    was based upon:
-    "https://stackoverflow.com/questions/22196587/how-to-vertically-center-a-container-in-bootstrap" */
-
-    .vertical-center {
-        min-height: 95%;
-        min-height: 95vh;
-
-        display: flex;
-        align-items: center;
+        background: url("../img/BW_DSC_0662.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
+
+    /* HERO IMAGE */
+
+
+    /* JUMBOTRON */
 
     .jumbotron {
-        font-family: 'Josefin Sans', sans-serif;
+        background-color: #ffffffe8;
+        font-weight: bold;
+        text-align: center;
+
+        padding: 25px;
     }
 
-    .jumbotron h1 {
-        text-transform: uppercase;
-        font-weight: 900;
-    }
+    /* The following code snippet 
+        was based upon:
+        "https://stackoverflow.com/questions/22196587/how-to-vertically-center-a-container-in-bootstrap" */
 
-    .jumbotron .btn {
-        font-size: 20px;
-    }
+        .vertical-center {
+            min-height: 95%;
+            min-height: 95vh;
 
+            display: flex;
+            align-items: center;
+        }
 
+        .jumbotron {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .jumbotron h1 {
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
+        .jumbotron .btn {
+            font-size: 20px;
+        }
+
+    /* JUMBOTRON */
 
 
 /* HOMEPAGE */
