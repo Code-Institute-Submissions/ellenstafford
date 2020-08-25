@@ -40,3 +40,69 @@ The main target audience for this website is recruiters and employers looking fo
 -  #### Frequent Visitor Goals 
 
     - As a frequent user I want to check to see if the candidate has added any new features to their online portfolio.
+    
+    
+## Technologies Used
+
+### Languages 
+
+- HTML (5)
+- CSS (3)
+- Javascript
+
+### Frameworks, Libraries & Programs 
+
+- [Bootstrap 4.4.1](https://getbootstrap.com/)
+  - Bootstrap was used to aid with responsiveness and to form a foundation for styling the website.
+  
+- [Google Fonts](https://fonts.google.com/)
+  - Google fonts 
+
+- [Font Awesome 5.14](https://fontawesome.com/)
+  - Font Awesome  
+  
+- [Balsamiq](https://balsamiq.com/)
+  - Balsamiq was used to create the wireframes during the design process.
+  
+- [Visual Studio Code](https://code.visualstudio.com/)
+  - Visual Studio Code was the software used to write the code. 
+  
+- [Git](https://git-scm.com/)
+  - Git was used for version control by utilising the PowerShell terminal in Visual Studio Code to commit to Git and push to GitHub.
+  
+- [GitHub](https://github.com/)
+  - GitHub is used to store the projects code after being pushed to Git. It acts as a cloud-based service to store the project’s assets and code, which means we don't need to rely on saving locally alone. 
+  
+- [Tailor Brands Studio](https://www.tailorbrands.com/)
+  - Tailor Brands Studio is a web-application that allows you create free brands and logos. It was used to create the logo which is displayed in the navbar. 
+
+
+## Testing 
+
+Use W3C Mark-up 
+
+### Testing User Stories
+
+- #### First Time Visitor Goals 
+
+- #### Returning Visitor Goals 
+
+- #### Frequent Visitor Goals
+
+### Further Testing 
+
+### Known Bugs 
+
+
+
+## Deployment 
+
+
+## Credits 
+
+### Code
+
+### Content 
+
+### Acknowledgements
+
