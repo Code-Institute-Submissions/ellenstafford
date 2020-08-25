@@ -10,6 +10,18 @@ body {
 
 /* NAVBAR FULLSCREEN OVERLAY */
 
+.navbar {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
+
+    .navbar-brand {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+
+
 /* The following code was 
     based upon:
     "https://stackoverflow.com/questions/57429572/how-to-style-fullscreen-menu-under-default-bootstrap-toggler"
@@ -101,20 +113,34 @@ body {
     text-align: center;
 
     padding: 25px;
-
 }
 
 /* This code snippet 
     was based upon:
     "https://stackoverflow.com/questions/22196587/how-to-vertically-center-a-container-in-bootstrap" */
 
-.vertical-center {
-    min-height: 95%;
-    min-height: 95vh;
+    .vertical-center {
+        min-height: 95%;
+        min-height: 95vh;
 
-    display: flex;
-    align-items: center;
-}
+        display: flex;
+        align-items: center;
+    }
+
+    .jumbotron {
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .jumbotron h1 {
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    .jumbotron .btn {
+        font-size: 20px;
+    }
+
+
 
 
 /* HOMEPAGE */
