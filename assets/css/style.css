@@ -20,6 +20,27 @@ body {
         font-weight: 700;
     }
 
+    @media (max-width:375px) {
+        .navbar-brand {
+            font-size: 15px;
+        }
+        
+        .navbar-brand img {
+            width: 100px;
+            height: 50px;
+        }
+    }
+
+    @media (max-width:320px) {
+        .navbar-brand {
+            font-size: 14px;
+        }
+        .navbar-brand img {
+            width: 80px;
+            height: 40px;
+        }
+    }
+
 
 
 /* The following code was 
