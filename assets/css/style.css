@@ -45,71 +45,84 @@ body {
 
 /* The following code was 
     based upon:
-    "https://stackoverflow.com/questions/57429572/how-to-style-fullscreen-menu-under-default-bootstrap-toggler"
-    Minor adjustments to the code were made. */
+    "https://stackoverflow.com/questions/57429572/how-to-style-fullscreen-menu-under-default-bootstrap-toggler" */
 
 .navbar .navbar-toggler {
     z-index: 5;
   }
   
-@media (max-width: 991.98px) {
+
+@media (max-width:991.98px) {
     .navbar .navbar-collapse {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
 
-      transition: 0.35s ease;
+        background-image: url("../img/Vn75gs.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
 
-      display: flex;
-      flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
 
-      align-content: center;
-      text-align: center !important;
+        transition: 0.35s ease;
+
+        display: flex;
+        flex-direction: column;
+
+        align-content: center;
+        text-align: center !important;
       
-      overflow-y: scroll;
-      overflow-x: hidden
+        overflow-y: scroll;
+        overflow-x: hidden
     }
 
     .navbar .navbar-collapse.collapse {
-      display: flex;
-      opacity: 0;
-      pointer-events: none
+        display: flex;
+        opacity: 0;
+        pointer-events: none
     }
 
     .navbar .navbar-collapse.collapsing[style*="height"] {
-      opacity: 1;
-      height: 100vh !important
+        opacity: 1;
+        height: 100vh !important
     }
 
     .navbar .navbar-collapse.collapsing {
-      opacity: 0;
-      height: 100vh
+        opacity: 0;
+        height: 100vh
     }
 
     .navbar .navbar-collapse.collapse.show {
-      opacity: 1;
-      pointer-events: auto
+        opacity: 1;
+        pointer-events: auto
     }
 
     .navbar .navbar-collapse .navbar-nav {
-      margin-right: initial !important;
-      margin-top: auto;
-      margin-bottom: auto
+        margin-right: initial !important;
+        margin-top: auto;
+        margin-bottom: auto
     }
 
     .navbar-nav {
         margin-left: initial !important; 
     }
+
+    .navbar-collapse ul {
+        background-color: #ffffffd9;
+        padding: 100px 20px;
+        border-radius: 15px;
+    }
     
 }
-  
+
 /* NAVBAR FULLSCREEN OVERLAY */
 
 
-/* HOMEPAGE */
 
+
+/* HOMEPAGE */
 
 .hero-container {
 
