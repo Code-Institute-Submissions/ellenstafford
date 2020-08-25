@@ -76,3 +76,33 @@ The main target audience for this website is recruiters and employers looking fo
 - [Tailor Brands Studio](https://www.tailorbrands.com/)
   - Tailor Brands Studio is a web-application that allows you create free brands and logos. It was used to create the logo which is displayed in the navbar. 
 
+
+## Testing 
+
+Use W3C Mark-up 
+
+### Testing User Stories
+
+- #### First Time Visitor Goals 
+
+- #### Returning Visitor Goals 
+
+- #### Frequent Visitor Goals
+
+### Further Testing 
+
+### Known Bugs 
+
+
+
+## Deployment 
+
+
+## Credits 
+
+### Code
+
+### Content 
+
+### Acknowledgements
+
