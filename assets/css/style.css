@@ -270,6 +270,14 @@ body {
     text-align: center;
 }
 
+.chapter-title-bg-2 {
+    background-color: #ff3467d4;
+}
+
+.chapter-content-bg-2 {
+    background-color: white;
+}
+
 /* PAGE CONFIGURATION */
 
 
@@ -290,6 +298,10 @@ body {
     }
 
     /* PROFILE IMG */
+
+    .card-body .btn {
+        background-color: #ff3467d4;
+    }
 
 
 /* ABOUT PAGE */
