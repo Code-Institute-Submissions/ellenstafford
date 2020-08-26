@@ -18,7 +18,7 @@ body {
 
     /* NAVBAR TRANSITION  */
 
-    
+
     /* The following code was
         based upon:
         "https://www.codeply.com/go/62Roy6RDOa" */
@@ -270,3 +270,25 @@ body {
 }
 
 /* PAGE CONFIGURATION */
+
+
+
+/* ABOUT PAGE */
+
+
+    /* PROFILE IMG */
+
+    #profile-img {
+        background: url("../img/BW_Profile_IMG7.jpg") no-repeat center;
+        background-size: cover;
+        min-height: 250px;
+        min-width: 250px;
+    
+        border-radius: 50%;
+        border: 3px solid #444;
+    }
+
+    /* PROFILE IMG */
+
+
+/* ABOUT PAGE */
