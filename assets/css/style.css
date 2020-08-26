@@ -234,6 +234,10 @@ body {
             font-size: 20px;
         }
 
+        .jumbotron a {
+            color: white;
+        }
+
     /* JUMBOTRON */
 
 
