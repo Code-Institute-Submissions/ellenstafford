@@ -15,14 +15,11 @@ body {
     font-size: 20px;
 }
 
-
     /* NAVBAR TRANSITION  */
-
 
     /* The following code was
         based upon:
         "https://www.codeply.com/go/62Roy6RDOa" */
-
 
     .navbar, .navbar-brand { 
         -webkit-transition:padding 0.2s ease;
@@ -89,14 +86,11 @@ body {
     /* NAVBAR BRAND */
 
 
-
     /* NAVBAR FULLSCREEN OVERLAY */
-
 
     /* The following code was 
         based upon:
         "https://stackoverflow.com/questions/57429572/how-to-style-fullscreen-menu-under-default-bootstrap-toggler" */
-
 
     .navbar .navbar-toggler {
         z-index: 5;
@@ -166,9 +160,8 @@ body {
         }
         
     }
-
+                                     
     /* NAVBAR FULLSCREEN OVERLAY */
-
 
 /* NAVBAR  */
 
@@ -176,7 +169,6 @@ body {
 
 
 /* HOMEPAGE */
-
 
     /* HERO IMAGE */
 
@@ -234,9 +226,7 @@ body {
             font-size: 20px;
         }
 
-
     /* JUMBOTRON */
-
 
 /* HOMEPAGE */
 
@@ -288,16 +278,11 @@ body {
     background-color: #ff3467d4;
 }
 
-
-
 /* PAGE CONFIGURATION */
 
 
 
 /* ABOUT PAGE */
-
-
-    /* PROFILE IMG */
 
     #profile-img {
         background: url("../img/BW_Profile_IMG7.jpg") no-repeat center;
@@ -309,12 +294,9 @@ body {
         border: 3px solid #444;
     }
 
-    /* PROFILE IMG */
-
     .card-body .btn {
         background-color: #ff3467d4;
     }
-
 
 /* ABOUT PAGE */
 
@@ -322,7 +304,6 @@ body {
 
 
 /* SKILLS PAGE */
-
 
     /* PROGRESS BAR */
 
@@ -344,6 +325,5 @@ body {
     }
 
     /* PROGRESS BAR */
-
 
 /* SKILLS PAGE */
