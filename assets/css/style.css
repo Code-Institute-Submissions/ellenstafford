@@ -317,3 +317,33 @@ body {
 
 
 /* ABOUT PAGE */
+
+
+
+
+/* SKILLS PAGE */
+
+
+    /* PROGRESS BAR */
+
+    /* Colour gradient based
+        from the following source:
+        "https://css-tricks.com/css3-progress-bars/" */
+
+    .progress-bar {
+        background-color: #63c6d6e6;
+        background: linear-gradient(to left, #d678fd, #63c6d6e6);
+
+        transition: all .1s ease-in-out;
+    }
+
+    @media (min-width:1025px) {     /* Desktops only */
+        .progress-bar:hover {
+        transform: scale(1.1);
+        }
+    }
+
+    /* PROGRESS BAR */
+
+
+/* SKILLS PAGE */
