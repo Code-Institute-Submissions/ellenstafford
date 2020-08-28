@@ -411,8 +411,17 @@ body {
 
 /* CONTACT FOOTER */
 
-footer .jumbotron {
-    padding: 10rem;
+@media (max-width:768px) {
+    footer .jumbotron {
+        padding: 4rem;
+    }
 }
+
+@media (min-width:1024px) {
+    footer .jumbotron {
+        padding: 10rem;
+    }
+}
+
 
 /* CONTACT FOOTER */
