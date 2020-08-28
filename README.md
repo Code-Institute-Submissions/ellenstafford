@@ -76,6 +76,12 @@ The main target audience for this website is recruiters and employers looking fo
 - [Tailor Brands Studio](https://www.tailorbrands.com/)
   - Tailor Brands Studio is a web-application that allows you create free brands and logos. It was used to create the logo which is displayed in the navbar. 
 
+- [MockupBro: Free Online Product Mockup Generator](https://mockupbro.com/)
+  - MockupBro is a web-application that allows you to create free mockup images. Mockups allow you to visually demonstrate what a product, or in this instance, a website will look like. I used some of their mockup images in the Projects section of my website. 
+
+- [Smartmockups - Free Product Mockup Generator](https://smartmockups.com/)
+  - Like MockupBro, Smartmocks is a web-application that allows you to create free mockup images. I also used some of their mockup images in the Projects section of my website. Using the two sites in conjunction allowed me to have more visual variety. 
+
 
 ## Testing 
 
