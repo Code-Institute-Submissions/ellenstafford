@@ -201,7 +201,7 @@ body {
         padding: 25px;
     }
 
-    /* The following code snippet 
+    /* The following code 
         was based upon:
         "https://stackoverflow.com/questions/22196587/how-to-vertically-center-a-container-in-bootstrap" */
 
@@ -327,3 +327,83 @@ body {
     /* PROGRESS BAR */
 
 /* SKILLS PAGE */
+
+
+
+
+/* The following code was 
+    based upon:
+    "https://bootstrapious.com/p/timeline" */
+    
+
+/* TIMELINE */
+
+.timeline {
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+    /* VERTICAL LINE */
+
+    .timeline:before {
+        content: ' ';
+        background: #fff;
+        display: inline-block;
+        position: absolute;
+        top: -20px;             /* Centers the content cards with the vertical line */
+        left: 16px;
+        width: 4px;
+        height: 100%;
+        z-index: 400;
+        border-radius: 1rem;
+    }
+
+    /* VERTICAL LINE */
+
+
+    .timeline-item {
+        margin: 20px 0;
+    }
+
+
+    /* ITEM ARROW */
+
+    .timeline-arrow {
+        border-top: 0.5rem solid transparent;
+        border-right: 0.5rem solid #fff;
+        border-bottom: 0.5rem solid transparent;
+        display: block;
+        position: absolute;
+        left: 2rem;
+    }
+
+    /* ITEM ARROW */
+
+    /* CIRCLE MARKER */
+
+    .timeline-item::before {
+        content: ' ';
+        background: #ddd;
+        display: inline-block;
+        position: absolute;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        left: 11px;
+        width: 14px;
+        height: 14px;
+        z-index: 400;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* CIRCLE MARKER */
+
+    /* CONTENT CARD */
+
+    .timeline-item .card {
+        position: relative;
+        top: -25px;
+    }
+
+    /* CONTENT CARD */
+
+/* TIMELINE */
