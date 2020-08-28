@@ -334,7 +334,7 @@ body {
 /* The following code was 
     based upon:
     "https://bootstrapious.com/p/timeline" */
-    
+
 
 /* TIMELINE */
 
@@ -407,3 +407,12 @@ body {
     /* CONTENT CARD */
 
 /* TIMELINE */
+
+
+/* CONTACT FOOTER */
+
+footer .jumbotron {
+    padding: 10rem;
+}
+
+/* CONTACT FOOTER */
