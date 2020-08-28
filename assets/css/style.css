@@ -416,17 +416,26 @@ body {
 
     @media (max-width:540px) {
         .project-img {
+            min-height: 300px;
+            min-width: 300px;
+        }
+    }
+
+    @media (max-width:375px) {
+        .project-img {
             min-height: 250px;
             min-width: 250px;
         }
     }
 
+
     @media (min-width:768px) {
         .project-img {
-            min-height: 500px;
-            min-width: 500px;
+            min-height: 375px;
+            min-width: 375px;
         }
     }
+    
 
     /* PROJECT IMAGE SIZING */
 
@@ -447,22 +456,22 @@ body {
     /* ACADEMIC PROJECT IMAGES */
 
         #projectImg-KingLear {
-            background: url("../img/king-lear-img.jpeg") no-repeat center;
+            background: url("../img/king-lear-mockup.png") no-repeat center;
             background-size: contain;
         }
 
         #projectImg-Translation {
-            background: url("../img/translation-img.jpeg") no-repeat center;
+            background: url("../img/translation-mockup.png") no-repeat center;
             background-size: contain;
         }
 
         #projectImg-Hamlet {
-            background: url("../img/hamlet-img.png") no-repeat center;
+            background: url("../img/hamlet-mockup.png") no-repeat center;
             background-size: contain;
         }
 
         #projectImg-HenryV {
-            background: url("../img/henry-v-img.png") no-repeat center;
+            background: url("../img/henry-v-mockup.png") no-repeat center;
             background-size: contain;
         }
 
