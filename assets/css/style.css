@@ -450,13 +450,22 @@ body {
         background: url("../img/WhiskeyDrop-laptop-mockup.png") no-repeat center;
         background-size: contain;
     }
+    #projectImg-SkyrimModding {
+        background: url("../img/skyrimSite_mockup.png") no-repeat center;
+        background-size: contain;
+    }
+
+    #projectImg-NextProject {
+        background: url("../img/futureProject_mockup.png") no-repeat center;
+        background-size: contain;
+    }
 
     /* WEB DEVELOPMENT PROJECT IMAGES */
     
     /* ACADEMIC PROJECT IMAGES */
 
         #projectImg-KingLear {
-            background: url("../img/king-lear-mockup.png") no-repeat center;
+            background: url("../img/king-lear-mockup2.png") no-repeat center;
             background-size: contain;
         }
 
@@ -471,7 +480,7 @@ body {
         }
 
         #projectImg-HenryV {
-            background: url("../img/henry-v-mockup.png") no-repeat center;
+            background: url("../img/henry-v-mockup2.png") no-repeat center;
             background-size: contain;
         }
 
