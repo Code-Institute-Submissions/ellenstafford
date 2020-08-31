@@ -486,6 +486,85 @@ body {
 
     /* ACADEMIC PROJECT IMAGES */
 
+    /* PROJECT OVERLAY */
+
+        /* The following code 
+        was based upon:
+        "https://codepen.io/ArnaudBalland/pen/vGZKLr" */
+
+       .projectOverlay {
+            position: relative;
+            width: 90%;
+            max-width: 500px;
+            margin: auto;
+            overflow: hidden;
+       }
+
+       .projectOverlay .projectOverlay-bg {
+            background: rgba(0,0,0,0.7);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            -webkit-transition: all 0.4s ease-in-out 0s;
+            -moz-transition: all 0.4s ease-in-out 0s;
+            transition: all 0.4s ease-in-out 0s;
+       }
+
+       .projectOverlay:hover .projectOverlay-bg {
+           opacity: 1;
+       }
+       
+       .project-img {
+           width: 100%;
+       }
+
+       .projectOverlay-content {
+            position: absolute;
+            text-align: center;
+            padding-left: 1em;
+            padding-right: 1em;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            -moz-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
+       }
+
+       .projectOverlay:hover .projectOverlay-content {
+            top: 50%;
+            left: 50%;
+            opacity: 1;
+       }
+
+       .projectOverlay-content h3 {
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            margin-bottom: 0.5em;
+            text-transform: uppercase;
+       }
+
+       .projectOverlay-content p {
+            color: #fff;
+            font-size: 0.8em;
+       }
+
+       .fadeIn-right {
+           left: 80%;
+       }
+       
+    /* PROJECT OVERLAY */
+
 /* PROJECTS */
 
 
