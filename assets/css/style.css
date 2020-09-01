@@ -559,6 +559,11 @@ body {
                 color: #fff;
                 font-size: 0.8em;
            }
+
+           .projectOverlay-content .my-4 {
+                border-top: 2px solid #fff;
+                width: 60%;
+           }
     
            .fadeIn-right {
                left: 80%;
