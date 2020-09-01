@@ -578,6 +578,18 @@ body {
     
            .projectOverlay-content p {
                 font-size: 0.8em;
+
+                clear: both;    /* So that the text doesn't go to the right of the hr */
+           }
+
+           .projectOverlay-content .my-4 {
+               margin-top: 1rem!important;
+               margin-bottom: 1rem!important;
+
+               border-top: 2px solid rgba(0,0,0,.1);
+               width: 60%;
+
+               float: left;
            }
 
         }
