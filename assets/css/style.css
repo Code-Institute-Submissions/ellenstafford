@@ -609,6 +609,34 @@ body {
 
 
 
+/* BLOG */
+
+    /* PROGRESS BAR */
+
+        #blog .progress {
+            height: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .progress-bar-blog {
+            background-color: #63c6d6e6;
+            /* background: linear-gradient(to left, #d678fd, #63c6d6e6); */
+
+            transition: all .1s ease-in-out;
+    }
+
+    @media (min-width:1025px) {     /* Desktops only */
+        .progress-bar-blog:hover {
+        transform: scale(1.1);
+        }
+    }
+
+    /* PROGRESS BAR */
+
+/* BLOG */
+
+
 
 /* CONTACT FOOTER */
 
