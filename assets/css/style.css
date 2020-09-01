@@ -603,6 +603,18 @@ body {
   
     /* PROJECT OVERLAY */
 
+
+    .projectLinks-left {
+        position: relative;
+        left: 11.5rem;
+        padding-bottom: 8px;
+    }
+
+    .projectLinks-right {
+        position: relative;
+        right: -11.5rem;
+        padding-bottom: 8px;
+    }
     
 
 /* PROJECTS */
