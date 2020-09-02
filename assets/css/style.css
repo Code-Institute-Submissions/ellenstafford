@@ -650,6 +650,30 @@ body {
 
 
 
+
+
+
+/* LOVE SLIDESHOW */
+
+.carousel-item  {
+    width: auto;
+    height: 280px;
+
+    position: relative;
+    left: 280px;
+
+
+}
+
+.carousel span {
+    color: black;
+}
+
+/* LOVE SLIDESHOW */
+
+
+
+
 /* CONTACT FOOTER */
 
 @media (max-width:768px) {
