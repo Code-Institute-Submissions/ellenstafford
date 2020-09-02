@@ -1017,9 +1017,53 @@
                     <div class="col-md-12 col-lg-6">
                         <a href="#">Download my CV <i class="fas fa-download"></i></a>
                     </div>
+
+                    <!-- MODAL BUTTON -->
                     <div class="col-md-12 col-lg-6">
-                        <button class="btn btn-info">Let's Have a Chat</button>
+                        <button class="btn btn-info" type="button" data-toggle="modal" data-target="#contactModal">
+                            Let's Have a Chat
+                        </button>
                     </div>
+                    <!-- MODAL BUTTON -->
+
+                    <!-- CONTACT MODAL -->
+                    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <!-- MODAL HEADING -->
+                                <div class="modal-header text-center">
+                                    <h4 class="modal-title w-100">
+                                        Get In Touch
+                                    </h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <!-- MODAL HEADING -->
+                                <!-- MODAL FORM -->
+                                <div class="modal-body">
+                                    <form action="mailto:stafford.ellen@protonmail.com" method="get">
+                                        <div class="form-group">
+                                            <label for="name">Name:</label>
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email Address:</label>
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="youremail@example.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message">Your Message:</label>
+                                            <textarea rows="3" class="form-control" name="message" id="message" maxlength="500" placeholder="Write Your Message Here - Max 500 Characters"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- MODAL FORM -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CONTACT MODAL -->
+
+
                 </div>
                 <hr class="my-4">
                 <!-- CV & CONTACT FORM -->
