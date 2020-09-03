@@ -305,7 +305,22 @@ body {
 
 /* EXPERIENCE PAGE */
 
+#experience h2 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 34px;
+    font-weight: 700;
+}
 
+#experience .my-4 {
+    border-top: 2px solid #fff;
+}
+
+#workExperience h2,
+#achievements h2 {
+    padding-top: 10%;
+}
 
 /* EXPERIENCE PAGE */
 
