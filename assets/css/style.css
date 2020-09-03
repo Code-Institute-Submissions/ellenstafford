@@ -305,7 +305,7 @@ body {
 
 /* EXPERIENCE PAGE */
 
-#experience h2 {
+#experience .chapter-content h2 {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
