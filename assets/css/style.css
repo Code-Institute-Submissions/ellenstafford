@@ -634,23 +634,56 @@ body {
     /* PROJECT OVERLAY */
 
     .projectLinks-left {
-        left: 20%;      /* Use percentages so for responsiveness on different screen sizes */
+        left: 19%;      /* Use percentages so for responsiveness on different screen sizes */
         padding: 0;
     }
 
     .projectLinks-right {
-        max-width: 5%;      /* To prevent body overflow */
-        right: -26%;          
+        max-width: 10%;      /* To prevent body overflow */
+        right: -23%;          
         padding: 0;
     }
 
     #projects_AW .projectLinks-right {
-        right: -28%;      /* Used to align the link icon with the img corner - only one link so needs to be pushed more to the right */ 
+        right: -27%;      /* Used to align the link icon with the img corner - only one link so needs to be pushed more to the right */ 
     }
     
-    .projectLinks-left i,
-    .projectLinks-right i {
-        font-size: 1.65rem;
+
+    #projects_WD h2, 
+    #projects_AW h2 {
+        font-family: 'Josefin Sans', sans-serif;
+
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 34px;
+        font-weight: 500;
+        color: rgb(19, 19, 19);
+        text-shadow: 1px 1px #444;
+    }
+
+    #projects_WD h4,
+    #projects_AW h4 {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    #projects_WD .my-4, 
+    #projects_AW .my-4 {
+        border-top: 5px solid #d678fd;
+    }
+
+    .fa-stack { 
+        font-size: 1.5rem; 
+    }
+
+    .fa-square {
+        color: #d678fd;
+    }
+
+    #projects_WD i,
+    #projects_AW i { 
+        vertical-align: middle; 
     }
 
 /* PROJECTS */
