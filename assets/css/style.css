@@ -438,7 +438,7 @@ body {
 
     /* PROJECT IMG SIZING */
 
-    @media (max-width:540px) {
+    @media (max-width:768px) {
         .project-img {
             min-height: 300px;
             min-width: 300px;
@@ -452,8 +452,14 @@ body {
         }
     }
 
+    @media (max-width:1110px) {
+        .project-img {
+            min-height: 320px;
+            min-width: 320px;
+        }
+    }
 
-    @media (min-width:540px) {
+    @media (min-width:1110px) {
         .project-img {
             min-height: 375px;
             min-width: 375px;
