@@ -800,4 +800,50 @@ body {
     }
 }
 
+#contact-footer .jumbotron {
+    padding-bottom: 0;
+}
+
+#contact-footer .lead {
+    padding-bottom: 8rem;
+}
+
+#contact-footer .jumbotron h2 {
+    padding-top: 5rem;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#contact-footer .jumbotron h4 {
+    padding-bottom: 2rem;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#contact-footer form {
+    width: 60%;
+    margin: auto;
+    padding: 10px;  
+}
+
+@media (max-width:1000px) {
+    #contact-footer form {
+        width: 80%;
+    }
+}
+
+.btn-contact {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 15%;
+    
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
 /* CONTACT FOOTER */
