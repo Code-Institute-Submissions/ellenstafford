@@ -627,19 +627,25 @@ body {
   
     /* PROJECT OVERLAY */
 
-
     .projectLinks-left {
-        position: relative;
-        left: 11.5rem;
-        padding-bottom: 8px;
+        left: 20%;      /* Use percentages so for responsiveness on different screen sizes */
+        padding: 0;
     }
 
     .projectLinks-right {
-        position: relative;
-        right: -11.5rem;
-        padding-bottom: 8px;
+        max-width: 5%;      /* To prevent body overflow */
+        right: -26%;          
+        padding: 0;
+    }
+
+    #projects_AW .projectLinks-right {
+        right: -28%;      /* Used to align the link icon with the img corner - only one link so needs to be pushed more to the right */ 
     }
     
+    .projectLinks-left i,
+    .projectLinks-right i {
+        font-size: 1.65rem;
+    }
 
 /* PROJECTS */
 
