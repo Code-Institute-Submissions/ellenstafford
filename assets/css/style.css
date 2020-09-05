@@ -119,7 +119,7 @@ body {
             text-align: center !important;
         
             overflow-y: scroll;
-            overflow-x: hidden
+            overflow-x: hidden;
         }
 
         .navbar .navbar-collapse.collapse {
@@ -453,7 +453,7 @@ body {
     }
 
 
-    @media (min-width:768px) {
+    @media (min-width:540px) {
         .project-img {
             min-height: 375px;
             min-width: 375px;
