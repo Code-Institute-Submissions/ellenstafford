@@ -792,7 +792,7 @@ body {
     margin: 0 auto;
     text: center;
 
-    max-width: auto;
+    max-width: 280px;
     max-height: 280px;
 }
 
