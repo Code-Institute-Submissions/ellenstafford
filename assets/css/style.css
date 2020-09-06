@@ -778,19 +778,42 @@ body {
 
 /* LOVE SLIDESHOW */
 
-.carousel-item  {
+/* Center carousel */
+.carousel {
+    max-width: 50%;    
+    margin: 0 auto;
+    text: center;
+
+    padding: 0;
+}
+
+/* Center carousel-inner img */
+.carousel-item img {
+    margin: 0 auto;
+    text: center;
+
+    max-width: auto;
+    max-height: 280px;
+}
+
+
+/* .carousel-item  {
     width: auto;
     height: 280px;
+} */
 
-    position: relative;
-    left: 280px;
-
-
+/* .inner-item {
+    text-align: center;
 }
+    
+    .inner-item img {
+        margin: 0 auto;
+    } */
+
 
 .carousel span {
     color: black;
-}
+} 
 
 /* LOVE SLIDESHOW */
 
