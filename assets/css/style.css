@@ -783,19 +783,19 @@ body {
 /* CONTACT FOOTER */
 
 @media (max-width:768px) {
-    footer .jumbotron {
+    #contact-footer .jumbotron {
         padding: 50px;
     }
 }
 
 @media (min-width:1024px) {
-    footer .jumbotron {
+    #contact-footer .jumbotron {
         padding: 10rem;
     }
 }
 
 @media (max-width:375px) {
-    footer .display-4 {
+    #contact-footer .display-4 {
         font-size: 2.5rem;
     }
 }
@@ -805,11 +805,11 @@ body {
 }
 
 #contact-footer .lead {
-    padding-bottom: 8rem;
+    padding-bottom: 4rem;
 }
 
 #contact-footer .jumbotron h2 {
-    padding-top: 5rem;
+    padding-top: 1rem;
     font-size: 50px;
     text-transform: uppercase;
     font-weight: 600;
@@ -825,13 +825,19 @@ body {
 #contact-footer form {
     width: 60%;
     margin: auto;
-    padding: 10px;  
+    padding-bottom: 7.5rem;
 }
 
 @media (max-width:1000px) {
     #contact-footer form {
         width: 80%;
     }
+}
+
+.CV_download {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .btn-contact {
@@ -844,6 +850,13 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 900;
+}
+
+
+
+footer {
+    background-color: #555555;
+    
 }
 
 /* CONTACT FOOTER */
