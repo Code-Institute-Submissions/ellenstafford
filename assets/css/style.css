@@ -538,7 +538,7 @@ body {
         was based upon:
         "https://codepen.io/ArnaudBalland/pen/vGZKLr" */
 
-        @media (min-width:800px) {
+        @media (min-width:992px) {
 
             .projectOverlay {
                 position: relative;
@@ -645,7 +645,7 @@ body {
            }
 
         }
-
+        
         /* PROJECT OVERLAY MOBILE DEVICES */
   
     /* PROJECT OVERLAY */
