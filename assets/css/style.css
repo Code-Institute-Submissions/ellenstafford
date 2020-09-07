@@ -671,6 +671,10 @@ body {
 
     /* PAGE STYLING */
 
+        #projects_AW {
+            padding-bottom: 12rem;
+        }
+
         #projects_WD h2, 
         #projects_AW h2 {
             font-family: 'Josefin Sans', sans-serif;
@@ -886,8 +890,14 @@ body {
 
 .CV_download {
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 800;
     font-size: 16px;
+}
+
+@media (max-width: 767px) {
+    #CV_text {
+        display: none;
+    }
 }
 
 .btn-contact {
