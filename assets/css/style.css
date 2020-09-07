@@ -543,7 +543,7 @@ body {
             .projectOverlay {
                 position: relative;
                 width: 90%;
-                max-width: 500px;
+                max-width: 375px;
                 margin: auto;
                 overflow: hidden;
            }
