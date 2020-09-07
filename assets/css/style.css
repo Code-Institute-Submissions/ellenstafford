@@ -702,6 +702,7 @@ body {
         .fa-square {
             color: #d678fd;
         }
+        
 
         /* The following code 
             based upon:
@@ -780,7 +781,7 @@ body {
 
 
 
-/* LOVE SLIDESHOW */
+/* LOVE CAROUSEL */
 
 /* Center carousel */
 .carousel {
@@ -829,12 +830,15 @@ body {
 
 }
 
-/* LOVE SLIDESHOW */
+/* LOVE CAROUSEL */
 
 
 
 
 /* CONTACT FOOTER */
+
+
+/* MEDIA QUERIES */
 
 @media (max-width:768px) {
     #contact-footer .jumbotron {
@@ -854,45 +858,11 @@ body {
     }
 }
 
-#contact-footer .jumbotron {
-    padding-bottom: 0;
-}
-
-#contact-footer .lead {
-    padding-bottom: 4rem;
-}
-
-#contact-footer .jumbotron h2 {
-    padding-top: 1rem;
-    font-size: 50px;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-#contact-footer .jumbotron h4 {
-    padding-bottom: 2rem;
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-#contact-footer form {
-    width: 60%;
-    margin: auto;
-    padding-bottom: 7.5rem;
-}
-
 @media (max-width:1000px) {
     #contact-footer form {
         width: 80%;
     }
-}
-
-.CV_download {
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 16px;
-}
+} 
 
 @media (max-width: 767px) {
     #CV_text {
@@ -900,28 +870,75 @@ body {
     }
 }
 
-.btn-contact {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 15%;
-    
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 900;
-}
+/* MEDIA QUERIES */
 
+    /* JUMBOTRON */
 
+    #contact-footer .jumbotron {
+        padding-bottom: 0;
+    }
 
-footer {
-    background-color: #63c6d6e6;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
+    #contact-footer .lead {
+        padding-bottom: 4rem;
+    }
 
-footer a {
-    color: white;
-}
+    #contact-footer .jumbotron h2 {
+        padding-top: 1rem;
+        font-size: 50px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    #contact-footer .jumbotron h4 {
+        padding-bottom: 2rem;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    /* JUMBOTRON */
+
+        /* FORM */
+
+        #contact-footer form {
+            width: 60%;
+            margin: auto;
+            padding-bottom: 7.5rem;
+        }
+
+        /* FORM */
+
+            /* FOOTER */
+
+            footer {
+                background-color: #63c6d6e6;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+
+            footer a {
+                color: white;
+            }
+            
+            .CV_download {
+                text-transform: uppercase;
+                font-weight: 800;
+                font-size: 16px;
+            }
+
+            .btn-contact {
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                width: 15%;
+                
+                font-family: 'Josefin Sans', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-weight: 900;
+            }
+
+            /* FOOTER */
+            
 
 /* CONTACT FOOTER */
