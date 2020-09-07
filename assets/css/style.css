@@ -759,7 +759,7 @@ body {
 .carousel {
     max-width: 50%;    
     margin: 0 auto;
-    text: center;
+    text-align: center;
 
     padding: 0;
 }
@@ -767,7 +767,7 @@ body {
 /* Center carousel-inner img */
 .carousel-item img {
     margin: 0 auto;
-    text: center;
+    text-align: center;
 
     max-width: 280px;
     max-height: 280px;
