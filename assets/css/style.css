@@ -361,6 +361,13 @@ body {
     font-weight: bolder;
 }
 
+.chapter-title h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px #444;
+}
+
 .chapter-content {
     background-color: #63c6d6e6;
 
