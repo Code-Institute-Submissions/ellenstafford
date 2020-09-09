@@ -33,6 +33,58 @@ body {
     /* NAVBAR ANCHOR TAG OFFSET */
 
 
+     /* NAVBAR LINKS */
+
+     .nav-link {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+
+        padding-bottom: 0;
+    }
+
+        /* BOTTOM BORDER ANIMATION */
+
+        /* The following code 
+            was based upon:
+            "https://stackoverflow.com/questions/28623446/hover-effect-expand-bottom-border"  */
+
+        .nav-link:after {
+            content: "";
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            height: 2px ;
+            border-bottom: solid 3px #63c6d6e6;
+            transform: scaleX(0);
+            transition: transform 1s ease-in-out;
+        }
+
+        .dropdown-toggle::after {
+            border-top: 0px !important;     /* To prevent Bootstrap's dropdown menu from overlapping the hover effects */
+        }
+
+        .nav-link:hover:after {   
+            transform: scaleX(1);
+        }
+
+        /* BOTTOM BORDER ANIMATION */
+
+            /* HOVER COLOR TRANSITION */
+
+            .navbar-light .navbar-nav .nav-link {
+                transition: color 1s;
+            }
+
+            .navbar-light .navbar-nav .nav-link:hover {
+                color: #63c6d6e6;
+            }
+
+            /* HOVER COLOR TRANSITION */
+
+    /* NAVBAR LINKS */
+
+
     /* NAVBAR TRANSITION  */
 
     /* The following code was
@@ -102,7 +154,6 @@ body {
         }
 
     /* NAVBAR BRAND */
-
 
     /* NAVBAR FULLSCREEN OVERLAY */
 
@@ -180,7 +231,7 @@ body {
     }
                                      
     /* NAVBAR FULLSCREEN OVERLAY */
-
+    
 /* NAVBAR  */
 
 
