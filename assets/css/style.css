@@ -486,6 +486,17 @@ body {
 
     /* PROGRESS BAR */
 
+#skills .chapter-content h4 {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #4a4a4a;
+}
+
+#skills .my-4 {
+    border-top: 2px solid #4a4a4a4a;
+}
+
 /* SKILLS PAGE */
 
 
