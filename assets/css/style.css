@@ -346,11 +346,15 @@ html {
 
         /* SCROLL DOWN BUTTON */
 
-        .scroll-arrow a {
+        .scrollDown a {
             color: white;
             position: relative;
-            bottom: 10px;
+            bottom: 30px;
         }
+
+        /* This code snippet was
+            taken from:
+            "https://codepen.io/bisaillonyannick/pen/pvZeGg"  */
 
         .bounce {
             -moz-animation: bounce 2s infinite;
