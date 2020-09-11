@@ -1042,6 +1042,17 @@ html {
             margin: auto;
         }
 
+        .btn-contact {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            
+            font-family: 'Josefin Sans', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 900;
+        }
+
         /* FORM */
 
 
@@ -1069,22 +1080,48 @@ html {
                 padding-right: 40px;
             }
             
-            .CV_download {
-                text-transform: uppercase;
-                font-weight: 800;
-                font-size: 16px;
-            }
+                /* DOWNLOAD CV TOOLTIP */
 
-            .btn-contact {
-                display: block;
-                margin-right: auto;
-                margin-left: auto;
-                
-                font-family: 'Josefin Sans', sans-serif;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-                font-weight: 900;
-            }
+                /* The following code 
+                    was based upon:
+                    "https://www.w3schools.com/css/css_tooltip.asp"  */
+
+                .CV_download .downloadHover-text {
+                    visibility: hidden;
+
+                    width: 170px !important;
+                    background-color: #d678fd;
+                    color: white;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    text-align: center;
+
+                    border-radius: 6px;
+                    padding: 5px 2px;
+
+                    position: absolute;
+                    bottom: 120%;
+                    left: 30%;
+                    margin-left: -60px;
+                }
+
+                .CV_download .downloadHover-text::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -5px;
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: #d678fd transparent transparent transparent;
+                }
+
+                .CV_download:hover .downloadHover-text {
+                    visibility: visible;
+                }
+
+                /* DOWNLOAD CV TOOLTIP */
 
             /* FOOTER */
             
