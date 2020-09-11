@@ -1059,6 +1059,17 @@ html {
 
         /* FORM */
 
+
+        .scrollUp a {
+            color: #17a2b8;
+
+            display: block;
+            text-align: center;
+
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
             /* FOOTER */
 
             footer {
