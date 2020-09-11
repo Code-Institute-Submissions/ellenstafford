@@ -459,12 +459,22 @@ html {
     #profile-img {
         background: url("../img/BW_Profile_IMG7.jpg") no-repeat center;
         background-size: cover;
-        min-height: 250px;
+        
+        /* To fix the image resizing on different screen sizes.
+            Based upon the following code:
+            "https://www.sitepoint.com/community/t/how-to-make-an-image-fit-in-a-responsive-div/259263/4" */
+            
+        max-width: 250px;
         min-width: 250px;
+        min-height: 250px;
+        max-height: 250px;
+        width: 100%;
+        height: auto;
     
         border-radius: 50%;
-        border: 3px solid #444;
+        border: 3px solid #444; 
     }
+    
 
     .card-body .btn {
         background-color: #d678fd;
