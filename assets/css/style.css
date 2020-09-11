@@ -9,14 +9,7 @@ body {
   
 
 
-/* NAVBAR */
-
-.navbar {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
-}
-
-     /* NAVBAR ANCHOR TAG OFFSET */
+html {
 
     /*  Used to offset the anchor tags - 
         the fixed navbar would overlaps the anchor tag header,
@@ -26,12 +19,23 @@ body {
         from the following source:
         "https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors/28824157#28824157"  */
 
-        html {
-            scroll-padding-top: 54px; /* height of fixed navbar */
-          }
-    
-    /* NAVBAR ANCHOR TAG OFFSET */
+    scroll-padding-top: 54px; /* height of fixed navbar */
 
+
+    /* To create a smooth scrolling effect */
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+/* NAVBAR */
+
+.navbar {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
 
      /* NAVBAR LINKS */
 
