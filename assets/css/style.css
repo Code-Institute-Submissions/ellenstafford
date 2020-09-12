@@ -728,7 +728,7 @@ html {
 
     /* PROJECT OVERLAY */
 
-        
+
         .projectLinks-mobile {
             visibility: hidden;
         }
@@ -934,9 +934,6 @@ html {
 
 
 
-
-
-
 /* LOVE CAROUSEL */
 
 /* Center carousel */
@@ -1083,6 +1080,13 @@ html {
 
             text-transform: uppercase;
             font-weight: 700;
+        }
+
+        @media (max-width: 991px) {
+            .scrollUp a {
+                position: relative;
+                bottom: 24px;
+            }
         }
 
             /* FOOTER */
