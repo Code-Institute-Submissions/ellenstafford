@@ -728,6 +728,11 @@ html {
 
     /* PROJECT OVERLAY */
 
+        
+        .projectLinks-mobile {
+            visibility: hidden;
+        }
+
         /* The following code 
         was based upon:
         "https://codepen.io/ArnaudBalland/pen/vGZKLr" */
@@ -813,7 +818,7 @@ html {
 
         /* PROJECT OVERLAY MOBILE DEVICES */
 
-        @media (max-width:768px) {
+        @media (max-width:991px) {
 
             .projectOverlay-content h3 {
                 text-transform: uppercase;
@@ -836,6 +841,10 @@ html {
                width: 60%;
 
                float: left;
+           }
+
+           .projectLinks-mobile {
+               visibility: visible;
            }
 
         }
