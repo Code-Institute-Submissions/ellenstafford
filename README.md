@@ -54,6 +54,9 @@ The main target audience for this website is recruiters and employers looking fo
 
 - [Bootstrap 4.4.1](https://getbootstrap.com/)
   - Bootstrap was used to aid with responsiveness and to form a foundation for styling the website.
+
+- [JQuery](https://jquery.com/)
+  - JQuery came with Bootstrap framework and was used to make the navbar responsive.
   
 - [Google Fonts](https://fonts.google.com/)
   - Google fonts 
@@ -85,7 +88,19 @@ The main target audience for this website is recruiters and employers looking fo
 - [PicResize - Crop, Resize, Edit images online](https://picresize.com/)
   - PicResize is a web-application that allows you to resize images and alter their width/height and pixel size. I used PicResize to make the carousel images a similar height and width
     in order to prevent the page jumping with each transition.
-  
+
+- [Asana](https://app.asana.com/0/home/1192103038725952)
+  - Asana is a web and mobile application designed to help you organise, track and manage your projects. It was used to organise my project and schedule each task efficiently.
+
+- [Responsively App](https://responsively.app/)
+  - Responsively App is DevTool software that allows you to see an instant preview of all target screens for your website in a single window, side-by-side. It was used to check the responsiveness of my site.
+
+- [W3C Validation Service](https://validator.w3.org/)
+  - W3C Validation Service checks the markup validation of web documents. It was used to check my HTML file for errors.
+
+ - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+  - W3C CSS Validation Service checks the markup validation of web documents. It was used to check my CSS file for errors.
+
 ## Testing 
 
 Use W3C Mark-up 
