@@ -1126,7 +1126,25 @@ html {
                 padding-left: 40px;
                 padding-right: 40px;
             }
-            
+
+            footer .fa-stack {
+                font-size: 1rem;
+            }
+
+            .CV_download {
+                padding: 0px 34px;
+            }
+
+            #CV_mobileText {
+                display: none;
+            }
+
+            @media (max-width: 991px) {
+                #CV_mobileText {
+                    display: block;
+                }
+            }
+
                 /* DOWNLOAD CV TOOLTIP */
 
                 /* The following code 
@@ -1149,7 +1167,7 @@ html {
 
                     position: absolute;
                     bottom: 120%;
-                    left: 30%;
+                    left: 23%;
                     margin-left: -60px;
                 }
 
