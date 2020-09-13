@@ -676,7 +676,11 @@ html {
             min-width: 375px;
         }
     }
-    
+
+    /* PROJECT IMAGE SIZING */
+
+    /* PROJECT CARD */
+
     .card-deck .card-img-top {
         padding: 2rem;
     }
@@ -687,7 +691,7 @@ html {
         padding: 0px;
     }
 
-    /* PROJECT IMAGE SIZING */
+    /* PROJECT CARD */
 
     /* WEB DEVELOPMENT PROJECT IMAGES */
 
@@ -1113,6 +1117,10 @@ html {
             }
         }
 
+        .scrollUp a:hover {
+            text-decoration: none;
+        }
+
             /* FOOTER */
 
             footer {
@@ -1125,6 +1133,10 @@ html {
                 color: white;
                 padding-left: 40px;
                 padding-right: 40px;
+            }
+
+            footer a:hover {
+                color: white;
             }
 
             footer .fa-stack {
@@ -1144,6 +1156,7 @@ html {
                     display: block;
                 }
             }
+
 
                 /* DOWNLOAD CV TOOLTIP */
 
