@@ -82,7 +82,10 @@ The main target audience for this website is recruiters and employers looking fo
 - [Smartmockups - Free Product Mockup Generator](https://smartmockups.com/)
   - Like MockupBro, Smartmocks is a web-application that allows you to create free mockup images. I also used some of their mockup images in the Projects section of my website. Using the two sites in conjunction allowed me to have more visual variety. 
 
-
+- [PicResize - Crop, Resize, Edit images online](https://picresize.com/)
+  - PicResize is a web-application that allows you to resize images and alter their width/height and pixel size. I used PicResize to make the carousel images a similar height and width
+    in order to prevent the page jumping with each transition.
+  
 ## Testing 
 
 Use W3C Mark-up 
