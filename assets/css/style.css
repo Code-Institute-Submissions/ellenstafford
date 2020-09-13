@@ -677,11 +677,11 @@ html {
         }
     }
     
-    .card-img-top {
+    .card-deck .card-img-top {
         padding: 2rem;
     }
 
-    .card-body {
+    .card-deck .card-body {
         max-width: 375px; 
         margin: auto;
         padding: 0px;
