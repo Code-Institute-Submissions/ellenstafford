@@ -52,11 +52,11 @@ I have imported [Poppins](https://fonts.google.com/specimen/Poppins?query=poppin
 
 - Poppins was used for the majority of the site's written text. It is a clean, readable font, making it both visually pleasing and appropriate.
 
-  - As according to the image above regarding the psychology behind type choices, Poppins can be seen as combination of Sans Serif and Modern fonts. Therefore, the connotations and emotions associations with font include: clean, progressive, modern and reliable.
+  - As according to the image above regarding the psychology behind type choices, Poppins can be seen as combination of Sans Serif and Modern fonts. Therefore, the connotations and emotions associated with the font include: clean, progressive, modern and reliable.
 
 - Josefin Sans was used for the majority of the site's headers (h1-h6 elements), aswell as the navbar, navbar brand and the button on the homepage and the contact form. It is bolder than the Poppins font, which thus allows for a good visual contrast between titles and content. It also helps to distinguish particular sections from the whole body of the site. 
 
-  - Josefin Sans can be seen as a hybrid between Serif, Sans Serif and Modern fonts. As according to the pyschology behind typography, Josefin Sans can evoke a combination of positive and associations emotions, such as: respectability, reliability, stability and strength.
+  - Josefin Sans can be seen as a hybrid between Serif, Sans Serif and Modern fonts. As according to the pyschology behind typography, Josefin Sans can evoke a combination of positive associations and emotions, such as: respectability, reliability, stability and strength.
 
 
 ### Colour Scheme
@@ -65,7 +65,7 @@ I have imported [Poppins](https://fonts.google.com/specimen/Poppins?query=poppin
 
 ![Psychology Behinid Color](assets/img/Color-psychology.png)
 
-The four main colours I have used on the site are cyan blue, white, a light pink and a soft violet. 
+The four main colours I have used on the site are cyan blue, white, a light pink and violet. 
 
 - White is a clean colour and is used often to create the illusion of space. In relation to web design, it visually declutters the site and reduces cognitive overload. The colour is associated with simplicity and honesty.
   
@@ -89,6 +89,8 @@ The four main colours I have used on the site are cyan blue, white, a light pink
 
 #### Colour Scheme - Application
 
+![Colour Palette](assets/img/color-palette.png)
+
 - #FFF White:
   - Navbar background colour
   - Jumbotron background colour on homepage 
@@ -98,7 +100,7 @@ The four main colours I have used on the site are cyan blue, white, a light pink
   - Social media links
   - Font colour for coloured backgrounds
 
-- #63C6D6E6 Cyan Blue:
+- #63C6D6 Middle Blue:
   - 'About Me' and 'Experience' page background colour 
   - Homepage 'learn more' button and contact form 'send' button
   - Linear gradient in progress bars on 'Skills' page
@@ -107,10 +109,10 @@ The four main colours I have used on the site are cyan blue, white, a light pink
   - Scroll to top button
   - Navbar hover effects
 
-- #FF3467D4 - Light Pink :
+- #FF3467D4 - 'Radical Red' Pink :
   - 'Skills' and 'Experience' page background colour
 
-- #D678FD - Violet:
+- #D678FD - 'Heliotrope' Violet:
   - 'Hire me' button on 'About Me' page
   - Linear gradient in progress bars on 'Skills' page
   - 'Read more' collapse buttons, hr elements and project link buttons on 'Projects' page 
@@ -119,16 +121,20 @@ The four main colours I have used on the site are cyan blue, white, a light pink
 
 ### Branding
 
+![Brand Image](assets/img/logo-raven-black.png)
+
 I created a site brand using [Tailor Brands Studio](https://www.tailorbrands.com/) to make my site both unique and professional. I used visual imagery rather than just text to make the brand more recognisable and easier to remember - we are often quite visual by nature, so I believe this effect would work well. The design choice was not arbitray either, as it is a subtle indication to my personality and interests. I percieve the raven as symbolic of wisdom and intrigue, but they can also have deeply spirtual connotations. 
 
 If I wish to create more projects in the future, such as a blog, for example, I can use this brand to indicate that it is of my creation -  like a signature or trademark.
 
-To correlate with the branding, a raven has been implemented in the background image for the navbar's fullscreen-overlay menu when on mobile devices, to maintain a consistent theme throughout.
+To correlate with the branding, a raven has been implemented in the background image for the navbar's fullscreen-overlay menu when on mobile devices to maintain a consistent theme throughout.
 
 
 ### Design Layout
 
-Each page is split into half - depending on the screen size of your device this will either be a horizontal split for desktops and tablets, or a vertical split for mobile devices. For this I took a lot of inspiration from [this website](http://melaniedaveid.com/), but I tweaked it to make it my own. I felt the aesthetic was analogous to a book, which reflected my past devotion to literature and thus correlated well to the theme and purpose of the website.
+Each page is split into half - depending on the screen size of your device this will either be a horizontal split for desktops and tablets, or a vertical split for mobile devices. For this I took a lot of inspiration from [this website](http://melaniedaveid.com/), but I tweaked it to make it my own. I felt the aesthetic was analogous to a book, which reflected my past devotion to literature and as the primary purpose of the website is for users to *read* and learn more about me, it thus correlated well to the site's theme and purpose.
+
+Furthermore, the layout provides a distinct method of distinguishing titles from their content. This has been referred to in commit messages and syntax as the 'page chapters' and 'page content'.
 
 
 
