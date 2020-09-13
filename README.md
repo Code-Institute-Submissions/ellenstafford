@@ -89,7 +89,7 @@ The four main colours I have used on the site are cyan blue, white, a light pink
 
 #### Colour Scheme - Application
 
-![Colour Palette](assets/img/color-palette.png)
+![Colour Palette](assets/img/color-palette.PNG)
 
 - #FFF White:
   - Navbar background colour
@@ -137,6 +137,15 @@ Each page is split into half - depending on the screen size of your device this 
 Furthermore, the layout provides a distinct method of distinguishing titles from their content. This has been referred to in commit messages and syntax as the 'page chapters' and 'page content'.
 
 
+### Wireframes
+
+- [Home](assets/wireframes/homepage.png)
+- [About Me](assets/wireframes/about-me.png)
+- [Skills](assets/wireframes/skills.png)
+- [Experience](assets/wireframes/experience.png)
+- [Projects](assets/wireframes/projects.png)
+- [I Love...](assets/wireframes/carousel.png)
+- [Contact Footer](assets/wireframes/contact-footer.png)
 
 
 ## Technologies Used
