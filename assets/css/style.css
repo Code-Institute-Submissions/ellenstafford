@@ -650,35 +650,41 @@ html {
     /* PROJECT IMG SIZING */
 
     @media (max-width:768px) {
-        .project-img {
+        .card-img-top .project-img {
             min-height: 300px;
             min-width: 300px;
         }
     }
 
     @media (max-width:375px) {
-        .project-img {
+        .card-img-top .project-img {
             min-height: 250px;
             min-width: 250px;
         }
     }
 
     @media (max-width:1110px) {
-        .project-img {
+        .card-img-top .project-img {
             min-height: 320px;
             min-width: 320px;
         }
     }
 
     @media (min-width:1110px) {
-        .project-img {
+        .card-img-top .project-img {
             min-height: 375px;
             min-width: 375px;
         }
     }
     
-    .card-img {
+    .card-img-top {
         padding: 2rem;
+    }
+
+    .card-body {
+        max-width: 375px; 
+        margin: auto;
+        padding: 0px;
     }
 
     /* PROJECT IMAGE SIZING */
