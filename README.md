@@ -148,6 +148,150 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
 - [Contact Footer](assets/wireframes/contact-footer.png)
 
 
+
+
+## Implemented Features
+
+- Responsive mobile first design built with Bootstrap framework.
+
+- User friendly design that is easy to navigate and use.
+
+- Smooth scroll effect on the entire page to get rid of the choppy abruptness of normal scrolling.
+
+- Scroll padding to offset anchor tags that the fixed navigation bar would otherwise overlap.
+
+### Navigation Bar
+
+- Fixed navigation bar 
+  - Also built using Bootstrap framework.
+  - Allows users to easily navigate through the site.
+  - As it is fixed at the top of the screen, it allows users to move to a different section of the site no matter where they are in that given moment.
+  - Enhances user experience - particularly on mobile devices, as a user is unlikely to want to scroll all the way up to the top of the page; a fixed navbar addresses this annoyance.
+
+- Navbar brand 
+  - The site brand is in the navbar in a fixed position to the left, following web design convention.
+  - It reinforces the site brand by having it in the navbar as a visual constant.
+  - When clicked the navbar brand will take users to the homepage - this conforms to conventions and increases the site's intuitiveness.
+  - The brand makes the navbar more noticeable and eye-catching which will encourage more input from users.
+
+- Transition animation that shrinks the navbar links and brand on scroll
+  - This helps compensate for the occupied real estate that the fixed navbar takes up. 
+  - It helps prevent users from being distracted from the site's content because of the fixed navbar.
+  - Provides a cleaner aesthetic.
+
+- Navbar link hover
+  - When the user hovers over a navbar link, the link slowly transitions from grey to a cyan blue and a cyan blue underline effect with a grow animation is activated.
+  - This gives the users a clear indication that the link is clickable and that the site is responding correctly to their input, which ultimately makes for a more intuitive experience.
+  - This makes the navbar more interactive and eye-catching and will encourage more user input.
+
+- Dropdown-menu 
+  - A dropdown-menu have been used for the 'Experience' page navbar link and the 'Projects' page navbar link to give users greater control over the navigation of the site.
+  - It declutters the navbar to maintain a clean aesethetic. 
+ 
+- Hamburger menu for mobile devices
+  - Built using Bootstrap framework.
+  - Ideal for mobile devices where real estate is limited.  
+  - Conforms to web design conventions and thus meets user expectations.
+
+- Fullscreen overlay menu for mobile devices 
+  - When on mobile devices, clicking the hamburger icon will direct users to a fullscreen overlay menu.
+  - This makes the navbar easier to use on mobile devices, particuarly smaller ones.
+  - Users will have the entire viewport of their screen to work with, rather than the smaller navbar used on desktops which might be difficult for users on smaller touch screen devices to use.
+  - The overlay menu has a raven background image to keep the site brand and theme consistent.
+
+### Homepage
+
+- Background hero-image 
+  - Adds visual depth.
+  - Subtly fulfills a site goal by showing, rather than telling, who I am (the picture is of myself when traveling in China). 
+
+- Bootstrap jumbotron
+  - Outlines the purpose of the site.
+  - The jumbotron introduces the site to the user, with 'Hi, I'm Ellen', which is a quick indication to what the site is - an online porfolio. 
+  - The 'learn more' button takes users to the first page - 'about me' - which creates an intuitive experience by giving users different navigational options. 
+
+- Scroll down arrow
+  - The bouncing animation highlights that the arrow is clickable by inviting the user to interact with it. 
+  - Creates an intuitive experience by giving users different navigational options. 
+
+### About Me Page
+
+- Callout card 
+  - Distinct from the rest of the 'about page' content.
+  - Encourages users to contact me with the 'hire me' button (which directs users to the contact form), fulfilling a site goal - get hired.
+
+### Skills Page
+
+- Progress bars
+  - Provides an intuitive, highly visual way for users to quickly and easily see my skillset and qualifications.
+  - The progress bars have a small transition animation which activates on hover.
+  - The animation increases the user's interactivity with the site and provides an intuitive and engaging experience. 
+
+### Experience Page
+
+- Experience Timeline
+  - Three different timelines for education, work experience and achievements - ordered from most significant to least signficant. 
+  - A great way to separate not only each category but each moment.
+  - Allows users to easily navigate through the Experience section. 
+  - Places more emphasis on visual imagery rather than bodies of text, which reduces cognitive overload and makes for a better user experience. 
+
+### Projects Page
+
+- Project images 
+  - Used Bootstrap's card-deck class for repsonsiveness.
+  - Each project is represented with an image rather than text - the visual emphasis preserves a positive user experience.
+  - The project image is either a mockup image of the project site, i.e. the homepage of Love Running on a mobile device, or an image which represents what exactly the project is, such as a picture of King Lear for my dissertation.
+  - Each image as a cyan blue background to maintain consistency with each other and with the site's colour scheme.
+
+- Overlay menu for desktop devices
+  - When hovering over the image on desktop devices, a overlay meny will activate.
+  - The menu provides brief information about the project, such as its title and summary, in a bold, white font.
+  - This means less real estate is taken up with text, providing a cleaner, more spacious aesthetic.
+  - Reduces cognitive overload by not overbearing the user will a lot of text.
+
+- Project link icons
+  - Under each project image is an link and github icon. 
+  - The colour is a bright violet (which is used sparingly in the site) to make the button more eye-catching and encourage users to click it.
+  - Bootstrap's card-deck class has been used to ensure the links are properly aligned with the images.
+
+- Mobile resonsiveness
+  - When on mobile, hover effects can compromise the user experience and cause resistance between the user and the site's content.
+  - To ensure the user experience is not negatively effected, text to replace the overlay menu is activated on mobile devices.
+  - This means when on mobile, the user does need to rely on the overlay menu to know the site's title and summary - it will automatically be shown to them as a standard body of text.
+
+### Footer  
+
+- Image Carousel above the footer 
+  - This is an intuitive, fun way for user's to learn more about me as a person - offering more than my qualifications, experience and skillset.
+  - It allows users to see my likes and interests, which will help formulate their overall opinion of me. 
+  - The carousel will transition through its images automatically, but arrow keys are also there to give users the control to navigate through the carousel themselves.
+
+- Scroll to Top
+  - Gives users an easy way of returning to the top of the page.
+  - On desktop the Scroll to Top arrow is positioned in the right corner of the screen - here, it does not obstruct important content and follows web design convention.
+  - The arrow is labelled so users know immediately exactly what the link does and where it will take them.
+  - The bouncing animation highlights that the arrow is clickable by inviting the user to interact with it. 
+  - Creates an intuitive experience by giving users different navigational options. 
+
+- Contact Form
+  - Reduces the steps a user will have to take to make contact with me by giving them the option to write a message within the site and send it to me directly.
+  - The contact form follows convention by being at the bottom of the site, near the footer.
+  - Its order makes good semantic sense as ordinarily users will read through the site's content first then make contact. 
+  - A method of contact would be expected at this point and thus meets user expectations.
+  - Provides users a different form of contact that varies from just providing social media links.
+  - The contact form is more personal than mere links, which encourages users to actually make contact, and in doing so fulfills the site's main purpose.
+
+- Social Media Links
+  - Font Awesome icons have been used for the social media links.
+  - Placing social media links in the footer follows web design convention and increases user experience by adhering to their expectations.
+
+- CV Download
+  - Uses Font Awesome icon download link to take up less real estate.
+  - On hover, (on desktop), a tooltip with the text: 'Download my CV' is displayed to tell users exactly what it is and encourage interaction. 
+  - On mobile devices, the text 'Download my CV!' will be displayed underneath the icon in place of the hover tool tip, as hover effects can be problematic on mobile devices and touch screens.
+
+
+
 ## Technologies Used
 
 ### Languages 
