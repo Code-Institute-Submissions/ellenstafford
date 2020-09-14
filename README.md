@@ -144,9 +144,8 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
 - [Skills](assets/wireframes/skills.png)
 - [Experience](assets/wireframes/experience.png)
 - [Projects](assets/wireframes/projects.png)
-- [I Love...](assets/wireframes/carousel.png)
+- [Carousel](assets/wireframes/carousel.png)
 - [Contact Footer](assets/wireframes/contact-footer.png)
-
 
 
 
@@ -242,6 +241,7 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
   - Each project is represented with an image rather than text - the visual emphasis preserves a positive user experience.
   - The project image is either a mockup image of the project site, i.e. the homepage of Love Running on a mobile device, or an image which represents what exactly the project is, such as a picture of King Lear for my dissertation.
   - Each image as a cyan blue background to maintain consistency with each other and with the site's colour scheme.
+  - Each project image as a scale on hover transition animation to increase its visual appeal, make the text easier to read and create an intuitive experience for the user.
 
 - Overlay menu for desktop devices
   - When hovering over the image on desktop devices, a overlay meny will activate.
@@ -351,9 +351,9 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
   - W3C CSS Validation Service checks the markup validation of web documents. It was used to check my CSS file for errors.
 
-## Testing 
+## Testing  
 
-Use W3C Mark-up 
+### Validation Services
 
 ### Testing User Stories
 
@@ -376,7 +376,87 @@ Use W3C Mark-up
 
 ### Code
 
-### Content 
+- [Bootsrap 4](https://getbootstrap.com/) has been used reguarly, it has been implemented most effectively in the following features:
+  - Mobile responsiveness through use of its grid system.
+  - Responsive navbar
+  - Design foundation for buttons
+  - Jumbotrons
+  - Cards 
+  - Carousel
+  - Contact form
+
+- To correctly nest collumns of the Bootstrap grid, I followed the format of this [StackOverflow post](https://stackoverflow.com/questions/24659471/nested-rows-with-bootstrap-grid-system)  
+
+- The code to offset the anchor tags came from this [StackOverflow post](https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors/28824157#28824157)
+
+- The hover effects for the navbar links was based of this [StackOverflow code snippet](https://stackoverflow.com/questions/28623446/hover-effect-expand-bottom-border)
+
+- The scale transition animation for the navbar was based of this [code from Codeply](https://www.codeply.com/go/62Roy6RDOa)
+
+- The fullscreen overlay menu was based upon this [StackOverflow post](https://stackoverflow.com/questions/57429572/how-to-style-fullscreen-menu-under-default-bootstrap-toggler)
+
+- The code for the background hero image was taken from [this CSS Tricks' code snippet](https://css-tricks.com/perfect-full-page-background-image/)
+
+- To help me vertically center the jumbotron on the homepage, I looked to [this css guide from CSS Tricks](https://css-tricks.com/perfect-full-page-background-image/)
+
+- The bounce animation for the scroll down and scroll to top arrow links were taken from upon this [codepen snippet](https://codepen.io/bisaillonyannick/pen/pvZeGg)
+
+- The scale on hover transition for the project images was based upon this [css guide from CSS Tricks](https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/)
+
+- When I had issues with the sizing of the project images, I turned to this [sitepoint post](https://www.sitepoint.com/community/t/how-to-make-an-image-fit-in-a-responsive-div/259263/4) to help me
+
+- The code for the colour gradient on the progress bars was based upon this [css guide from CSS Tricks](https://css-tricks.com/css3-progress-bars/)
+
+- The code for the Experience page's timeline was based upon this [code from Bootstrapious](https://bootstrapious.com/p/timeline)
+
+- The hover overlay text for the project images was based upon this [code from codepen](https://codepen.io/ArnaudBalland/pen/vGZKLr)
+
+- I used Font Awesome's stacked icons guide for the project link icons and the download CV icon, [found here](https://fontawesome.com/how-to-use/on-the-web/styling/stacking-icons)
+
+- The code used for the hover tool on the download CV icon was based upon [this guide from w3schools](https://www.w3schools.com/css/css_tooltip.asp)
+
+
+### Content
+
+- All content was written by the developer.
+
+- Comments on the psychology of colours mentioned in this readme where based upon [this source](https://puttingedge.events/the-psychology-of-colour/)
+
+- Comments on the psychology behind typography mentioned in this readme where based upon [this image](http://www.experiencedtr.com/blog/2018/4/24/the-psychology-behind-fonts-you-choose)
+
+
+### Inspiration
+
+The following website were used inspired the design on my website and/or inspired my to include certain features:
+
+- [Melanie David - UX Design & Art Direction](http://melaniedaveid.com/)
+
+- [Pascal Vangemert Interactive Resume](http://www.pascalvangemert.nl/#/profile)
+
+- [MetaLearn](http://www.metalearn.net/about)
+
+- [Molamil](https://legacy.molamil.com/frontpage)
+
+- [Adam Hartwig](https://www.adamhartwig.co.uk/)
+
+The following articles were used to help me formulate design choices and conveyed the importance of UX design:
+
+- [Bad Design vs Good Design](https://www.interaction-design.org/literature/article/bad-design-vs-good-design-5-examples-we-can-learn-frombad-design-vs-good-design-5-examples-we-can-learn-from-130706)
+
+- [Dark UIs. The Good and the Bad. The Dos and Don'ts.](https://www.toptal.com/designers/ui/dark-ui)
+
 
 ### Acknowledgements
+
+- [CodeInstitute](https://codeinstitute.net/) for the course material, knowledge and inspiration.
+- [W3Schools](https://www.w3schools.com/) for its high quality guides and helping me remember how to code!
+- [StackOverflow](https://stackoverflow.com/) and all the people on there, for being a perpetual source of help and inspiration throughout this project.
+- [Slack Community](https://slack.com/intl/en-gb/) for all the help, advice and inspiration.
+- [Bootstrap](https://getbootstrap.com/) for their life-saving css and jquery framework. 
+- [Academind](https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w) for the highly helpful Bootstrap tutorials!
+- [Anissa Deanna](https://www.youtube.com/channel/UCVOKt2XgozvMSnZDZGMdetg) and [Kie Codes](https://www.youtube.com/channel/UC1cSiiIAx7Kni1ivz7-3rpQ) for their very helpful youtube videos on writing commit messages.
+
+- I want to thank my mentor, Can Sucullu, for his help and valuable suggestions throughout this project.
+- I also want to thank friends and family members for their continual support and opinions on this project. 
+
 
