@@ -301,7 +301,7 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
 - More images to hero image on the homepage (like a carousel).
 
 
-### Technologies Used
+## Technologies Used
 
 ### Languages 
 
@@ -361,6 +361,8 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
   - W3C CSS Validation Service checks the markup validation of web documents. It was used to check my CSS file for errors.
 
 ## Testing  
+
+Testing documentation can be found in this separate [testing.md](testing.md) file.
 
 ### Validation Services
 
