@@ -291,6 +291,14 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
   - On mobile devices, the text 'Download my CV!' will be displayed underneath the icon in place of the hover tool tip, as hover effects can be problematic on mobile devices and touch screens.
 
 
+## Features left to Implement 
+
+- A blog page.
+- Update social media to direct to my own social media accounts.
+- A toggle dark mode feature which changes the UI colour to a darker colour palette - for users who prefer darker UI.
+- A confirmation modal for the contact form.
+- More images to hero image on the homepage (like a carousel).
+
 
 ## Technologies Used
 
