@@ -148,8 +148,9 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
 - [Contact Footer](assets/wireframes/contact-footer.png)
 
 
+## Features
 
-## Implemented Features
+### Implemented Features
 
 - Responsive mobile first design built with Bootstrap framework.
 
@@ -159,7 +160,7 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
 
 - Scroll padding to offset anchor tags that the fixed navigation bar would otherwise overlap.
 
-### Navigation Bar
+#### Navigation Bar
 
 - Fixed navigation bar 
   - Also built using Bootstrap framework.
@@ -198,7 +199,7 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
   - Users will have the entire viewport of their screen to work with, rather than the smaller navbar used on desktops which might be difficult for users on smaller touch screen devices to use.
   - The overlay menu has a raven background image to keep the site brand and theme consistent.
 
-### Homepage
+#### Homepage
 
 - Background hero-image 
   - Adds visual depth.
@@ -213,20 +214,20 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
   - The bouncing animation highlights that the arrow is clickable by inviting the user to interact with it. 
   - Creates an intuitive experience by giving users different navigational options. 
 
-### About Me Page
+#### About Me Page
 
 - Callout card 
   - Distinct from the rest of the 'about page' content.
   - Encourages users to contact me with the 'hire me' button (which directs users to the contact form), fulfilling a site goal - get hired.
 
-### Skills Page
+#### Skills Page
 
 - Progress bars
   - Provides an intuitive, highly visual way for users to quickly and easily see my skillset and qualifications.
   - The progress bars have a small transition animation which activates on hover.
   - The animation increases the user's interactivity with the site and provides an intuitive and engaging experience. 
 
-### Experience Page
+#### Experience Page
 
 - Experience Timeline
   - Three different timelines for education, work experience and achievements - ordered from most significant to least signficant. 
@@ -234,7 +235,7 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
   - Allows users to easily navigate through the Experience section. 
   - Places more emphasis on visual imagery rather than bodies of text, which reduces cognitive overload and makes for a better user experience. 
 
-### Projects Page
+#### Projects Page
 
 - Project images 
   - Used Bootstrap's card-deck class for repsonsiveness.
@@ -259,7 +260,7 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
   - To ensure the user experience is not negatively effected, text to replace the overlay menu is activated on mobile devices.
   - This means when on mobile, the user does need to rely on the overlay menu to know the site's title and summary - it will automatically be shown to them as a standard body of text.
 
-### Footer  
+#### Footer  
 
 - Image Carousel above the footer 
   - This is an intuitive, fun way for user's to learn more about me as a person - offering more than my qualifications, experience and skillset.
@@ -291,7 +292,7 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
   - On mobile devices, the text 'Download my CV!' will be displayed underneath the icon in place of the hover tool tip, as hover effects can be problematic on mobile devices and touch screens.
 
 
-## Features left to Implement 
+### Features left to Implement 
 
 - A blog page.
 - Update social media to direct to my own social media accounts.
@@ -300,7 +301,7 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
 - More images to hero image on the homepage (like a carousel).
 
 
-## Technologies Used
+### Technologies Used
 
 ### Languages 
 
