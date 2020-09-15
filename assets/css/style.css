@@ -1,34 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;900&family=Poppins:wght@200;400;600&display=swap');
-
 body {
     margin: 0;
     padding: 0;
-
     font-family: 'Poppins', sans-serif;
 }
-  
-
 
 html {
-
-    /*  Used to offset the anchor tags - 
-        the fixed navbar would overlaps the anchor tag header,
-        the following code offers a quick solution to this visual issue.
+    /*  Used to offset the anchor tags when 
+        the fixed navbar would overlaps the anchor tag header.
         ----
-        The code was taken
-        from the following source:
-        "https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors/28824157#28824157"  */
+        The code was taken from: "https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors/28824157#28824157"  */
 
     scroll-padding-top: 54px; /* height of fixed navbar */
-
 
     /* To create a smooth scrolling effect */
     scroll-behavior: smooth;
 }
-
-
-
-
 
 /* NAVBAR */
 
@@ -37,63 +23,49 @@ html {
     font-size: 20px;
 }
 
-     /* NAVBAR LINKS */
+.nav-link {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding-bottom: 0;
+}
 
-     .nav-link {
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-weight: 400;
+    /* BOTTOM BORDER HOVER ANIMATION */
 
-        padding-bottom: 0;
+    /* The following code was based upon: "https://stackoverflow.com/questions/28623446/hover-effect-expand-bottom-border"  */
+
+    .nav-link:after {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 2px ;
+        border-bottom: solid 3px #63c6d6e6;
+        transform: scaleX(0);
+        transition: transform 1s ease-in-out;
     }
 
-        /* BOTTOM BORDER ANIMATION */
+    .dropdown-toggle::after {
+        border-top: 0px !important;     /* Prevents Bootstrap from overwriting the hover effects */
+    }
 
-        /* The following code 
-            was based upon:
-            "https://stackoverflow.com/questions/28623446/hover-effect-expand-bottom-border"  */
+    .nav-link:hover:after {   
+        transform: scaleX(1);
+    }
 
-        .nav-link:after {
-            content: "";
-            display: block;
-            margin: 0 auto;
-            width: 100%;
-            height: 2px ;
-            border-bottom: solid 3px #63c6d6e6;
-            transform: scaleX(0);
-            transition: transform 1s ease-in-out;
-        }
+    /* HOVER COLOR TRANSITION */
 
-        .dropdown-toggle::after {
-            border-top: 0px !important;     /* To prevent Bootstrap's dropdown menu from overlapping the hover effects */
-        }
+    .navbar-light .navbar-nav .nav-link {
+        transition: color 1s;
+    }
 
-        .nav-link:hover:after {   
-            transform: scaleX(1);
-        }
-
-        /* BOTTOM BORDER ANIMATION */
-
-            /* HOVER COLOR TRANSITION */
-
-            .navbar-light .navbar-nav .nav-link {
-                transition: color 1s;
-            }
-
-            .navbar-light .navbar-nav .nav-link:hover {
-                color: #63c6d6e6;
-            }
-
-            /* HOVER COLOR TRANSITION */
-
-    /* NAVBAR LINKS */
-
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #63c6d6e6;
+    }
 
     /* NAVBAR TRANSITION  */
 
-    /* The following code was
-        based upon:
-        "https://www.codeply.com/go/62Roy6RDOa" */
+    /* The following code was based upon: "https://www.codeply.com/go/62Roy6RDOa" */
 
     .navbar, .navbar-brand { 
         -webkit-transition:padding 0.2s ease;
@@ -126,44 +98,37 @@ html {
         min-height:calc(100% - 70px);
     }
 
-    /* NAVBAR TRANSITION  */
-
-
     /* NAVBAR BRAND */
 
+    .navbar-brand {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    @media (max-width:375px) {
         .navbar-brand {
-            text-transform: uppercase;
-            font-weight: 700;
+            font-size: 15px;
         }
-
-        @media (max-width:375px) {
-            .navbar-brand {
-                font-size: 15px;
-            }
-            
-            .navbar-brand img {
-                width: 100px;
-                height: 50px;
-            }
+        
+        .navbar-brand img {
+            width: 100px;
+            height: 50px;
         }
+    }
 
-        @media (max-width:320px) {
-            .navbar-brand {
-                font-size: 14px;
-            }
-            .navbar-brand img {
-                width: 80px;
-                height: 40px;
-            }
+    @media (max-width:320px) {
+        .navbar-brand {
+            font-size: 14px;
         }
-
-    /* NAVBAR BRAND */
+        .navbar-brand img {
+            width: 80px;
+            height: 40px;
+        }
+    }
 
     /* NAVBAR FULLSCREEN OVERLAY */
 
-    /* The following code was 
-        based upon:
-        "https://stackoverflow.com/questions/57429572/how-to-style-fullscreen-menu-under-default-bootstrap-toggler" */
+    /* The following code was based upon: "https://stackoverflow.com/questions/57429572/how-to-style-fullscreen-menu-under-default-bootstrap-toggler" */
 
     .navbar .navbar-toggler {
         z-index: 5;
@@ -171,28 +136,20 @@ html {
 
     @media (max-width:991.98px) {
         .navbar .navbar-collapse {
-
-            /* linear-gradient(rgb(250 250 250 / 60%), rgb(184 217 230 / 94%)) */
-
             background-image: linear-gradient(rgb(250 250 250 / 0%), rgb(9 9 9 / 97%)), url("../img/Vn75gs.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
-
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-
             transition: 0.35s ease;
-
             display: flex;
             flex-direction: column;
-
             align-content: center;
             text-align: center !important;
-        
             overflow-y: scroll;
             overflow-x: hidden;
         }
@@ -258,8 +215,7 @@ html {
             text-align: center;
         }
 
-        /* To make the dropmenu flush with the navlink,
-            while maintaining a good amount of space between each navlink */
+        /* Makes dropmenu flush with the navlink, while maintaining a good amount of space between each navlink */
         
         #experienceDropdownMenu {
             padding-bottom: 0px;
@@ -273,126 +229,94 @@ html {
         #contactFooterNav {
             padding-top: 38px;
         }
-
-        /* FULLSCREEN NAV-MENU STYLING */
     }
-                                     
-    /* NAVBAR FULLSCREEN OVERLAY */
     
-/* NAVBAR  */
-
-
-
-
 /* HOMEPAGE */
 
-    /* HERO IMAGE */
+/* HERO IMAGE */
 
-    .hero-container {
+.hero-container {
 
-        height: 100vh;
-        height: 100%;       /* A fallback for browsers that do not support vh */
+    height: 100vh;
+    height: 100%;       /* A fallback for browsers that do not support vh */
 
-        /* The following code snippet 
-            was taken from:
-            "https://css-tricks.com/perfect-full-page-background-image/" */
+    /* The following code snippet 
+        was taken from:
+        "https://css-tricks.com/perfect-full-page-background-image/" */
 
-        background: url("../img/BW_DSC_0662.jpg") no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+    background: url("../img/BW_DSC_0662.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+    background-color: #ffffffe8;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.jumbotron h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.jumbotron .btn {
+    font-size: 20px;
+}
+
+    /* The following code was based upon: "https://stackoverflow.com/questions/22196587/how-to-vertically-center-a-container-in-bootstrap" */
+
+    .vertical-center {
+        min-height: 95%;
+        min-height: 95vh;
+        display: flex;
+        align-items: center;
     }
 
-    /* HERO IMAGE */
+/* SCROLL DOWN BUTTON */
 
+.scrollDown a {
+    color: white;
+    position: relative;
+    bottom: 30px;
+}
 
-    /* JUMBOTRON */
+    /* The following code was taken from: "https://codepen.io/bisaillonyannick/pen/pvZeGg"  */
 
-    .jumbotron {
-        background-color: #ffffffe8;
-        font-weight: bold;
-        text-align: center;
-
-        padding: 25px;
-    }
-
-    /* The following code 
-        was based upon:
-        "https://stackoverflow.com/questions/22196587/how-to-vertically-center-a-container-in-bootstrap" */
-
-        .vertical-center {
-            min-height: 95%;
-            min-height: 95vh;
-
-            display: flex;
-            align-items: center;
+    .bounce {
+        -moz-animation: bounce 2s infinite;
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
         }
-
-        .jumbotron {
-            font-family: 'Josefin Sans', sans-serif;
+        
+        @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
         }
-
-        .jumbotron h1 {
-            text-transform: uppercase;
-            font-weight: 900;
+        40% {
+            transform: translateY(-30px);
         }
-
-        .jumbotron .btn {
-            font-size: 20px;
+        60% {
+            transform: translateY(-15px);
         }
-
-    /* JUMBOTRON */
-
-        /* SCROLL DOWN BUTTON */
-
-        .scrollDown a {
-            color: white;
-            position: relative;
-            bottom: 30px;
         }
-
-        /* This code snippet was
-            taken from:
-            "https://codepen.io/bisaillonyannick/pen/pvZeGg"  */
-
-        .bounce {
-            -moz-animation: bounce 2s infinite;
-            -webkit-animation: bounce 2s infinite;
-            animation: bounce 2s infinite;
-          }
-          
-          @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-              transform: translateY(0);
-            }
-            40% {
-              transform: translateY(-30px);
-            }
-            60% {
-              transform: translateY(-15px);
-            }
-          }
-
-        /* SCROLL DOWN BUTTON */
-
-/* HOMEPAGE */
-
-
 
 /* PAGE CONFIGURATION */
 
 .chapter-title  {
     background-color: white;
-
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     text-align: center;
     line-height: 100vh;
-
     text-transform: uppercase;
     font-weight: bolder;
 }
@@ -406,13 +330,10 @@ html {
 
 .chapter-content {
     background-color: #63c6d6e6;
-
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-
     text-align: center;
-
     overflow-y: scroll;
     padding: 3% 5% 5% 5%;
 }
@@ -433,12 +354,9 @@ html {
     background-color: #ff3467d4;
 }
 
-
     /* SCALE ON HOVER */
 
-    /* The following code snippet 
-        was taken from the following source:
-        "https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/" */
+    /* The following code snippet was taken from the following source: "https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/" */
 
     .grow {
         transition: all .2s ease-in-out;
@@ -448,60 +366,44 @@ html {
         transform: scale(1.1);
     }
 
-    /* SCALE ON HOVER */
-
-/* PAGE CONFIGURATION */
-
-
-
 /* ABOUT PAGE */
 
-    #profile-img {
-        background: url("../img/BW_Profile_IMG7.jpg") no-repeat center;
-        background-size: cover;
-        
-        /* To fix the image resizing on different screen sizes.
-            Based upon the following code:
-            "https://www.sitepoint.com/community/t/how-to-make-an-image-fit-in-a-responsive-div/259263/4" */
-            
-        max-width: 250px;
-        min-width: 250px;
-        min-height: 250px;
-        max-height: 250px;
-        width: 100%;
-        height: auto;
+#profile-img {
+    background: url("../img/BW_Profile_IMG7.jpg") no-repeat center;
+    background-size: cover;
     
-        border-radius: 50%;
-        border: 3px solid #444; 
-    }
-    
+    /* Used the following code to fix disproportionate img sizes: "https://www.sitepoint.com/community/t/how-to-make-an-image-fit-in-a-responsive-div/259263/4" */
+    max-width: 250px;
+    min-width: 250px;
+    min-height: 250px;
+    max-height: 250px;
+    width: 100%;
+    height: auto;
 
-    .card-body .btn {
-        background-color: #d678fd;
-        color: white;
-    }
+    border-radius: 50%;
+    border: 3px solid #444; 
+}
 
-    #about-content h3,
-    #about-content h4 {
-        text-transform: uppercase;
-        font-weight: 700;
-        letter-spacing: 1px;
-        color: white;
-    }
+.card-body .btn {
+    background-color: #d678fd;
+    color: white;
+}
 
-    #about-content h5 {
-        text-transform: uppercase;
-        padding: 5px;
-        font-weight: 600;
-        letter-spacing: 1px;
-        color: #6f6f6f;
-    }
-    
+#about-content h3,
+#about-content h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+}
 
-/* ABOUT PAGE */
-
-
-
+#about-content h5 {
+    text-transform: uppercase;
+    padding: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #6f6f6f;
+}
 
 /* EXPERIENCE PAGE */
 
@@ -522,33 +424,24 @@ html {
     padding-top: 10%;
 }
 
-/* EXPERIENCE PAGE */
-
-
-
-
 /* SKILLS PAGE */
 
-    /* PROGRESS BAR */
+/* PROGRESS BAR */
 
-    /* Colour gradient based
-        from the following source:
-        "https://css-tricks.com/css3-progress-bars/" */
+/* Colour gradient based from the following source: "https://css-tricks.com/css3-progress-bars/" */
 
-    .progress-bar {
-        background-color: #63c6d6e6;
-        background: linear-gradient(to left, #d678fd, #63c6d6e6);
+.progress-bar {
+    background-color: #63c6d6e6;
+    background: linear-gradient(to left, #d678fd, #63c6d6e6);
 
-        transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+
+@media (min-width:1025px) {     /* Desktops only */
+    .progress-bar:hover {
+    transform: scale(1.1);
     }
-
-    @media (min-width:1025px) {     /* Desktops only */
-        .progress-bar:hover {
-        transform: scale(1.1);
-        }
-    }
-
-    /* PROGRESS BAR */
+}
 
 #skills .chapter-content h4 {
     text-transform: uppercase;
@@ -561,16 +454,8 @@ html {
     border-top: 2px solid #4a4a4a4a;
 }
 
-/* SKILLS PAGE */
 
-
-
-
-/* The following code was 
-    based upon:
-    "https://bootstrapious.com/p/timeline" */
-
-
+/* The following code was based upon: "https://bootstrapious.com/p/timeline" */
 /* TIMELINE */
 
 .timeline {
@@ -593,13 +478,9 @@ html {
         border-radius: 1rem;
     }
 
-    /* VERTICAL LINE */
-
-
     .timeline-item {
         margin: 20px 0;
     }
-
 
     /* ITEM ARROW */
 
@@ -611,8 +492,6 @@ html {
         position: absolute;
         left: 2rem;
     }
-
-    /* ITEM ARROW */
 
     /* CIRCLE MARKER */
 
@@ -630,8 +509,6 @@ html {
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     }
 
-    /* CIRCLE MARKER */
-
     /* CONTENT CARD */
 
     .timeline-item .card {
@@ -639,345 +516,298 @@ html {
         top: -25px;
     }
 
-    /* CONTENT CARD */
-
-/* TIMELINE */
-
-
-
 /* PROJECTS */
 
-    /* PROJECT IMG SIZING */
+/* PROJECT IMG SIZING */
 
-    @media (max-width:768px) {
-        .card-img-top .project-img {
-            min-height: 300px;
-            min-width: 300px;
-        }
+@media (max-width:768px) {
+    .card-img-top .project-img {
+        min-height: 300px;
+        min-width: 300px;
     }
+}
 
-    @media (max-width:375px) {
-        .card-img-top .project-img {
-            min-height: 250px;
-            min-width: 250px;
-        }
+@media (max-width:375px) {
+    .card-img-top .project-img {
+        min-height: 250px;
+        min-width: 250px;
     }
+}
 
-    @media (max-width:1110px) {
-        .card-img-top .project-img {
-            min-height: 320px;
-            min-width: 320px;
-        }
+@media (max-width:1110px) {
+    .card-img-top .project-img {
+        min-height: 320px;
+        min-width: 320px;
     }
+}
 
-    @media (min-width:1110px) {
-        .card-img-top .project-img {
-            min-height: 375px;
-            min-width: 375px;
-        }
+@media (min-width:1110px) {
+    .card-img-top .project-img {
+        min-height: 375px;
+        min-width: 375px;
     }
+}
 
-    /* PROJECT IMAGE SIZING */
+/* PROJECT CARD */
 
-    /* PROJECT CARD */
+.card-deck .card-img-top {
+    padding: 2rem;
+}
 
-    .card-deck .card-img-top {
-        padding: 2rem;
-    }
+.card-deck .card-body {
+    max-width: 375px; 
+    margin: auto;
+    padding: 0px;
+}
 
-    .card-deck .card-body {
-        max-width: 375px; 
+/* WEB DEVELOPMENT PROJECT IMAGES */
+
+#projectImg-LoveRunning {
+    background: url("../img/LoveRunning-mobile-mockup.png") no-repeat center;
+    background-size: contain;
+}
+
+#projectImg-WhiskeyDrop {
+    background: url("../img/WhiskeyDrop-laptop-mockup.png") no-repeat center;
+    background-size: contain;
+}
+#projectImg-SkyrimModding {
+    background: url("../img/skyrimSite_mockup.png") no-repeat center;
+    background-size: contain;
+}
+
+#projectImg-NextProject {
+    background: url("../img/futureProject_mockup.png") no-repeat center;
+    background-size: contain;
+}
+
+/* ACADEMIC PROJECT IMAGES */
+
+#projectImg-KingLear {
+    background: url("../img/king-lear-mockup2.png") no-repeat center;
+    background-size: contain;
+}
+
+#projectImg-Translation {
+    background: url("../img/translation-mockup.png") no-repeat center;
+    background-size: contain;
+}
+
+#projectImg-Hamlet {
+    background: url("../img/hamlet-mockup.png") no-repeat center;
+    background-size: contain;
+}
+
+#projectImg-HenryV {
+    background: url("../img/henry-v-mockup2.png") no-repeat center;
+    background-size: contain;
+}
+
+/* PROJECT OVERLAY */
+
+/* The following code was based upon: "https://codepen.io/ArnaudBalland/pen/vGZKLr" */
+
+@media (min-width:992px) {
+
+    .projectOverlay {
+        position: relative;
+        width: 90%;
+        max-width: 375px;
         margin: auto;
-        padding: 0px;
+        overflow: hidden;
     }
 
-    /* PROJECT CARD */
-
-    /* WEB DEVELOPMENT PROJECT IMAGES */
-
-    #projectImg-LoveRunning {
-        background: url("../img/LoveRunning-mobile-mockup.png") no-repeat center;
-        background-size: contain;
+    .projectOverlay .projectOverlay-bg {
+        background: rgba(0,0,0,0.7);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        -moz-transition: all 0.4s ease-in-out 0s;
+        transition: all 0.4s ease-in-out 0s;
     }
 
-    #projectImg-WhiskeyDrop {
-        background: url("../img/WhiskeyDrop-laptop-mockup.png") no-repeat center;
-        background-size: contain;
+    .projectOverlay:hover .projectOverlay-bg {
+        opacity: 1;
     }
-    #projectImg-SkyrimModding {
-        background: url("../img/skyrimSite_mockup.png") no-repeat center;
-        background-size: contain;
-    }
-
-    #projectImg-NextProject {
-        background: url("../img/futureProject_mockup.png") no-repeat center;
-        background-size: contain;
+    
+    .project-img {
+        width: 100%;
     }
 
-    /* WEB DEVELOPMENT PROJECT IMAGES */
-    
-    /* ACADEMIC PROJECT IMAGES */
+    .projectOverlay-content {
+        position: absolute;
+        text-align: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
 
-        #projectImg-KingLear {
-            background: url("../img/king-lear-mockup2.png") no-repeat center;
-            background-size: contain;
-        }
+    .projectOverlay:hover .projectOverlay-content {
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+    }
 
-        #projectImg-Translation {
-            background: url("../img/translation-mockup.png") no-repeat center;
-            background-size: contain;
-        }
+    .projectOverlay-content h3 {
+        color: #fff;
+        font-weight: 500;
+        letter-spacing: 0.15em;
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+    }
 
-        #projectImg-Hamlet {
-            background: url("../img/hamlet-mockup.png") no-repeat center;
-            background-size: contain;
-        }
+    .projectOverlay-content h4 {
+        color: #fff;
+        font-weight: 500;
+        letter-spacing: 0.15em;
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
 
-        #projectImg-HenryV {
-            background: url("../img/henry-v-mockup2.png") no-repeat center;
-            background-size: contain;
-        }
+    .projectOverlay-content p {
+        color: #fff;
+        font-size: 0.8em;
+    }
 
-    /* ACADEMIC PROJECT IMAGES */
+    .projectOverlay-content .my-4 {
+        border-top: 2px solid #fff;
+        width: 60%;
+    }
 
-    /* PROJECT OVERLAY */
+    .fadeIn-right {
+        left: 80%;
+    }
+}
 
+/* PROJECT OVERLAY MOBILE DEVICES */
 
-        .projectLinks-mobile {
-            visibility: hidden;
-        }
+@media (max-width:991px) {
 
-        /* The following code 
-        was based upon:
-        "https://codepen.io/ArnaudBalland/pen/vGZKLr" */
+    .projectOverlay-content h3 {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
 
-        @media (min-width:992px) {
+    .projectOverlay-content p {
+        font-size: 0.8em;
+        clear: both;    /* So that the text doesn't go to the right of the hr */
+    }
 
-            .projectOverlay {
-                position: relative;
-                width: 90%;
-                max-width: 375px;
-                margin: auto;
-                overflow: hidden;
-           }
-    
-           .projectOverlay .projectOverlay-bg {
-                background: rgba(0,0,0,0.7);
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                left: 0;
-                top: 0;
-                bottom: 0;
-                right: 0;
-                opacity: 0;
-                -webkit-transition: all 0.4s ease-in-out 0s;
-                -moz-transition: all 0.4s ease-in-out 0s;
-                transition: all 0.4s ease-in-out 0s;
-           }
-    
-           .projectOverlay:hover .projectOverlay-bg {
-               opacity: 1;
-           }
-           
-           .project-img {
-               width: 100%;
-           }
-    
-           .projectOverlay-content {
-                position: absolute;
-                text-align: center;
-                padding-left: 1em;
-                padding-right: 1em;
-                width: 100%;
-                top: 50%;
-                left: 50%;
-                opacity: 0;
-                -webkit-transform: translate(-50%, -50%);
-                -moz-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-                -webkit-transition: all 0.3s ease-in-out 0s;
-                -moz-transition: all 0.3s ease-in-out 0s;
-                transition: all 0.3s ease-in-out 0s;
-           }
-    
-           .projectOverlay:hover .projectOverlay-content {
-                top: 50%;
-                left: 50%;
-                opacity: 1;
-           }
-    
-           .projectOverlay-content h3 {
-                color: #fff;
-                font-weight: 500;
-                letter-spacing: 0.15em;
-                margin-bottom: 0.5em;
-                text-transform: uppercase;
-           }
+    .projectOverlay-content .my-4 {
+        margin-top: 1rem!important;
+        margin-bottom: 1rem!important;
+        border-top: 2px solid rgba(0,0,0,.1);
+        width: 60%;
+        float: left;
+    }
 
-           .projectOverlay-content h4 {
-                color: #fff;
-                font-weight: 500;
-                letter-spacing: 0.15em;
-                margin-bottom: 0.5em;
-                text-transform: uppercase;
+    .projectOverlay-content .my-4 {
+        width: 80%;
+    }
 
-                font-size: 16px;
-            }
-    
-           .projectOverlay-content p {
-                color: #fff;
-                font-size: 0.8em;
-           }
+    .projectLinks-mobile {
+        visibility: visible;
+    }
 
-           .projectOverlay-content .my-4 {
-                border-top: 2px solid #fff;
-                width: 60%;
-           }
-    
-           .fadeIn-right {
-               left: 80%;
-           }
-        }
+}
 
-        /* PROJECT OVERLAY MOBILE DEVICES */
+/* PAGE STYLING */
 
-        @media (max-width:991px) {
+#projects_AW {
+    padding-bottom: 12rem;
+}
 
-            .projectOverlay-content h3 {
-                text-transform: uppercase;
+#projects_WD h2, 
+#projects_AW h2 {
+    font-family: 'Josefin Sans', sans-serif;
 
-                letter-spacing: 1px;
-                font-size: 18px;
-           }
-    
-           .projectOverlay-content p {
-                font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 34px;
+    font-weight: 500;
+    color: rgb(19, 19, 19);
+    text-shadow: 1px 1px #444;
+}
 
-                clear: both;    /* So that the text doesn't go to the right of the hr */
-           }
+#projects_WD h4,
+#projects_AW h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+}
 
-           .projectOverlay-content .my-4 {
-               margin-top: 1rem!important;
-               margin-bottom: 1rem!important;
+#projects_WD .my-4, 
+#projects_AW .my-4 {
+    border-top: 5px solid #d678fd;
+}
 
-               border-top: 2px solid rgba(0,0,0,.1);
-               width: 60%;
+#projects_WD i,
+#projects_AW i { 
+    vertical-align: middle; 
+}
 
-               float: left;
-           }
+.fa-square {
+    color: #d678fd;
+}
 
-           .projectOverlay-content .my-4 {
-                width: 80%;
-            }
+/* The following code based upon: "https://fontawesome.com/how-to-use/on-the-web/styling/stacking-icons" */
 
-           .projectLinks-mobile {
-               visibility: visible;
-           }
+.fa-stack { 
+    font-size: 1.5rem; 
+}
 
-        }
-        
-        /* PROJECT OVERLAY MOBILE DEVICES */
-  
-    /* PROJECT OVERLAY */
+/* PROJECT CONTENT (MOBILE DEVICES) */
 
-    /* PAGE STYLING */
+@media (max-width:799px) {
+    .col-12 .projectOverlay-content  h3 {
+        padding-top: 15px;
+        padding-right: 2em;
+        padding-left: 2rem;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 400;
+        text-align: center;
+    }
 
-        #projects_AW {
-            padding-bottom: 12rem;
-        }
+    .col-12 .projectOverlay-content p {
+        padding-right:  1rem;
+        padding-left: 1rem;
+        padding-bottom: 10px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #555555;
+    }
+}
 
-        #projects_WD h2, 
-        #projects_AW h2 {
-            font-family: 'Josefin Sans', sans-serif;
+/* CAROUSEL */
 
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 34px;
-            font-weight: 500;
-            color: rgb(19, 19, 19);
-            text-shadow: 1px 1px #444;
-        }
-
-        #projects_WD h4,
-        #projects_AW h4 {
-            text-transform: uppercase;
-            font-size: 20px;
-            font-weight: 400;
-        }
-
-        #projects_WD .my-4, 
-        #projects_AW .my-4 {
-            border-top: 5px solid #d678fd;
-        }
-
-        .fa-square {
-            color: #d678fd;
-        }
-        
-
-        /* The following code 
-            based upon:
-            "https://fontawesome.com/how-to-use/on-the-web/styling/stacking-icons" */
-
-        .fa-stack { 
-            font-size: 1.5rem; 
-        }
-
-        #projects_WD i,
-        #projects_AW i { 
-            vertical-align: middle; 
-        }
-
-        /* PROJECT CONTENT (MOBILE DEVICES) */
-        
-        @media (max-width:799px) {
-            .col-12 .projectOverlay-content  h3 {
-                padding-top: 15px;
-                padding-right: 2em;
-                padding-left: 2rem;
-                font-size: 25px;
-                text-transform: uppercase;
-                font-weight: 400;
-                text-align: center;
-            }
-        
-            .col-12 .projectOverlay-content p {
-                padding-right:  1rem;
-                padding-left: 1rem;
-                padding-bottom: 10px;
-                
-                font-size: 18px;
-                font-weight: 400;
-                color: #555555;
-            }
-        }
-
-        /* PROJECT CONTENT (MOBILE DEVICES) */
-
-    /* PAGE STYLING */
-
-/* PROJECTS */
-
-
-
-
-/* LOVE CAROUSEL */
-
-/* Center carousel */
 .carousel {
     max-width: 50%;    
     margin: 0 auto;
     text-align: center;
-
     padding: 0;
 }
 
-/* Center carousel-inner img */
 .carousel-item img {
     margin: 0 auto;
     text-align: center;
-
     max-width: 280px;
     max-height: 280px;
 }
@@ -994,32 +824,22 @@ html {
     position: relative;
     left: auto;
     right: auto;
-
     color: black;
 }
 
 #carousel h3 {
     font-family: 'Josefin Sans', sans-serif;
-
     text-transform: uppercase;
     font-weight: 800;
     font-size: 35px;
     letter-spacing: 1px;
-
     margin-bottom: 0;
     padding-bottom: 0;
 
 }
 
-/* LOVE CAROUSEL */
-
-
-
 
 /* CONTACT FOOTER */
-
-
-/* MEDIA QUERIES */
 
 @media (max-width:768px) {
     #contact-footer .jumbotron {
@@ -1051,157 +871,134 @@ html {
     }
 }
 
-/* MEDIA QUERIES */
+/* JUMBOTRON */
 
-    /* JUMBOTRON */
+#contact-footer .jumbotron {
+    padding-bottom: 0;
+}
 
-    #contact-footer .jumbotron {
-        padding-bottom: 0;
-    }
+#contact-footer .lead {
+    padding-bottom: 4rem;
+}
 
-    #contact-footer .lead {
-        padding-bottom: 4rem;
-    }
+#contact-footer .jumbotron h2 {
+    padding-top: 1rem;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 
-    #contact-footer .jumbotron h2 {
-        padding-top: 1rem;
-        font-size: 50px;
+#contact-footer .jumbotron h4 {
+    padding-bottom: 2rem;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* FORM */
+
+#contact-footer form {
+    width: 60%;
+    margin: auto;
+}
+
+.btn-contact {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+    .scrollUp a {
+        color: #17a2b8;
+        display: block;
+        text-align: center;
         text-transform: uppercase;
-        font-weight: 600;
+        font-weight: 700;
     }
 
-    #contact-footer .jumbotron h4 {
-        padding-bottom: 2rem;
-        font-size: 30px;
-        text-transform: uppercase;
-        font-weight: 500;
-    }
-
-    /* JUMBOTRON */
-
-        /* FORM */
-
-        #contact-footer form {
-            width: 60%;
-            margin: auto;
-        }
-
-        .btn-contact {
-            display: block;
-            margin-right: auto;
-            margin-left: auto;
-            
-            font-family: 'Josefin Sans', sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: 900;
-        }
-
-        /* FORM */
-
-
+    @media (max-width: 991px) {
         .scrollUp a {
-            color: #17a2b8;
-
-            display: block;
-            text-align: center;
-
-            text-transform: uppercase;
-            font-weight: 700;
+            position: relative;
+            bottom: 24px;
         }
+    }
 
-        @media (max-width: 991px) {
-            .scrollUp a {
-                position: relative;
-                bottom: 24px;
-            }
-        }
+    .scrollUp a:hover {
+        text-decoration: none;
+    }
 
-        .scrollUp a:hover {
-            text-decoration: none;
-        }
+/* FOOTER */
 
-            /* FOOTER */
+footer {
+    background-color: #63c6d6e6;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 
-            footer {
-                background-color: #63c6d6e6;
-                padding-top: 1rem;
-                padding-bottom: 1rem;
-            }
+footer a {
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+}
 
-            footer a {
-                color: white;
-                padding-left: 40px;
-                padding-right: 40px;
-            }
+footer a:hover {
+    color: white;
+}
 
-            footer a:hover {
-                color: white;
-            }
+footer .fa-stack {
+    font-size: 1rem;
+}
 
-            footer .fa-stack {
-                font-size: 1rem;
-            }
+.CV_download {
+    padding: 0px 34px;
+}
 
-            .CV_download {
-                padding: 0px 34px;
-            }
+#CV_mobileText {
+    display: none;
+}
 
-            #CV_mobileText {
-                display: none;
-            }
+@media (max-width: 991px) {
+    #CV_mobileText {
+        display: block;
+    }
+}
 
-            @media (max-width: 991px) {
-                #CV_mobileText {
-                    display: block;
-                }
-            }
+/* CV TOOLTIP */
 
+/* The following code was based upon: "https://www.w3schools.com/css/css_tooltip.asp"  */
 
-                /* DOWNLOAD CV TOOLTIP */
+.CV_download .downloadHover-text {
+    visibility: hidden;
+    width: 170px !important;
+    background-color: #d678fd;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 2px;
+    position: absolute;
+    bottom: 120%;
+    left: 23%;
+    margin-left: -60px;
+}
 
-                /* The following code 
-                    was based upon:
-                    "https://www.w3schools.com/css/css_tooltip.asp"  */
+.CV_download .downloadHover-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #d678fd transparent transparent transparent;
+}
 
-                .CV_download .downloadHover-text {
-                    visibility: hidden;
-
-                    width: 170px !important;
-                    background-color: #d678fd;
-                    color: white;
-                    font-size: 15px;
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    text-align: center;
-
-                    border-radius: 6px;
-                    padding: 5px 2px;
-
-                    position: absolute;
-                    bottom: 120%;
-                    left: 23%;
-                    margin-left: -60px;
-                }
-
-                .CV_download .downloadHover-text::after {
-                    content: "";
-                    position: absolute;
-                    top: 100%;
-                    left: 50%;
-                    margin-left: -5px;
-                    border-width: 5px;
-                    border-style: solid;
-                    border-color: #d678fd transparent transparent transparent;
-                }
-
-                .CV_download:hover .downloadHover-text {
-                    visibility: visible;
-                }
-
-                /* DOWNLOAD CV TOOLTIP */
-
-            /* FOOTER */
-            
-
-/* CONTACT FOOTER */
+.CV_download:hover .downloadHover-text {
+    visibility: visible;
+}
