@@ -121,7 +121,7 @@ The four main colours I have used on the site are cyan blue, white, a light pink
 
 ### Branding
 
-![Brand Image](assets/img/logo-raven-black.png)
+![Brand Image](assets/img/logo-raven-black.webp)
 
 I created a site brand using [Tailor Brands Studio](https://www.tailorbrands.com/) to make my site both unique and professional. I used visual imagery rather than just text to make the brand more recognisable and easier to remember - we are often quite visual by nature, so I believe this effect would work well. The design choice was not arbitray either, as it is a subtle indication to my personality and interests. I percieve the raven as symbolic of wisdom and intrigue, but they can also have deeply spirtual connotations. 
 
