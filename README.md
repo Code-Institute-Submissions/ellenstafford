@@ -364,21 +364,6 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
 
 Testing documentation can be found in this separate [testing.md](testing.md) file.
 
-### Validation Services
-
-### Testing User Stories
-
-- #### First Time Visitor Goals 
-
-- #### Returning Visitor Goals 
-
-- #### Frequent Visitor Goals
-
-### Further Testing 
-
-### Known Bugs 
-
-
 
 ## Deployment 
 
@@ -391,11 +376,10 @@ The website was developed by using [Visual Studio Code]() and [Git] to push to G
 3. At the top of the project's repository (not the top of the screen) select the **'Setting'** button from the menu - as seen [here](assets/img/settingsLocation.PNG)
 4. On the Settings, scroll down the default page until you locate the **'GitHub Pages'** section (near the bottom of the page). 
 5. Under **'Source'**, click the **dropdown menu** called 'None' and in **'select branch' choose 'master'** - as seen [here](assets/img/githubPageLocation.PNG)
-  - When selected you should see [this](sourceMasterBranch.PNG)
+  - When selected you should see [this](assets/img/sourceMasterBranch.PNG)
 6. Click **Save** to confirm your selection. The page will automatically refresh.
 7. Scroll back down to 'GitHub Pages' and you will see a link to your deployed site.
-  - It will now look something like [this](deployed.PNG)
-
+  - It will now look something like [this](assets/img/deployed.PNG)
 
 
 
@@ -441,7 +425,11 @@ The website was developed by using [Visual Studio Code]() and [Git] to push to G
 
 - I used Font Awesome's stacked icons guide for the project link icons and the download CV icon, [found here](https://fontawesome.com/how-to-use/on-the-web/styling/stacking-icons)
 
-- The code used for the hover tool on the download CV icon was based upon [this guide from w3schools](https://www.w3schools.com/css/css_tooltip.asp)
+- To center the project overlay paragraphs when on mobile screens I used a code snippet from this [StackOverflow post](https://stackoverflow.com/questions/5581034/is-there-are-way-to-make-a-child-divs-width-wider-than-the-parent-div-using-css)
+
+- The code used for the hover tool on the download CV icon was based upon [this guide from W3Schools](https://www.w3schools.com/css/css_tooltip.asp)
+
+- The Javascript code for the navbar fullscreen overlay menu was editied and fixed by [Scott Kip](https://github.com/ShavingSeagull) from Code Institute.
 
 
 ### Content
@@ -480,11 +468,12 @@ The following articles were used to help me formulate design choices and conveye
 - [W3Schools](https://www.w3schools.com/) for its high quality guides and helping me remember how to code!
 - [StackOverflow](https://stackoverflow.com/) and all the people on there, for being a perpetual source of help and inspiration throughout this project.
 - [Slack Community](https://slack.com/intl/en-gb/) for all the help, advice and inspiration.
-- [Bootstrap](https://getbootstrap.com/) for their life-saving css and jquery framework. 
+- [Bootstrap](https://getbootstrap.com/) for the css and jquery framework. 
 - [Academind](https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w) for the highly helpful Bootstrap tutorials!
 - [Anissa Deanna](https://www.youtube.com/channel/UCVOKt2XgozvMSnZDZGMdetg) and [Kie Codes](https://www.youtube.com/channel/UC1cSiiIAx7Kni1ivz7-3rpQ) for their very helpful youtube videos on writing commit messages.
 
-- I want to thank my mentor, Can Sucullu, for his help and valuable suggestions throughout this project.
-- I also want to thank friends and family members for their continual support and opinions on this project. 
+- I want thank Johann and Scott from Code Institute for their assistance with this project.
+- I also want to thank my mentor, Can Sucullu, for his help and valuable suggestions throughout this project.
+- Finally, want to thank friends and family members for their continual support and opinions on this project. 
 
 
