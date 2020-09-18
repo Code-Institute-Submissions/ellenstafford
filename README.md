@@ -382,6 +382,23 @@ Testing documentation can be found in this separate [testing.md](testing.md) fil
 
 ## Deployment 
 
+The website was developed by using [Visual Studio Code]() and [Git] to push to GitHub, which hosts the repository. The website was deployed to GitHub Pages using the following steps:
+
+### GitHub Pages 
+
+1. Open **GitHub** in your browser and **sign in** to your GithHub account.
+2. Locate the project's GitHub **repository** - most easily found [here](assets/img/repoLocation.PNG)
+3. At the top of the project's repository (not the top of the screen) select the **'Setting'** button from the menu - as seen [here](assets/img/settingsLocation.PNG)
+4. On the Settings, scroll down the default page until you locate the **'GitHub Pages'** section (near the bottom of the page). 
+5. Under **'Source'**, click the **dropdown menu** called 'None' and in **'select branch' choose 'master'** - as seen [here](assets/img/githubPageLocation.PNG)
+  - When selected you should see [this](sourceMasterBranch.PNG)
+6. Click **Save** to confirm your selection. The page will automatically refresh.
+7. Scroll back down to 'GitHub Pages' and you will see a link to your deployed site.
+  - It will now look something like [this](deployed.PNG)
+
+
+
+
 
 ## Credits 
 
