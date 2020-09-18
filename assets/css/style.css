@@ -792,6 +792,12 @@ html {
     }
 }
 
+@media (min-width: 992px) {
+    .projectLinks-mobile {
+        display: none;
+    }
+}
+
 /* The following code was based upon "https://stackoverflow.com/questions/5581034/is-there-are-way-to-make-a-child-divs-width-wider-than-the-parent-div-using-css" */
 
 @media (max-width: 496px) {
