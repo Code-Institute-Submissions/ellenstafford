@@ -11,22 +11,19 @@ $(window).scroll(function() {
 });
 
 
-//        The following code was
-//        based upon:
-//        "https://teamtreehouse.com/community/how-to-close-toggle-overlay-menu-when-clicking-navigation-item-anchor-link"
+//        The following code was based upon: "https://teamtreehouse.com/community/how-to-close-toggle-overlay-menu-when-clicking-navigation-item-anchor-link"
 
-//  Closes the navbar fullscreen overlay menu when 
-//  a navlink is clicked.
 
 $('.navbar-toggler').click(function() {
-  $(this).toggleClass('active');
-  $('.navbar-collapse').toggleClass('open').show();
- });
-
+$('.navbar-collapse').addClass('open').show();
+});
 
 // Closes the menu after clicking link
 
 $('.navbar-collapse li').on('click', function(){
-   $(".navbar-collapse").hide();
-   $(".navbar-toggler").removeClass("active");
+  
+ $(".navbar-collapse").removeClass('open').hide();
+ if($('.navbar-collapse').hasClass('show')) {
+      $('.navbar-collapse').removeClass('show');
+  }
 });
