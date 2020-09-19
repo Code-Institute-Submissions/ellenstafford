@@ -85,18 +85,18 @@ However this did not mean the site's performance was at its best. I found that m
 
 | Desktop | Mobile |
 | ------- | ------ |
-| [PageSpeed Insights Desktop](assets/img/pageInsights-img2-test3.PNG) | [PageSpeed Insights Mobile](assets/img/pageInsights-img1-test3.PNG) |
+| ![PageSpeed Insights Desktop](assets/img/pageInsights-img2-test3.PNG) | ![PageSpeed Insights Mobile](assets/img/pageInsights-img1-test3.PNG) |
 
 My concern, was the performance impact on mobile, because despite resizing the image files, I still experienced stuttering on mobile devices. Page Insights noted that the images were still impacting performance:
 
 | Desktop | Mobile |
 | ------- | ------ |
-| [PageSpeed Insights Desktop](assets/img/pageInsights-img4-test3.PNG) | [PageSpeed Insights Mobile](assets/img/pageInsights-img3-test3.PNG) |
+| ![PageSpeed Insights Desktop](assets/img/pageInsights-img4-test3.PNG) | ![PageSpeed Insights Mobile](assets/img/pageInsights-img3-test3.PNG) |
 
 PageSpeed Insights recommended changing the format of the images from PNG and JPEG to a next-gen format, like webP, which would reduce the screen loading by an estimate of 3.75s on mobile, and 0.67s on desktop. 
 
-I used multiple online converters to convert my images from PNG to webP, such as [ImageOnline.com](https://image.online-convert.com/convert-to-webp) [Convertio](https://convertio.co/png-webp/) and [Zamzar](https://www.zamzar.com/convert/png-to-webp/)
-- Online converters often have limits on how many files you can convert, so I used multiple converters so that I could convert all my images.
+- I used multiple online converters to convert my images from PNG to webP, such as [ImageOnline.com](https://image.online-convert.com/convert-to-webp) [Convertio](https://convertio.co/png-webp/) and [Zamzar](https://www.zamzar.com/convert/png-to-webp/). 
+    - Online converters often have limits on how many files you can convert, so I used multiple converters so that I could convert all my images.
 
 Converting the images didn't have much impact on the Speed Score, however it did drastically reduce the stuttering when scrolling on mobile devices.
 
