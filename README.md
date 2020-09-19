@@ -3,6 +3,59 @@
 
 This website is an online porfolio, or resume, designed to showcase my skills and qualifications. It is also a great and intuitive way to learn more about me.
 
+
+## Contents 
+
+
+- [Project Purpose](##Project-Purpose)
+
+- [User Experience (UX)](##User-Experience-(UX))
+
+  - [User Stories](###User-Stories)
+
+- [Design](##Design)
+
+  - [Typography](###Typography)
+
+  - [Colour Scheme](###Colour-Scheme)
+
+  - [Colour Scheme - Psychology](####Colour-Scheme-Psychology)
+
+  - [Colour Scheme - Application](####Colour-Scheme-Application)
+
+  - [Branding](###Branding)
+
+  - [Design Layout](###Design-Layout)
+
+  - [Wireframes](###Wireframes)
+
+- [Features](##Features)
+
+  - [Implemented Features](###Implemented-Features)
+
+  - [Features Left to Implement](###Features-Left-To-Implement)
+
+- [Technologies Used](##Technologies-Used)
+
+  - [Languages](###Languages)
+
+  - [Frameworks, Libraries & Programs](###Frameworks,-Libraries-&-Programs)
+
+- [Testing](##Testing)
+
+- [Deployment](##Deployment)
+
+- [Credits](##Credits)
+
+  - [Code](###Code)
+
+  - [Content](###Content)
+
+  - [Inspiration](###Inspiration)
+
+  - [Acknowledgements](###Acknowledgements)
+
+
 ## Project Purpose 
 
 The primary aim of this website is to establish an online presence for myself and to impress potential recruiters who may hire me. Unlike a traditional CV or resume, this online portfolio allows my skills to speak for themselves, with the website itself acting as an exemplar of my current skillset. By using HTML, CSS and a little Javascript, this website gives users an easy and aesthetically pleasing interface for them to effortlessly discover who I am. 
@@ -474,6 +527,6 @@ The following articles were used to help me formulate design choices and conveye
 
 - I want thank Johann and Scott from Code Institute for their assistance with this project.
 - I also want to thank my mentor, Can Sucullu, for his help and valuable suggestions throughout this project.
-- Finally, want to thank friends and family members for their continual support and opinions on this project. 
+- Finally, want to thank friends and family members for their continual support and feedback. 
 
 
