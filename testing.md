@@ -36,7 +36,7 @@ However, the validator did find [these errors](assets/img/CSS-validator.PNG) in 
     - `-moz-transform is an unknown vendor extension`
 
 - W3C's CSS Validation Service flagged **line 175** as an error.
-    - The warning: `*auto* is not defined by any specification as an allowed value for *pointer-events*, but is supported in multiple browsers`
+    - The warning: `auto is not defined by any specification as an allowed value for pointer-events, but is supported in multiple browsers`
     - However, this line is necessary for the functionality of the navbar fullscreen overlay menu - a screenshot of the code can be seen [here](assets/img/codeScreenshot.PNG)
     - Removing this line breaks the navigation links when on the fullscreen overlay - they will no longer be clickable.
     - Ignoring the warning.
@@ -124,12 +124,74 @@ There was also the concern of how this would work, if at all, once the website w
 
 ## Testing User Stories
 
-- #### First Time Visitor Goals 
+### First Time Visitor Goals 
 
-- #### Returning Visitor Goals 
+1. As a first-time visitor, I want to understand the main purpose of the site immediately.
 
-- #### Frequent Visitor Goals
+    - Upon entering the site users are greeted with a clean, user friendly navigation bar at the top of the screen, which they can use to go to a page of their choice. Underneath is a hero-image and jumbotron, with the text 'Hi, I'm Ellen. I'm a University Graduate & Freelancer in Software Development' and a button that says 'Learn More' bellow.
 
+    - The main purpose of the site is made clear with the hero image and jumbotron - it tells the user that this site is about, me, with 'Hi, I'm Ellen [...]' and that the site's purpose is to serve as an online porfolio to advertise myself.
+
+2. I want to easily navigate through the site's content.
+
+    - The navigation bar is clear, readable and easy to use. It is fixed which means the user can easily navigate to different parts of the site's page quickly and effortlessly, no matter where they are on the page at that given moment. 
+
+3. I do not want to decode the site's features to be able to use them - no features should be hard to find or hard to perceive as a feature.
+    
+    - Every button that is clickable is an imperative, which tells the user that it is clickable and that they should interact with it. 
+
+    - No information is hidden, with exception to the project image overlay, which is visible when the mouse hovers over it. Due to the image size, it is unlikely that the user would overlook this feature, particularly as it follows conventions seen on other sites. Nevertheless, a small indication, like a 'hover over me' text, to encourage the user to interact with the image could be added to further improve user experience. 
+
+4. I want to easily find information about the potential candidate I may hire.
+
+    - The fixed navigation bar allows the user to easily navigate to different parts of the site that has the information they require.
+
+    - The 'Learn more' button on the homepage makes it so users can immediately find the information they seek. 
+
+    - Information has been effectively organised so that users can navigate through the site's content, and sift through information easily. 'Read more' buttons are there to indicate to the user that more information can be revealed, which exposes the user to more information without the risk of cognitive overload. 
+
+5. As a first-time visitor, I also want to immediately see the potential of the candidate, which means the site itself needs to meet a desired professional quality.
+
+    - The site fulfills this purpose, but users can also easily navigate to both the Experience page and the Projects page in order to satisfy this goal.
+
+6. I want to be assured that the site is trusted, therefore I want to see social media links to serve as evidence to their major claims.
+
+    - Social media links are provided in the site's footer. There are also references available in the downloadable CV file. 
+
+7. Most significantly, as a first-time visitor, I want to *like* the site so that I will revisit it again.
+
+    - The site encourages user interactivity and reguarly responds to the user's input. 
+    
+    - The scroll-down and scroll-up arrow buttons give a visually stimulating and effective way for users to navigate through the site, as a navigational feature other than the navbar. 
+
+    - Buttons encourage users to enage with the site.
+
+    - The implementation of a contact form, alongside contact links, makes the user experience more personal and intuitive. 
+
+    - The image carousel is visually stimulating and unqiue to this genre of website, which may make the site more memorable and encourage users to visit again.
+
+
+### Returning Visitor Goals 
+
+1. As a returning visitor, I want to see the projects the candidate may have worked on.
+
+    - Users can navigate to the Projects page to see both web development projects and academic work. 
+
+    - The projects are emphaised visually, with the large, eye-catching image to grab the users attention and encourage them to lear more.
+
+2. Additionally, I want to see their qualifications, relevant work experience and what skills they have.
+
+    - Users can navigate to the Skills page and the Experience page to see my qualifications and skillsets. Both are represented visually - with progress bars and a timeline. This makes it quicker for users to take in all the information and offers the information to them in an intuitive way that diminishes the risk of cognitive overload.
+
+3. I want to be able to easily contact the candidate at any point throughout my navigation of the site so that they can answer any question I may have.
+
+    - Users can navigate to the contact footer by either users the navigation bar or clicking the 'Hire Me' button on the about page. The fixed navbar fulfills this goal by allowing the users to go to the contact section quickly and easily, regardless of where they are in the site.
+
+4. As a returning visitor, I may want to download a CV in PDF format and see references to validate the candidate’s claims.
+
+    - A download icon for the downloadable CV can be found in the footer with the social media links. A hover tooltip will display on desktop when the user hovers over the icon with their mouse. This tells the users exactly what it is that they will download. 
+
+    - When on mobile devices, a text reading 'Download my CV' will be displayed underneath the download icon in place of the hover tooltip to make the feature easy for the users to understand and use.
 
 
 ## Further Testing 
