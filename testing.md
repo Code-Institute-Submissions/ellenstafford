@@ -1,4 +1,24 @@
-# Testing 
+# ![Site Brand](assets/img/logo-raven-black.webp) Testing 
+
+## Contents
+
+- [Automated Testing](#Automated-Testing)
+
+    - [W3C Validation Service](#W3C-Markup-Validation-Service)
+
+    - [Page Speed / Performance](#Page-Speed/Performance)
+        - [Test 1](#Test-1)
+        - [Test 2](#Test-2)
+        - [Test 3](#Test-3)
+        - [Unfixable Performance Issues](Unfixable-Performance-Issues)
+
+- [Testing User Stories](#Testing-User-Stories)
+
+    - [First Time Visitor Goals](#First-Time-Visitor-Goals)
+
+    - [Returning Visitor Goals](#Returning-Visitor-Goals)
+
+-----
 
 ## Automated Testing
 
@@ -120,7 +140,7 @@ This process did work, although it would require some fine tweaking to make it a
 
 There was also the concern of how this would work, if at all, once the website was deployed. Therefore, this may be a 'fix' that I will implement and try to resolve in the future. For now, the issue is not damaging to the site, as the site speed is quick enough to not cause user irritation and intervene with user input. Nevertheless, it will be wise to recitify this issue in the future.
 
-
+-----
 
 ## Testing User Stories
 
@@ -195,6 +215,9 @@ There was also the concern of how this would work, if at all, once the website w
 
 
 ## Further Testing 
+
+
+
 
 ## Known Bugs 
 

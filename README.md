@@ -1,4 +1,4 @@
-# Porfolio Website [ellenstafford.com](https://ellenst264.github.io/ellenstafford/)
+# ![Site Brand](assets/img/logo-raven-black.webp) Porfolio Website: [ellenstafford.com](https://ellenst264.github.io/ellenstafford/)
 
 [View live project here](https://ellenst264.github.io/ellenstafford/)
 
