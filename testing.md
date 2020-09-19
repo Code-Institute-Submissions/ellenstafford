@@ -24,24 +24,24 @@ However, the validator did find [these errors](assets/img/CSS-validator.PNG) in 
 #### Warnings:
 
 - The following warning were ignored as they can be necessary to ensure functionality on different browsers:
-    - -webkit-transition is an unknown vendor extension
-    - -moz-transition is an unknown vendor extension
-    - -o-transition is an unknown vendor extension
-    - -webkit-background-size is an unknown vendor extension
-    - -moz-background-size is an unknown vendor extension
-    - -o-background-size is an unknown vendor extension
-    - -moz-animation is an unknown vendor extension
-    - -webkit-animation is an unknown vendor extension
-    - -webkit-transform is an unknown vendor extension
-    - -moz-transform is an unknown vendor extension
+    - `-webkit-transition is an unknown vendor extension`
+    - `-moz-transition is an unknown vendor extension`
+    - `-o-transition is an unknown vendor extension`
+    - `-webkit-background-size is an unknown vendor extension`
+    - `-moz-background-size is an unknown vendor extension`
+    - `-o-background-size is an unknown vendor extension`
+    - `-moz-animation is an unknown vendor extension`
+    - `-webkit-animation is an unknown vendor extension`
+    - `-webkit-transform is an unknown vendor extension`
+    - `-moz-transform is an unknown vendor extension`
 
 - W3C's CSS Validation Service flagged **line 175** as an error.
-    - The warning: '*auto* is not defined by any specification as an allowed value for *pointer-events*, but is supported in multiple browsers'
+    - The warning: `*auto* is not defined by any specification as an allowed value for *pointer-events*, but is supported in multiple browsers`
     - However, this line is necessary for the functionality of the navbar fullscreen overlay menu - a screenshot of the code can be seen [here](assets/img/codeScreenshot.PNG)
     - Removing this line breaks the navigation links when on the fullscreen overlay - they will no longer be clickable.
     - Ignoring the warning.
 
-- The service flagged 768 warnings in Bootstrap. As I cannot address these warning directly, I am forced to ignore it. 
+- The service flagged **768 warnings in Bootstrap**. As I cannot address these warning directly, I am forced to ignore it. 
 
 
 ### Page Speed/Performace
@@ -95,20 +95,20 @@ My concern, was the performance impact on mobile, because despite resizing the i
 
 PageSpeed Insights recommended changing the format of the images from PNG and JPEG to a next-gen format, like webP, which would reduce the screen loading by an estimate of 3.75s on mobile, and 0.67s on desktop. 
 
-- I used multiple online converters to convert my images from PNG to webP, such as [ImageOnline.com](https://image.online-convert.com/convert-to-webp) [Convertio](https://convertio.co/png-webp/) and [Zamzar](https://www.zamzar.com/convert/png-to-webp/). 
-    - Online converters often have limits on how many files you can convert, so I used multiple converters so that I could convert all my images.
+- I used multiple online converters to convert my images from PNG to webP, such as [ImageOnline.com](https://image.online-convert.com/convert-to-webp), [Convertio](https://convertio.co/png-webp/) and [Zamzar](https://www.zamzar.com/convert/png-to-webp/). 
+    - Online converters often have limits on how many files you can convert, so I used multiple converters.
 
 Converting the images didn't have much impact on the Speed Score, however it did drastically reduce the stuttering when scrolling on mobile devices.
 
 
 ### Unfixable Performance Issues 
 
-The remaining performance impact derives from the render-blocking resources primarily caused by Bootstrap and Font Awesome. The only 'fix' to this issue would be to locally load a limited CSS file for both Bootstrap and Font Awesome, which would include *only* the files that I need. 
+The remaining performance impact derives from the render-blocking resources primarily caused by Bootstrap and Font Awesome. The only 'fix' to this issue would be to locally load a limited CSS file for both Bootstrap and Font Awesome, which would *only* call the CSS that I need. 
 
 I tested this on the local repository of the site by doing the following steps:
 
 1. I removed the link to Bootstrap's extenal stylesheet (CDN). 
-2. I copied the *used* Bootstrap CSS code from the deployed website by using the [CSS Used](https://chrome.google.com/webstore/detail/css-used/cdopjfddjlonogibjahpnmjpoangjfff?hl=en) extension in [Chrome's DevTools]https://developers.google.com/web/tools/chrome-devtools() 
+2. I copied the *used* Bootstrap CSS code from the deployed website by using the [CSS Used](https://chrome.google.com/webstore/detail/css-used/cdopjfddjlonogibjahpnmjpoangjfff?hl=en) extension in [Chrome's DevTools](https://developers.google.com/web/tools/chrome-devtools) 
 3. I then minified the code using [CSS Minifier](https://cssminifier.com/)
 4. I copied the minified css code into my main CSS file (style.css) before any of my own code.
 5. I navigated to the [Bootstrap GitHub Repository](https://github.com/twbs/bootstrap)
@@ -116,13 +116,13 @@ I tested this on the local repository of the site by doing the following steps:
 7. I linked to the newly downloaded `bootstrap.grid.css.min` in my HTML and loaded it before my `style.css` file.
 8. I saved the changes made to both `index.html` and `style.css`
 
-This process did work, although it would require some fine tweaking to make it aesthetically identical to the deployed website. Additionally, I did the same process but using a Custom Bootstrap CSS file from [here](https://getbootstrap.com/docs/3.4/customize/) in place of `bootstrap-grid.css.min`. This made the site's features more functional but causes visual inconsistencies, such as the font size being a lot smaller than the original website.
+This process did work, although it would require some fine tweaking to make it aesthetically identical to the deployed website. Additionally, I did the same process but using a **Custom Bootstrap CSS** file from [here](https://getbootstrap.com/docs/3.4/customize/) in place of `bootstrap-grid.css.min`. This made the site's features more functional but caused visual inconsistencies, such as the font size being a lot smaller than the original website.
 
-There was also the concern of how this would work, if at all, once the website was deployed. Therefore, this may be a 'fix' that I will implement and try to resolve in the future. For now, the issue is not damaging to the site, and the site speed is quick enough to not cause user irritation and intervene with user input. Nevertheless, it will be wise to recitify this issue in the future.
+There was also the concern of how this would work, if at all, once the website was deployed. Therefore, this may be a 'fix' that I will implement and try to resolve in the future. For now, the issue is not damaging to the site, as the site speed is quick enough to not cause user irritation and intervene with user input. Nevertheless, it will be wise to recitify this issue in the future.
 
 
 
-### Testing User Stories
+## Testing User Stories
 
 - #### First Time Visitor Goals 
 
@@ -130,7 +130,9 @@ There was also the concern of how this would work, if at all, once the website w
 
 - #### Frequent Visitor Goals
 
-### Further Testing 
 
-### Known Bugs 
+
+## Further Testing 
+
+## Known Bugs 
 
