@@ -225,16 +225,16 @@ There was also the concern of how this would work, if at all, once the website w
 
 | No. |   Action    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
 | --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
-|  1  | Navigate to `About Me` | Click the `About Me` nav link | The site will navigate to the `About Me` section | Navigates to `About Me` section | [x] Pass |
-|  2  | Navigate to `Skills` | Click the `Skills` nav link | The site will navigate to the `Skills` section | Navigates to `Skills` section | [x] Pass |
-|  3  | Navigate to `Contact` | Click the `Contact` nav link | The site will navigate to the `Contact` section | Navigates to `Contact` section | [x] Pass |
-|  4  | Navigate to `Homepage` | Click the `Navbar brand` | The site will navigate back up to the `Homepage` when the navbar brand is clicked | Navigates to `Homepage` | [x] Pass |
-|  5  | Navigate to `Experience` - `Education` | Click the `Experience` nav link and then `Education` on the drop-down menu | Upon clicking `Experience` the drop-down menu will be visible. The site will navigate to the `Education` section once clicked | Clicking `Experience` open the drop-down menu. Navigates to `Education` section when `Education` is clicked in drop-down menu | [x] Pass | When navigating to `Education` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
-|  6  | Navigate to `Experience` - `Work Experience` | Click the `Experience` nav link and then `Work Experience` on the drop-down menu | Upon clicking `Experience` the drop-down menu will be visible. The site will navigate to the `Work Experience` section once clicked | Clicking `Experience` open the drop-down menu. Navigates to `Work Experience` section when `Education` is clicked in drop-down menu | [x] Pass | When navigating to `Work Experience` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
-|  7  | Navigate to `Experience` - `Achievements` | Click the `Experience` nav link and then `Achievements` on the drop-down menu | Upon clicking `Experience` the drop-down menu will be visible. The site will navigate to the `Achievements` section once clicked | Clicking `Experience` open the drop-down menu. Navigates to `Education` section when `Achievements` is clicked in drop-down menu | [x] Pass | When navigating to `Achievements` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
-|  8  | Navigate to `Projects` - `Web Development` | Click the `Projects` nav link and then `Web Development` on the drop-down menu | Upon clicking `Projects` the drop-down menu will be visible. The site will navigate to the `Web Development` section once clicked | Clicking `Projects` open the drop-down menu. Navigates to `Web Development` section when `Projects` is clicked in drop-down menu | [x] Pass |
-|  9  | Navigate to `Projects` - `Academic Work` | Click the `Projects` nav link and then `Academic Work` on the drop-down menu | Upon clicking `Projects` the drop-down menu will be visible. The site will navigate to the `Academic Work` section once clicked | Clicking `Projects` open the drop-down menu. Navigates to `Academic Work` section when `Projects` is clicked in drop-down menu | [x] Pass |
-|  11 | Navbar will transform on scroll | Scroll down the page | The navbar size will shrink on mouse scroll | Upon scrolling down the navbar shrinks in size | [x] Pass |
+|  1  | Navigate to `About Me` | Click the `About Me` nav link | The site will navigate to the `About Me` section | Navigates to `About Me` section | Pass |
+|  2  | Navigate to `Skills` | Click the `Skills` nav link | The site will navigate to the `Skills` section | Navigates to `Skills` section | Pass |
+|  3  | Navigate to `Contact` | Click the `Contact` nav link | The site will navigate to the `Contact` section | Navigates to `Contact` section | Pass |
+|  4  | Navigate to `Homepage` | Click the `Navbar brand` | The site will navigate back up to the `Homepage` when the navbar brand is clicked | Navigates to `Homepage` | Pass |
+|  5  | Navigate to `Experience` - `Education` | Click the `Experience` nav link and then `Education` on the drop-down menu | Upon clicking `Experience` the drop-down menu will be visible. The site will navigate to the `Education` section once clicked | Clicking `Experience` open the drop-down menu. Navigates to `Education` section when `Education` is clicked in drop-down menu | Pass | When navigating to `Education` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
+|  6  | Navigate to `Experience` - `Work Experience` | Click the `Experience` nav link and then `Work Experience` on the drop-down menu | Upon clicking `Experience` the drop-down menu will be visible. The site will navigate to the `Work Experience` section once clicked | Clicking `Experience` open the drop-down menu. Navigates to `Work Experience` section when `Education` is clicked in drop-down menu | Pass | When navigating to `Work Experience` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
+|  7  | Navigate to `Experience` - `Achievements` | Click the `Experience` nav link and then `Achievements` on the drop-down menu | Upon clicking `Experience` the drop-down menu will be visible. The site will navigate to the `Achievements` section once clicked | Clicking `Experience` open the drop-down menu. Navigates to `Education` section when `Achievements` is clicked in drop-down menu | Pass | When navigating to `Achievements` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
+|  8  | Navigate to `Projects` - `Web Development` | Click the `Projects` nav link and then `Web Development` on the drop-down menu | Upon clicking `Projects` the drop-down menu will be visible. The site will navigate to the `Web Development` section once clicked | Clicking `Projects` open the drop-down menu. Navigates to `Web Development` section when `Projects` is clicked in drop-down menu | Pass |
+|  9  | Navigate to `Projects` - `Academic Work` | Click the `Projects` nav link and then `Academic Work` on the drop-down menu | Upon clicking `Projects` the drop-down menu will be visible. The site will navigate to the `Academic Work` section once clicked | Clicking `Projects` open the drop-down menu. Navigates to `Academic Work` section when `Projects` is clicked in drop-down menu | Pass |
+|  11 | Navbar will transform on scroll | Scroll down the page | The navbar size will shrink on mouse scroll | Upon scrolling down the navbar shrinks in size | Pass |
 
 -----
 
@@ -242,20 +242,111 @@ There was also the concern of how this would work, if at all, once the website w
 
 | No. |   Action    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
 | --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
-|  1  | Open navbar fullscreen overlay menu | Click the burger icon | Will open the fullscreen overlay menu, filling the entire screen | Opens the fullscreen overlay menu | [x] Pass |
-|  2  | Navigate to `About Me` | Click the burger icon then click `About Me` nav link in the fullscreen overlay menu | The fullscreen overlay menu will close and navigate to the `About Me` section | Closes the fullscreen overlay menu and navigates to `About Me` section | [x] Pass |
-|  3  | Navigate to `Skills` | Click the burger icon then click `Skills` nav link in the fullscreen overlay menu | The fullscreen overlay menu will close and navigate to the `Skills` section | Closes the fullscreen overlay menu and navigates to `Skills` section | [x] Pass |
-|  4  | Navigate to `Contact` | Click the burger icon then click `Contact` nav link in the fullscreen overlay menu | The fullscreen overlay menu will close and navigate to the `Contact` section | Closes the fullscreen overlay menu and navigates to `Contact` section | [x] Pass |
-|  5  | Navigate to `Homepage` | Click the `Navbar brand` | The site will navigate back up to the `Homepage` when the navbar brand is clicked | Navigates to `Homepage` | [x] Pass |
-|  6  | Navigate to `Experience` - `Education` | Click the burger icon. In the fullscreen screen overlay menu click the `Experience` navlink then `Education` in the dropdown menu | Upon clicking `Experience` the drop-down menu will be visible. Once `Education` is clicked the fullscreen overlay menu will close and navigate to the `Education` section  | Clicking `Experience` opens the drop-down menu, clicking `Education` in the drop-down menu closes the fullscreen overlay and navigates to the `Education` section | [x] Pass | When navigating to `Education` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
-|  7  | Navigate to `Experience` - `Work Experience` | Click the burger icon. In the fullscreen screen overlay menu click the `Experience` navlink then `Work Experience` in the dropdown menu | Upon clicking `Experience` the drop-down menu will be visible. Once `Work Experience` is clicked the fullscreen overlay menu will close and navigate to the `Work Experience` section  | Clicking `Experience` opens the drop-down menu, clicking `Work Experience` in the drop-down menu closes the fullscreen overlay and navigates to the `Work Experience` section | [x] Pass | When navigating to `Work Experience` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
-|  8  | Navigate to `Experience` - `Achievements` | Click the burger icon. In the fullscreen screen overlay menu click the `Experience` navlink then `Achievements` in the dropdown menu | Upon clicking `Experience` the drop-down menu will be visible. Once `Achievements` is clicked the fullscreen overlay menu will close and navigate to the `Achievements` section  | Clicking `Experience` opens the drop-down menu, clicking `Achievements` in the drop-down menu closes the fullscreen overlay and navigates to the `Achievements` section | [x] Pass | When navigating to `Achievements` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
-|  9  | Navigate to `Projects` - `Web Development` | Click the burger icon. In the fullscreen screen overlay menu click the `Projects` navlink then `Web Development` in the dropdown menu | Upon clicking `Projects` the drop-down menu will be visible. Once `Web Development` is clicked the fullscreen overlay menu will close and navigate to the `Web Development` section  | Clicking `Projects` opens the drop-down menu, clicking `Web Development` in the drop-down menu closes the fullscreen overlay and navigates to the `Web Development` section | [x] Pass | 
-|  10 | Navigate to `Projects` - `Academic Work` | Click the burger icon. In the fullscreen screen overlay menu click the `Projects` navlink then `Academic Work` in the dropdown menu | Upon clicking `Projects` the drop-down menu will be visible. Once `Academic Work` is clicked the fullscreen overlay menu will close and navigate to the `Academic Work` section  | Clicking `Projects` opens the drop-down menu, clicking `Academic Work` in the drop-down menu closes the fullscreen overlay and navigates to the `Academic Work` section | [x] Pass | 
-|  11 | Navbar will transform on scroll | Scroll down the page | The navbar size will shrink on mouse scroll | Upon scrolling down the navbar shrinks in size | [x] Pass |
+|  1  | Open navbar fullscreen overlay menu | Click the burger icon | Will open the fullscreen overlay menu, filling the entire screen | Opens the fullscreen overlay menu | Pass |
+|  2  | Navigate to `About Me` | Click the burger icon then click `About Me` nav link in the fullscreen overlay menu | The fullscreen overlay menu will close and navigate to the `About Me` section | Closes the fullscreen overlay menu and navigates to `About Me` section | Pass |
+|  3  | Navigate to `Skills` | Click the burger icon then click `Skills` nav link in the fullscreen overlay menu | The fullscreen overlay menu will close and navigate to the `Skills` section | Closes the fullscreen overlay menu and navigates to `Skills` section | Pass |
+|  4  | Navigate to `Contact` | Click the burger icon then click `Contact` nav link in the fullscreen overlay menu | The fullscreen overlay menu will close and navigate to the `Contact` section | Closes the fullscreen overlay menu and navigates to `Contact` section | Pass |
+|  5  | Navigate to `Homepage` | Click the `Navbar brand` | The site will navigate back up to the `Homepage` when the navbar brand is clicked | Navigates to `Homepage` | Pass |
+|  6  | Navigate to `Experience` - `Education` | Click the burger icon. In the fullscreen screen overlay menu click the `Experience` navlink then `Education` in the dropdown menu | Upon clicking `Experience` the drop-down menu will be visible. Once `Education` is clicked the fullscreen overlay menu will close and navigate to the `Education` section  | Clicking `Experience` opens the drop-down menu, clicking `Education` in the drop-down menu closes the fullscreen overlay and navigates to the `Education` section | Pass | When navigating to `Education` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
+|  7  | Navigate to `Experience` - `Work Experience` | Click the burger icon. In the fullscreen screen overlay menu click the `Experience` navlink then `Work Experience` in the dropdown menu | Upon clicking `Experience` the drop-down menu will be visible. Once `Work Experience` is clicked the fullscreen overlay menu will close and navigate to the `Work Experience` section  | Clicking `Experience` opens the drop-down menu, clicking `Work Experience` in the drop-down menu closes the fullscreen overlay and navigates to the `Work Experience` section | Pass | When navigating to `Work Experience` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
+|  8  | Navigate to `Experience` - `Achievements` | Click the burger icon. In the fullscreen screen overlay menu click the `Experience` navlink then `Achievements` in the dropdown menu | Upon clicking `Experience` the drop-down menu will be visible. Once `Achievements` is clicked the fullscreen overlay menu will close and navigate to the `Achievements` section  | Clicking `Experience` opens the drop-down menu, clicking `Achievements` in the drop-down menu closes the fullscreen overlay and navigates to the `Achievements` section | Pass | When navigating to `Achievements` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
+|  9  | Navigate to `Projects` - `Web Development` | Click the burger icon. In the fullscreen screen overlay menu click the `Projects` navlink then `Web Development` in the dropdown menu | Upon clicking `Projects` the drop-down menu will be visible. Once `Web Development` is clicked the fullscreen overlay menu will close and navigate to the `Web Development` section  | Clicking `Projects` opens the drop-down menu, clicking `Web Development` in the drop-down menu closes the fullscreen overlay and navigates to the `Web Development` section | Pass | 
+|  10 | Navigate to `Projects` - `Academic Work` | Click the burger icon. In the fullscreen screen overlay menu click the `Projects` navlink then `Academic Work` in the dropdown menu | Upon clicking `Projects` the drop-down menu will be visible. Once `Academic Work` is clicked the fullscreen overlay menu will close and navigate to the `Academic Work` section  | Clicking `Projects` opens the drop-down menu, clicking `Academic Work` in the drop-down menu closes the fullscreen overlay and navigates to the `Academic Work` section | Pass | 
+|  11 | Navbar will transform on scroll | Scroll down the page | The navbar size will shrink on mouse scroll | Upon scrolling down the navbar shrinks in size | Pass |
 
 
 ----
+### Homepage 
+
+| No. |   Action / Feature    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
+| --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
+|  1  | `Learn More` jumbotron button | Click `Learn More` button | Will navigate the user to `About Me` | Navigates to `About Me` | Pass |
+|  2  | `Scroll-down arrow` button | Click `scroll-down` button | Will navigate the user to `About Me` | Navigates to `About Me` | Pass |
+|  3  | Testing above features on `mobile devices` | See above | See above | Both tests work as expected | Pass |
+
+
+-----
+
+### About Me Page 
+
+| No. |   Action / Feature    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
+| --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
+|  1  | `Hire Me` button in callout card | Click `Hire Me` button | Will navigate to `Contact` section | Navigates to `Contact` section | Pass |
+|  2 | Testing above feature on `mobile devices` | See above | See above | Work as expected | Pass |
+|  3  | `Overflow scroll` on `mobile devices` | On the chapter content the user will scroll through the content **first** before scrolling down the page onto the next section | `Overflow scroll` will work as intended and allow the user to scroll through the content without scrolling down the page | `Overflow scroll` function works and allows users to scroll through the content without scrolling down the page | Pass |
+
+
+-----
+
+### Skills Page
+
+| No. |   Action / Feature    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
+| --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
+|  1  | `Overflow scroll` | Hover mouse over the chapter content section (the white background) and scroll | `Overflow scroll` will work as intended and allow the user to scroll through the content without scrolling down the page | `Overflow scroll` function works and allows users to scroll through the content without scrolling down the page | Pass |
+|  2  | `Overflow scroll` on `mobile devices` | On the chapter content the user will scroll through the content **first** before scrolling down the page onto the next section | `Overflow scroll` will work as intended and allow the user to scroll through the content without scrolling down the page | `Overflow scroll` function works and allows users to scroll through the content without scrolling down the page | Pass |
+|  3  | `Progress bars` scale animation on `desktop` | Hover the mouse over the `progress bars` to trigger the scale animation | The scale transition animation will trigger on mouse hover | Hovering the mouse over the `progress bars` triggers the small scale animation | Pass |
+
+
+-----
+
+### Experience Page 
+
+| No. |   Action / Feature    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
+| --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
+|  1  | `Overflow scroll` | Hover mouse over the chapter content section (the white background) and scroll | `Overflow scroll` will work as intended and allow the user to scroll through the content without scrolling down the page | `Overflow scroll` function works and allows users to scroll through the content without scrolling down the page | Pass |
+|  2  | `Overflow scroll` on `mobile devices` | On the chapter content the user will scroll through the content **first** before scrolling down the page onto the next section | `Overflow scroll` will work as intended and allow the user to scroll through the content without scrolling down the page | `Overflow scroll` function works and allows users to scroll through the content without scrolling down the page | Pass |
+|  3  | `Read More` button - `show` | Click `Read More` button | Will show hidden collapsable content on click | Clicking `Read More` reveals the hidden text | Pass |
+|  4  | `Read More` button - `hide` | Click the same `Read More` button for a second time | Will hide the revealed collapsable content on click | Hides the revealed content | Pass |
+|  5  | Testing `Read More` features on `mobile devices` | See above | See above | Works as expected | Pass |
+
+
+-----
+
+
+### Projects Page 
+
+| No. |   Action / Feature    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
+| --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
+|  1  | `Overlay content` for project `image` | Hover mouse over the project `image` | Will display `overlay content` when the mouse hovers over the `image` | Displays the `overlay content` on mouse hover | Pass |
+|  2  | Project `image` and `overlay content` scale transform | Hover mouse over the project `image` | Both the project `image` and its `overlay content` will increase in size with a `transform (scale)` animation on mouse hover | On mouse hover both the `image` and its `overlay content` increase in size with a graceful `transform (scale)` animation | Pass |
+|  3  | `Overlay content` - inactive for  `mobile devices` | Hover mouse or click project `image` | The project `overlay content` will not display on click or hover | The `overlay content` does not activate when hovering over or clicking the project `image` | Pass | The project `overlay content` has a minimum width of 992px, which prevents the feature from activating on mobile devices in order to maintain good UX design |
+|  4  | `Overlay content` - visible content under the project `image` for `mobile devices` | N/A | The `overlay content` will be displayed underneath the project `image` on `mobile devices`, replacing the `overlay content` hover function | The `overlay content` is displayed underneath the project `image` when on `mobile devices` | Pass | This is visible at 992px and above - the point at which the project `overlay` no longer functions on mouse hover |
+|  5  | `Project links` | Click `project link` icon | Clicking the `project link` icon will direct users to a `new tab` containing the appropriate project | Navigates to a `new tab` containing the appropriate project when clicking the `link` icon | Pass | On mouse hover the `project link` icons for the `Web Development` section will display a small hyphen next to icon. This is not intented but causes no real disruptions for the user. I conclude that this is a very minor visual bug |
+|  5  | Project `GitHub links` | Click project `GitHub` icon | Clicking the project `GitHub` icon will direct users to a `new tab` containing a `GitHub repository` for the appropriate project | Navigates to a `new tab` containing a `GitHub repository` for the appropriate project when clicking the `GitHub` icon | Pass | Only implemented in the `Web Development` section |
+|  6  | Testing `GitHub links` and `project links` on `mobile devices` | See above | See above | Works as expected | Pass |
+
+
+-----
+
+### Carousel
+
+| No. |   Action / Feature    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
+| --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
+|  1  | Automatic image slide | N/A | The `carousel` should slide through images automatically without the need for user input | The `carousel` slides through images automatically without input | Pass |
+|  2  | Manual controls - `next` | Click the `carousel` right arrow button | Upon clicking the right arrow the `carousel` will slide to the `next image` | Slides to the `next carousel image` when the right arrow is clicked | Pass |
+|  3  | Manual controls - `previous` | Click the `carousel` left arrow button | Upon clicking the left arrow the `carousel` will slide to the `previous image` | Slides to the `previous carousel image` when the left arrow is clicked | Pass |
+|  4  | See if all `carousel images` work correctly | Either wait for the `carousel` to automatically slide through every image **or** manually sift through images with the arrow `controls` | Every `image` in the `carousel` will load | `Shakespeare's *King Lear* image` did not load | Fail | Used `DevTools` to locate the source of the error. Discovered that I has used the wrong `image format` in `HTML` |
+|  5  | Fix `Shakspeare's *King Lear* image` for `carousel` | Change `image format` from `png` to `webp`. Save changes in `HTML` and `commit` to `GitHub` | All `carousel images` will load | All `images` loaded | Pass | 
+|  6  | Visible on `desktop` and `tablet devices` | In `DevTools` change device toolbar to `desktop` and `tablet` (Ipad) | The `carousel` will be visible | The `carousel` is visible | Pass | Has a minimum width of 768px |
+|  7  | Hidden on `mobile devices` | In `DevTools` change device toolbar to `mobile` | The `carousel` will be hidden | The `carousel` is hidden | Pass | Hides the `carousel` at 767px |
+
+
+-----
+
+
+### Contact Form 
+
+| No. |   Action / Feature    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
+| --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
+|  1  | Test `contact form` `text field` | Click a `text field` and `input data` by typing on the keyboard | Users will be able to `input data` into the `text field` of the `contact form` | Can `input data` into the `text field` | Pass | Tested for every `text field` |
+|  2  | Test `required boolean attribute` functionality | Click the `send` button without inputting data | A notification will show by the first empty `required text field` telling the user to `input data`. The `send` function will be blocked until all `requried text fields` are filled out | Displays a notification by the first empty `required text field` (in this case, `first name`) and tells the user to `input data`. The `send` button will not function whilst the `required text fields` are empty | Pass |
+|  3  | Test `requried boolean attribute` functionality with **some** `text fields` filled in | On the `contact form` fill **one or more, but not all, (maximum of 3)** `requried text fields` and click `send` | A notification will show on the first empty `required text field` telling the user to `input data`. The `send` function will be blocked until all `requried text fields` are filled out | Displays a notification by the first empty `required text field` and tells the user to `input data`. The `send` button will not function whilst the `required text fields` are empty | Pass |
+|  4  | Test `email input type` | Click on the `email input field` and input data that **is not** an email (e.g. a 'name' or 'hi') | A notification will show by the `email input field` telling the user to `include a '@' in the email address`. The `send` button will not function until this is resolved | Shows a notification by the `email input field` telling the user to `include a '@' in the email address`. The `send` button is blocked | Pass |
+|  5  | `Send` completed `contact form` | Fill in **at least all** of the  `required text fields` and click `send` | Will `send` the inputted data and `refresh` the `contact form` | Opens your device's email application and automatically composes a new email with the addresse field already filled in. The `contact form` does not refresh unless the site itself is refreshed **manually** | Pass & Fail | The `contact form` passes its **functionality test** but doesn't work how I want it to. In the future, I would like to alter the `contact form` so that it will send the inputted data **automatically** to the email listed in the `mailto form action` without requiring **additional steps** from the user |
+
+
+-----
+
 
 
 ## Further Testing 
