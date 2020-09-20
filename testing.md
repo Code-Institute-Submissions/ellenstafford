@@ -18,6 +18,8 @@
 
     - [Returning Visitor Goals](#Returning-Visitor-Goals)
 
+    - [Manual Testing](#manual-testing)
+
 -----
 
 ## Automated Testing
@@ -214,7 +216,51 @@ There was also the concern of how this would work, if at all, once the website w
     - When on mobile devices, a text reading 'Download my CV' will be displayed underneath the download icon in place of the hover tooltip to make the feature easy for the users to understand and use.
 
 
+
+## Manual Testing 
+
+-----
+
+### Navigation bar - Desktop
+
+| No. |   Action    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
+| --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
+|  1  | Navigate to `About Me` | Click the `About Me` nav link | The site will navigate to the `About Me` section | Navigates to `About Me` section | [x] Pass |
+|  2  | Navigate to `Skills` | Click the `Skills` nav link | The site will navigate to the `Skills` section | Navigates to `Skills` section | [x] Pass |
+|  3  | Navigate to `Contact` | Click the `Contact` nav link | The site will navigate to the `Contact` section | Navigates to `Contact` section | [x] Pass |
+|  4  | Navigate to `Homepage` | Click the `Navbar brand` | The site will navigate back up to the `Homepage` when the navbar brand is clicked | Navigates to `Homepage` | [x] Pass |
+|  5  | Navigate to `Experience` - `Education` | Click the `Experience` nav link and then `Education` on the drop-down menu | Upon clicking `Experience` the drop-down menu will be visible. The site will navigate to the `Education` section once clicked | Clicking `Experience` open the drop-down menu. Navigates to `Education` section when `Education` is clicked in drop-down menu | [x] Pass | When navigating to `Education` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
+|  6  | Navigate to `Experience` - `Work Experience` | Click the `Experience` nav link and then `Work Experience` on the drop-down menu | Upon clicking `Experience` the drop-down menu will be visible. The site will navigate to the `Work Experience` section once clicked | Clicking `Experience` open the drop-down menu. Navigates to `Work Experience` section when `Education` is clicked in drop-down menu | [x] Pass | When navigating to `Work Experience` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
+|  7  | Navigate to `Experience` - `Achievements` | Click the `Experience` nav link and then `Achievements` on the drop-down menu | Upon clicking `Experience` the drop-down menu will be visible. The site will navigate to the `Achievements` section once clicked | Clicking `Experience` open the drop-down menu. Navigates to `Education` section when `Achievements` is clicked in drop-down menu | [x] Pass | When navigating to `Achievements` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
+|  8  | Navigate to `Projects` - `Web Development` | Click the `Projects` nav link and then `Web Development` on the drop-down menu | Upon clicking `Projects` the drop-down menu will be visible. The site will navigate to the `Web Development` section once clicked | Clicking `Projects` open the drop-down menu. Navigates to `Web Development` section when `Projects` is clicked in drop-down menu | [x] Pass |
+|  9  | Navigate to `Projects` - `Academic Work` | Click the `Projects` nav link and then `Academic Work` on the drop-down menu | Upon clicking `Projects` the drop-down menu will be visible. The site will navigate to the `Academic Work` section once clicked | Clicking `Projects` open the drop-down menu. Navigates to `Academic Work` section when `Projects` is clicked in drop-down menu | [x] Pass |
+|  11 | Navbar will transform on scroll | Scroll down the page | The navbar size will shrink on mouse scroll | Upon scrolling down the navbar shrinks in size | [x] Pass |
+
+-----
+
+### Navigation Bar - Mobile Devices
+
+| No. |   Action    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
+| --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
+|  1  | Open navbar fullscreen overlay menu | Click the burger icon | Will open the fullscreen overlay menu, filling the entire screen | Opens the fullscreen overlay menu | [x] Pass |
+|  2  | Navigate to `About Me` | Click the burger icon then click `About Me` nav link in the fullscreen overlay menu | The fullscreen overlay menu will close and navigate to the `About Me` section | Closes the fullscreen overlay menu and navigates to `About Me` section | [x] Pass |
+|  3  | Navigate to `Skills` | Click the burger icon then click `Skills` nav link in the fullscreen overlay menu | The fullscreen overlay menu will close and navigate to the `Skills` section | Closes the fullscreen overlay menu and navigates to `Skills` section | [x] Pass |
+|  4  | Navigate to `Contact` | Click the burger icon then click `Contact` nav link in the fullscreen overlay menu | The fullscreen overlay menu will close and navigate to the `Contact` section | Closes the fullscreen overlay menu and navigates to `Contact` section | [x] Pass |
+|  5  | Navigate to `Homepage` | Click the `Navbar brand` | The site will navigate back up to the `Homepage` when the navbar brand is clicked | Navigates to `Homepage` | [x] Pass |
+|  6  | Navigate to `Experience` - `Education` | Click the burger icon. In the fullscreen screen overlay menu click the `Experience` navlink then `Education` in the dropdown menu | Upon clicking `Experience` the drop-down menu will be visible. Once `Education` is clicked the fullscreen overlay menu will close and navigate to the `Education` section  | Clicking `Experience` opens the drop-down menu, clicking `Education` in the drop-down menu closes the fullscreen overlay and navigates to the `Education` section | [x] Pass | When navigating to `Education` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
+|  7  | Navigate to `Experience` - `Work Experience` | Click the burger icon. In the fullscreen screen overlay menu click the `Experience` navlink then `Work Experience` in the dropdown menu | Upon clicking `Experience` the drop-down menu will be visible. Once `Work Experience` is clicked the fullscreen overlay menu will close and navigate to the `Work Experience` section  | Clicking `Experience` opens the drop-down menu, clicking `Work Experience` in the drop-down menu closes the fullscreen overlay and navigates to the `Work Experience` section | [x] Pass | When navigating to `Work Experience` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
+|  8  | Navigate to `Experience` - `Achievements` | Click the burger icon. In the fullscreen screen overlay menu click the `Experience` navlink then `Achievements` in the dropdown menu | Upon clicking `Experience` the drop-down menu will be visible. Once `Achievements` is clicked the fullscreen overlay menu will close and navigate to the `Achievements` section  | Clicking `Experience` opens the drop-down menu, clicking `Achievements` in the drop-down menu closes the fullscreen overlay and navigates to the `Achievements` section | [x] Pass | When navigating to `Achievements` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
+|  9  | Navigate to `Projects` - `Web Development` | Click the burger icon. In the fullscreen screen overlay menu click the `Projects` navlink then `Web Development` in the dropdown menu | Upon clicking `Projects` the drop-down menu will be visible. Once `Web Development` is clicked the fullscreen overlay menu will close and navigate to the `Web Development` section  | Clicking `Projects` opens the drop-down menu, clicking `Web Development` in the drop-down menu closes the fullscreen overlay and navigates to the `Web Development` section | [x] Pass | 
+|  10 | Navigate to `Projects` - `Academic Work` | Click the burger icon. In the fullscreen screen overlay menu click the `Projects` navlink then `Academic Work` in the dropdown menu | Upon clicking `Projects` the drop-down menu will be visible. Once `Academic Work` is clicked the fullscreen overlay menu will close and navigate to the `Academic Work` section  | Clicking `Projects` opens the drop-down menu, clicking `Academic Work` in the drop-down menu closes the fullscreen overlay and navigates to the `Academic Work` section | [x] Pass | 
+|  11 | Navbar will transform on scroll | Scroll down the page | The navbar size will shrink on mouse scroll | Upon scrolling down the navbar shrinks in size | [x] Pass |
+
+
+----
+
+
 ## Further Testing 
+
+
 
 
 
