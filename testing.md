@@ -18,7 +18,27 @@
 
     - [Returning Visitor Goals](#Returning-Visitor-Goals)
 
-    - [Manual Testing](#manual-testing)
+- [Manual Testing](#manual-testing)
+
+    - [Navigation Bar - Desktop](#navigation-bar-desktop)
+
+    - [Navigation Bar - Mobile Devices](#navigation-bar-mobile-devices)
+
+    - [Homepage](#homepage)
+
+    - [About Me Page](#about-me-page)
+
+    - [Skills Page](#skills-page)
+
+    - [Experience Page](#experience-page)
+
+    - [Projects Page](#projects-page)
+
+    - [Carousel](#carousel)
+
+    - [Contact Form](#contact-form)
+
+    - [Footer](#footer)
 
 -----
 
@@ -221,7 +241,7 @@ There was also the concern of how this would work, if at all, once the website w
 
 -----
 
-### Navigation bar - Desktop
+### Navigation Bar - Desktop
 
 | No. |   Action    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
 | --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
@@ -325,7 +345,7 @@ There was also the concern of how this would work, if at all, once the website w
 |  1  | Automatic image slide | N/A | The `carousel` should slide through images automatically without the need for user input | The `carousel` slides through images automatically without input | Pass |
 |  2  | Manual controls - `next` | Click the `carousel` right arrow button | Upon clicking the right arrow the `carousel` will slide to the `next image` | Slides to the `next carousel image` when the right arrow is clicked | Pass |
 |  3  | Manual controls - `previous` | Click the `carousel` left arrow button | Upon clicking the left arrow the `carousel` will slide to the `previous image` | Slides to the `previous carousel image` when the left arrow is clicked | Pass |
-|  4  | See if all `carousel images` work correctly | Either wait for the `carousel` to automatically slide through every image **or** manually sift through images with the arrow `controls` | Every `image` in the `carousel` will load | `Shakespeare's *King Lear* image` did not load | Fail | Used `DevTools` to locate the source of the error. Discovered that I has used the wrong `image format` in `HTML` |
+|  4  | See if all `carousel images` work correctly | Either wait for the `carousel` to automatically slide through every image **or** manually sift through images with the arrow `controls` | Every `image` in the `carousel` will load | `Shakespeare's *King Lear* image` did not load | Fail | Used `DevTools` to locate the source of the error. Discovered that I had used the wrong `image format` in `HTML` |
 |  5  | Fix `Shakspeare's *King Lear* image` for `carousel` | Change `image format` from `png` to `webp`. Save changes in `HTML` and `commit` to `GitHub` | All `carousel images` will load | All `images` loaded | Pass | 
 |  6  | Visible on `desktop` and `tablet devices` | In `DevTools` change device toolbar to `desktop` and `tablet` (Ipad) | The `carousel` will be visible | The `carousel` is visible | Pass | Has a minimum width of 768px |
 |  7  | Hidden on `mobile devices` | In `DevTools` change device toolbar to `mobile` | The `carousel` will be hidden | The `carousel` is hidden | Pass | Hides the `carousel` at 767px |
@@ -346,6 +366,20 @@ There was also the concern of how this would work, if at all, once the website w
 
 
 -----
+
+### Footer 
+
+| No. |   Action / Feature    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
+| --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
+|  1  | `Scroll to top` arrow button | Click `scroll to top` | Will navigate the user back up to the `homepage` | Navigates to `homepage` | Pass |
+|  2  | `Email` icon link | Click the `email` icon link | Will open up the device's email application and compose a new email with the addresse already filled in | Opens the device's email application and composes a new email with the email listed in the `mailto form action` already filled in the addresse tab | Passed |
+|  3  | `GitHub`icon link | Click the `GitHub` icon | Will navigate to my GitHub page via a new tab | Opens a new tab for my GitHub page | Pass |
+|  4  | `Linkedin` icon link | Click the `Linkedin` icon | Will navigate to Linkedin via a new tab | Opens a new tab for Linkedin | Pass |
+|  5  | `Skype` icon link | Click the `Skype` icon | Will navigate to Skype via a new tab | Opens a new tab for Skype | Pass |
+|  6  | `DeviantArt` icon link | Click the `DeviantArt` icon | Will navigate to DeviantArt via a new tab | Opens a new tab for DeviantArt | Pass |
+|  7  | `Download` icon link | Click the `download` icon | Will navigate to downloadable PDF file (my CV) via a new tab | Opens a new tab for my CV as a downloadable PDF file | Pass |
+|  8  | `Hover tooltip` for downloadable CV | Hover mouse over the `download CV` icon link | Will display a tooltip that says `download my CV!` | Hovering the mouse over the `download` icon displays a `tooltip` that says `download my CV!` | Pass | This is for **desktop only** |
+|  9  | CV download `responsiveness` | On `DevTools` toggle device toolbar and change the device to **tablet** (or any phone) | Will display text underneath the `download` icon that says `download my CV!` | Changing the device to **tablet**, or anything smaller than tablet, displays the text, `download my CV!`, underneath the `download` icon | Pass | The `download my CV` text displays at a maximum of 991px. It replaces the `hover tooltip` function when on `mobile devices` |
 
 
 
