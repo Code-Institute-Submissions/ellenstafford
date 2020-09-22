@@ -136,7 +136,7 @@ html {
 
     @media (max-width:991.98px) {
         .navbar .navbar-collapse {
-            background-image: linear-gradient(rgb(250 250 250 / 0%), rgb(9 9 9 / 97%)), url("../img/navmenu-bg.webp");
+            background-image: linear-gradient(rgb(250 250 250 / 0%), rgb(9 9 9 / 97%)), url("../img/navmenu-bg.png");
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
@@ -244,7 +244,7 @@ html {
         was taken from:
         "https://css-tricks.com/perfect-full-page-background-image/" */
 
-    background: url("../img/BW_DSC_0662.webp") no-repeat center center fixed; 
+    background: url("../img/BW_DSC_0662.png") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -369,7 +369,7 @@ html {
 /* ABOUT PAGE */
 
 #profile-img {
-    background: url("../img/BW_Profile_IMG7.webp") no-repeat center;
+    background: url("../img/BW_Profile_IMG7.png") no-repeat center;
     background-size: cover;
     
     /* Used the following code to fix disproportionate img sizes: "https://www.sitepoint.com/community/t/how-to-make-an-image-fit-in-a-responsive-div/259263/4" */
@@ -563,43 +563,43 @@ html {
 /* WEB DEVELOPMENT PROJECT IMAGES */
 
 #projectImg-LoveRunning {
-    background: url("../img/LoveRunning-mobile-mockup.webp") no-repeat center;
+    background: url("../img/LoveRunning-mobile-mockup.png") no-repeat center;
     background-size: contain;
 }
 
 #projectImg-WhiskeyDrop {
-    background: url("../img/WhiskeyDrop-laptop-mockup.webp") no-repeat center;
+    background: url("../img/WhiskeyDrop-laptop-mockup.png") no-repeat center;
     background-size: contain;
 }
 #projectImg-SkyrimModding {
-    background: url("../img/skyrimSite_mockup.webp") no-repeat center;
+    background: url("../img/skyrimSite_mockup.png") no-repeat center;
     background-size: contain;
 }
 
 #projectImg-NextProject {
-    background: url("../img/futureProject_mockup.webp") no-repeat center;
+    background: url("../img/futureProject_mockup.png") no-repeat center;
     background-size: contain;
 }
 
 /* ACADEMIC PROJECT IMAGES */
 
 #projectImg-KingLear {
-    background: url("../img/king-lear-mockup.webp") no-repeat center;
+    background: url("../img/king-lear-mockup.png") no-repeat center;
     background-size: contain;
 }
 
 #projectImg-Translation {
-    background: url("../img/translation-mockup.webp") no-repeat center;
+    background: url("../img/translation-mockup.png") no-repeat center;
     background-size: contain;
 }
 
 #projectImg-Hamlet {
-    background: url("../img/hamlet-mockup.webp") no-repeat center;
+    background: url("../img/hamlet-mockup.png") no-repeat center;
     background-size: contain;
 }
 
 #projectImg-HenryV {
-    background: url("../img/henry-v-mockup2.webp") no-repeat center;
+    background: url("../img/henry-v-mockup2.png") no-repeat center;
     background-size: contain;
 }
 
