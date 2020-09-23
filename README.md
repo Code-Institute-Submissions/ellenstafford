@@ -11,53 +11,53 @@ This website is an online porfolio, or resume, designed to showcase my skills an
 ## Contents 
 
 
-- [Project Purpose](#Project-Purpose)
+- [Project Purpose](#project-purpose)
 
-- [User Experience (UX)](#User-Experience-(UX))
+- [User Experience (UX)](#user-experience-ux)
 
-  - [User Stories](#User-Stories)
+  - [User Stories](#user-stories)
 
-- [Design](#Design)
+- [Design](#design)
 
-  - [Typography](#Typography)
+  - [Typography](#typography)
 
-  - [Colour Scheme](#Colour-Scheme)
+  - [Colour Scheme](#colour-scheme)
 
-  - [Colour Scheme - Psychology](#Colour-Scheme-Psychology)
+  - [Colour Scheme - Psychology](#colour-scheme-psychology)
 
-  - [Colour Scheme - Application](#Colour-Scheme-Application)
+  - [Colour Scheme - Application](#colour-scheme-application)
 
-  - [Branding](#Branding)
+  - [Branding](#branding)
 
-  - [Design Layout](#Design-Layout)
+  - [Design Layout](#design-layout)
 
-  - [Wireframes](#Wireframes)
+  - [Wireframes](#wireframes)
 
-- [Features](#Features)
+- [Features](#features)
 
-  - [Implemented Features](#Implemented-Features)
+  - [Implemented Features](#implemented-features)
 
-  - [Features Left to Implement](#Features-Left-To-Implement)
+  - [Features Left to Implement](#features-left-to-implement)
 
-- [Technologies Used](#Technologies-Used)
+- [Technologies Used](#technologies-used)
 
-  - [Languages](#Languages)
+  - [Languages](#languages)
 
-  - [Frameworks, Libraries & Programs](#Frameworks,-Libraries-&-Programs)
+  - [Frameworks, Libraries & Programs](#frameworks,-libraries-&-programs)
 
-- [Testing](#Testing)
+- [Testing](#testing)
 
-- [Deployment](#Deployment)
+- [Deployment](#deployment)
 
-- [Credits](#Credits)
+- [Credits](#credits)
 
-  - [Code](#Code)
+  - [Code](#code)
 
-  - [Content](#Content)
+  - [Content](#content)
 
-  - [Inspiration](#Inspiration)
+  - [Inspiration](#inspiration)
 
-  - [Acknowledgements](#Acknowledgements)
+  - [Acknowledgements](#acknowledgements)
 
 -----
 
@@ -363,6 +363,21 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
 - More images to hero image on the homepage (like a carousel).
 
 -----
+
+### Feature Feedback
+
+When sharing the project with friends and family members, they provided me with useful feedback on how the project can improve. The following list is a selection of that feeback, which includes a list of features and/or changes that could be implemented into the project to make it better:
+
+- Move the **Hire Me button** in the **About Me** page near the bottom of the webpage.
+  - Usually, employers will want to find out everything there is to know **first, then** contact the candidate for hire.
+
+- Remove the **progress bars** from the **Personal Strengths** subheading in the **Skills** page.
+
+- Add an email address *and* phone number that is **text based** rather that just an icon.
+  - It was recommended by the same user that a fixed footer may be beneficial, although this would take up a lot of real estate and could potentially compromise good UX design. 
+
+------
+
 
 ## Technologies Used
 
