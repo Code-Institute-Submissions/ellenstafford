@@ -2,21 +2,21 @@
 
 ## Contents
 
-- [Automated Testing](#Automated-Testing)
+- [Automated Testing](#automated-testing)
 
-    - [W3C Validation Service](#W3C-Markup-Validation-Service)
+    - [W3C Validation Service](#w3c-markup-validation-service)
 
-    - [Page Speed / Performance](#Page-Speed/Performance)
-        - [Test 1](#Test-1)
-        - [Test 2](#Test-2)
-        - [Test 3](#Test-3)
-        - [Unfixable Performance Issues](Unfixable-Performance-Issues)
+    - [Page Speed / Performance](#page-performance)
+        - [Test 1](#test-1)
+        - [Test 2](#test-2)
+        - [Test 3](#test-3)
+        - [Unfixable Performance Issues](#unfixable-performance-issues)
 
-- [Testing User Stories](#Testing-User-Stories)
+- [Testing User Stories](#testing-user-stories)
 
-    - [First Time Visitor Goals](#First-Time-Visitor-Goals)
+    - [First Time Visitor Goals](#first-time-visitor-goals)
 
-    - [Returning Visitor Goals](#Returning-Visitor-Goals)
+    - [Returning Visitor Goals](#returning-visitor-goals)
 
 - [Manual Testing](#manual-testing)
 
@@ -39,6 +39,29 @@
     - [Contact Form](#contact-form)
 
     - [Footer](#footer)
+
+- [Further Testing](#further-testing)
+
+    - [Desktop](#desktop)
+
+    - [Mobile Devices](#mobile-devices)
+
+- [Known Bugs](#known-bugs)
+
+    - [Navigation Bar Fullscreen Overlay](#navigation-bar-fullscreen-overlay)
+
+    - [Navigation Fullscreen Overlay Fix](#navigation-fullscreen-overlay-fix)
+
+    - [Experience Page Navigation](#experience-page-navigation)
+
+    - [Carousel Page Jump Bug](#carousel-page-jump-bug)
+
+    - [iOS Safari](#ios-safari)
+
+    - [Tablet Devices](#tablet-devices)
+
+    - [Performance](#performance)
+
 
 -----
 
@@ -86,7 +109,7 @@ However, the validator did find [these errors](assets/img/CSS-validator.PNG) in 
 - The service flagged **768 warnings in Bootstrap**. As I cannot address these warning directly, I am forced to ignore it. 
 
 
-### Page Speed/Performace
+### Page Performance
 
 I used [UpTrends](https://www.uptrends.com/tools/website-speed-test) and Google's [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) to check the speed of my website. Here are my results when using the service:
 
@@ -249,9 +272,9 @@ There was also the concern of how this would work, if at all, once the website w
 |  2  | Navigate to `Skills` | Click the `Skills` nav link | The site will navigate to the `Skills` section | Navigates to `Skills` section | Pass |
 |  3  | Navigate to `Contact` | Click the `Contact` nav link | The site will navigate to the `Contact` section | Navigates to `Contact` section | Pass |
 |  4  | Navigate to `Homepage` | Click the `Navbar brand` | The site will navigate back up to the `Homepage` when the navbar brand is clicked | Navigates to `Homepage` | Pass |
-|  5  | Navigate to `Experience` - `Education` | Click the `Experience` nav link and then `Education` on the drop-down menu | Upon clicking `Experience` the drop-down menu will be visible. The site will navigate to the `Education` section once clicked | Clicking `Experience` open the drop-down menu. Navigates to `Education` section when `Education` is clicked in drop-down menu | Pass | When navigating to `Education` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
-|  6  | Navigate to `Experience` - `Work Experience` | Click the `Experience` nav link and then `Work Experience` on the drop-down menu | Upon clicking `Experience` the drop-down menu will be visible. The site will navigate to the `Work Experience` section once clicked | Clicking `Experience` open the drop-down menu. Navigates to `Work Experience` section when `Education` is clicked in drop-down menu | Pass | When navigating to `Work Experience` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
-|  7  | Navigate to `Experience` - `Achievements` | Click the `Experience` nav link and then `Achievements` on the drop-down menu | Upon clicking `Experience` the drop-down menu will be visible. The site will navigate to the `Achievements` section once clicked | Clicking `Experience` open the drop-down menu. Navigates to `Education` section when `Achievements` is clicked in drop-down menu | Pass | When navigating to `Achievements` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
+|  5  | Navigate to `Experience` - `Education` | Click the `Experience` nav link and then `Education` on the drop-down menu | Upon clicking `Experience` the drop-down menu will be visible. The site will navigate to the `Education` section once clicked | Clicking `Experience` open the drop-down menu. Navigates to `Education` section when `Education` is clicked in drop-down menu | Pass | When navigating to `Education` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#experience-page-navigation) for more details |
+|  6  | Navigate to `Experience` - `Work Experience` | Click the `Experience` nav link and then `Work Experience` on the drop-down menu | Upon clicking `Experience` the drop-down menu will be visible. The site will navigate to the `Work Experience` section once clicked | Clicking `Experience` open the drop-down menu. Navigates to `Work Experience` section when `Education` is clicked in drop-down menu | Pass | When navigating to `Work Experience` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#experience-page-navigation) for more details |
+|  7  | Navigate to `Experience` - `Achievements` | Click the `Experience` nav link and then `Achievements` on the drop-down menu | Upon clicking `Experience` the drop-down menu will be visible. The site will navigate to the `Achievements` section once clicked | Clicking `Experience` open the drop-down menu. Navigates to `Education` section when `Achievements` is clicked in drop-down menu | Pass | 
 |  8  | Navigate to `Projects` - `Web Development` | Click the `Projects` nav link and then `Web Development` on the drop-down menu | Upon clicking `Projects` the drop-down menu will be visible. The site will navigate to the `Web Development` section once clicked | Clicking `Projects` open the drop-down menu. Navigates to `Web Development` section when `Projects` is clicked in drop-down menu | Pass |
 |  9  | Navigate to `Projects` - `Academic Work` | Click the `Projects` nav link and then `Academic Work` on the drop-down menu | Upon clicking `Projects` the drop-down menu will be visible. The site will navigate to the `Academic Work` section once clicked | Clicking `Projects` open the drop-down menu. Navigates to `Academic Work` section when `Projects` is clicked in drop-down menu | Pass |
 |  11 | Navbar will transform on scroll | Scroll down the page | The navbar size will shrink on mouse scroll | Upon scrolling down the navbar shrinks in size | Pass |
@@ -267,12 +290,13 @@ There was also the concern of how this would work, if at all, once the website w
 |  3  | Navigate to `Skills` | Click the burger icon then click `Skills` nav link in the fullscreen overlay menu | The fullscreen overlay menu will close and navigate to the `Skills` section | Closes the fullscreen overlay menu and navigates to `Skills` section | Pass |
 |  4  | Navigate to `Contact` | Click the burger icon then click `Contact` nav link in the fullscreen overlay menu | The fullscreen overlay menu will close and navigate to the `Contact` section | Closes the fullscreen overlay menu and navigates to `Contact` section | Pass |
 |  5  | Navigate to `Homepage` | Click the `Navbar brand` | The site will navigate back up to the `Homepage` when the navbar brand is clicked | Navigates to `Homepage` | Pass |
-|  6  | Navigate to `Experience` - `Education` | Click the burger icon. In the fullscreen screen overlay menu click the `Experience` navlink then `Education` in the dropdown menu | Upon clicking `Experience` the drop-down menu will be visible. Once `Education` is clicked the fullscreen overlay menu will close and navigate to the `Education` section  | Clicking `Experience` opens the drop-down menu, clicking `Education` in the drop-down menu closes the fullscreen overlay and navigates to the `Education` section | Pass | When navigating to `Education` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
-|  7  | Navigate to `Experience` - `Work Experience` | Click the burger icon. In the fullscreen screen overlay menu click the `Experience` navlink then `Work Experience` in the dropdown menu | Upon clicking `Experience` the drop-down menu will be visible. Once `Work Experience` is clicked the fullscreen overlay menu will close and navigate to the `Work Experience` section  | Clicking `Experience` opens the drop-down menu, clicking `Work Experience` in the drop-down menu closes the fullscreen overlay and navigates to the `Work Experience` section | Pass | When navigating to `Work Experience` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
-|  8  | Navigate to `Experience` - `Achievements` | Click the burger icon. In the fullscreen screen overlay menu click the `Experience` navlink then `Achievements` in the dropdown menu | Upon clicking `Experience` the drop-down menu will be visible. Once `Achievements` is clicked the fullscreen overlay menu will close and navigate to the `Achievements` section  | Clicking `Experience` opens the drop-down menu, clicking `Achievements` in the drop-down menu closes the fullscreen overlay and navigates to the `Achievements` section | Pass | When navigating to `Achievements` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#known-bugs) for more details |
+|  6  | Navigate to `Experience` - `Education` | Click the burger icon. In the fullscreen screen overlay menu click the `Experience` navlink then `Education` in the dropdown menu | Upon clicking `Experience` the drop-down menu will be visible. Once `Education` is clicked the fullscreen overlay menu will close and navigate to the `Education` section  | Clicking `Experience` opens the drop-down menu, clicking `Education` in the drop-down menu closes the fullscreen overlay and navigates to the `Education` section | Pass | When navigating to `Education` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#experience-page-navigation) for more details |
+|  7  | Navigate to `Experience` - `Work Experience` | Click the burger icon. In the fullscreen screen overlay menu click the `Experience` navlink then `Work Experience` in the dropdown menu | Upon clicking `Experience` the drop-down menu will be visible. Once `Work Experience` is clicked the fullscreen overlay menu will close and navigate to the `Work Experience` section  | Clicking `Experience` opens the drop-down menu, clicking `Work Experience` in the drop-down menu closes the fullscreen overlay and navigates to the `Work Experience` section | Pass | When navigating to `Work Experience` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#experience-page-navigation) for more details |
+|  8  | Navigate to `Experience` - `Achievements` | Click the burger icon. In the fullscreen screen overlay menu click the `Experience` navlink then `Achievements` in the dropdown menu | Upon clicking `Experience` the drop-down menu will be visible. Once `Achievements` is clicked the fullscreen overlay menu will close and navigate to the `Achievements` section  | Clicking `Experience` opens the drop-down menu, clicking `Achievements` in the drop-down menu closes the fullscreen overlay and navigates to the `Achievements` section | Pass | 
 |  9  | Navigate to `Projects` - `Web Development` | Click the burger icon. In the fullscreen screen overlay menu click the `Projects` navlink then `Web Development` in the dropdown menu | Upon clicking `Projects` the drop-down menu will be visible. Once `Web Development` is clicked the fullscreen overlay menu will close and navigate to the `Web Development` section  | Clicking `Projects` opens the drop-down menu, clicking `Web Development` in the drop-down menu closes the fullscreen overlay and navigates to the `Web Development` section | Pass | 
 |  10 | Navigate to `Projects` - `Academic Work` | Click the burger icon. In the fullscreen screen overlay menu click the `Projects` navlink then `Academic Work` in the dropdown menu | Upon clicking `Projects` the drop-down menu will be visible. Once `Academic Work` is clicked the fullscreen overlay menu will close and navigate to the `Academic Work` section  | Clicking `Projects` opens the drop-down menu, clicking `Academic Work` in the drop-down menu closes the fullscreen overlay and navigates to the `Academic Work` section | Pass | 
 |  11 | Navbar will transform on scroll | Scroll down the page | The navbar size will shrink on mouse scroll | Upon scrolling down the navbar shrinks in size | Pass |
+|  12 | Navbar `hamburger button` - `mobile devices` | In `DevTools` toggle device toolbar and change device to iPhone 6/7/8 | The `hamburger button` should be inline with the navbar to the right hand side of the screen | The `hamburger button` displays underneath the navbar brand rather than beside it | Fail | Will need to modify media queries in css |
 
 
 ----
@@ -385,10 +409,214 @@ There was also the concern of how this would work, if at all, once the website w
 
 ## Further Testing 
 
+### Desktop 
+
+- Hardware 
+    - MSI GE72MVR Apache Pro Laptop
+    - Desktop PC with a AOC 2560 x 1440 monitor 
+    - Desktop PC with a 1920 x 1080 monitor
+    - Desktop PC with a 1600 x 900 monitor
+    - HP Spectre x360 Laptop
+    - HP Pavilion 14-ce3600sa Laptop
+    - HP Pavilion 14-ce3602sa   
+    - Apple MacBook Air 
+
+- Operating Systems
+    - Windows 10
+    - iOS
+
+- Browsers
+    - Windows 10
+        - Google Chrome
+        - Brave 
+        - Microsoft Edge
+        - Internet Explorer 
+            - doesnt work see [here]
+    - iOS
+        - Google Chrome
+        - Safari
+            - Bug noted, see [here](#ios-safari)
 
 
+### Mobile Devices
 
+- Hardware
+    - Honor 20 Pro
+    - Samsung S8 +
+    - Samsung A20
+    - Iphone 7   -  no image 
+    - Sony Xperia Z3 Plus
+    - Sony Xperia Z4 Tablet 
+        - Bug noted, see [here](#tablet-devices)
+
+
+- Operating Systems
+    - Andriod
+    - iOS
+
+
+- Browsers
+    - Android 
+        - Google Chrome
+        - Huawei browser
+        - Opera 
+        - Firefox 
+            - doesnt work, see [here]
+
+    - iOS
+        - Safari 
+            - Bug noted, see [here](#ios-safari)
 
 
 ## Known Bugs 
 
+### Navigation Bar Fullscreen Overlay
+
+The **fullscreen overlay menu** was added to the project to provide a better user experience for users on mobile devices. When on mobile or tablet devices the navbar would collapse and in its place would be a **hamburger button** to the right side of the navbar. When clicked it would open the fullscreen overlay menu containing the navigation links.
+
+The overlay menu occupies the entire viewport of the device, which makes it easier for users to use on **touchscreen devices**, particularly for those users who own very **small** touchscreen devices. With this layout, navigation links are easier to click. 
+
+This was why I implemented the fullscreen overlay menu to this project, but adding it gave rise to a few bugs.
+ 
+- Without Javascript, users had to manually close the fullscreen overlay menu after clicking a navlink. 
+    - This increased the amount of steps required from users and may have easily caused confusion and irritation. 
+    - Javascript was then added to address this issue and ensure good UX design. 
+
+However, after adding Javascript new problems arised:
+
+Although the fullscreen menu would close after clicking a navlink, as intended, when returning to the hamburger button again the overlay would flash and close. Multiple clicks were required to get it to open again. This is explained in depth in the table below:
+
+| Click No. |       Standard navlink        |       Drop-down menu navlink      |  
+| --------- | ----------------------------- | --------------------------------- |
+|   1   | works as intended | overlay menu opens but then closes when clicking the drop-down menu navlink |
+|   2   | overlay menu flashes then closes | overlay menu flashes then closes |
+|   3   | works as intended - can click the navlink | works as intended - can click the drop-down menu navlink |
+|   4   | overlay menu flashes and closes | overlay menu flashes and closes |
+|   5   | works as intended | overlay menu opens but them closes when clicking the drop-down menu navlink |
+|   6   | overlay menu flashes and closes | overlay menu flashes and closes |
+|   7   | works as intended | works as intended |
+
+- The pattern repeats in a perpetual loop
+
+
+### Navigation Fullscreen Overlay Fix
+
+Before:
+
+``` 
+$('.navbar-toggler').click(function() {
+  $(this).toggleClass('active');
+  $('.navbar-collapse').toggleClass('open').show();
+ });
+
+ $('.navbar-collapse li').on('click', function(){
+   $(".navbar-collapse").hide();
+   $(".navbar-toggler").removeClass("active");
+});
+
+```
+
+After (Fixed):
+```
+$('.navbar-toggler').click(function() {
+    $('.navbar-collapse').addClass('open').show();
+});
+
+
+$('.navbar-collapse li').on('click', function(){
+ $(".navbar-collapse").removeClass('open').hide();
+ if($('.navbar-collapse').hasClass('show')) {
+      $('.navbar-collapse').removeClass('show');
+  }
+});
+
+```
+
+The problem was caused by a conflict with Bootstrap Jquery:
+- The collapsible Bootstrap element goes through a series of states as it collapses - from open, to moving, to close and vice versa.
+- But the main problem derived from the 'show' class.
+    - The 'show' class in the Jquery above (before the fix) is what is getting left over after hiding the overlay.
+    - However Bootstrap uses the same 'show' class to denote elements that can be seen. 
+
+Steps to fix the code:
+- Checked to see if the 'show' class was still present after hiding the overlay.
+- After seeing it was, removed it.
+- Bootstrap will then re-add the class the next time the navigation menu is opened.
+- Removed the 'active' class as it did not do anything.
+    
+    - I thank Scott Kipp from Code Institue for fixing this issue.
+
+
+-----
+
+
+### Experience Page Navigation 
+
+- Navigation via the navbar does not always when navigating to the **Education** or **Work Experience** section once in the Experience page. 
+
+- The characteristics of this bug is illustrated bellow (a **fail** means there is no response when the link is clicked):
+
+    - Homepage > Education > Work Experience - Fail 
+    - Homepage > Work Experience > Education - Fail 
+    - Homepage > Education > Achievements > Work Experience > Education - Fail
+    - Homepage > Work Experience > Achievements > Work Experience > Education - Fail
+    - Homepage > Work Experience > Achievements > Education > Work Experience - Fail
+
+- There is problem when navigation from **Education** to **Work Experience** and vice versa 
+
+    - Currently the root cause of this problem has not been isolated.
+    - It is yet to be fixed.
+    
+
+-----
+
+
+
+### Carousel Page Jump Bug
+
+When transitioning to the **Skyrim carousel image** it causes the whole webpage to jump.
+
+- Likely caused by the image's difference in height.
+    - However, changing the image size with online tools like [PicResize](https://picresize.com/) doesn't fix the page jumping.
+    - Might have to change the image completely to something with dimension sizes that are similar to the other carousel images.
+
+
+
+-----
+
+### iOS Safari 
+
+When sharing the website with friends and family members, those who used Safari browser on iOS operating system found:
+
+- None of the site's images would load.
+
+    - After research the problem was linked to the image format: webP
+    - Apple have only just added support for webP images for the first time in Safari - for Safari 14 **only**
+    - Apple users with a version lower than **Safari 14** would not see the images
+        - A iPhone 7 user and an MacBook Air user reported that none of the site's images loaded on their device
+
+- Images were converted back to PNG format to ensure compatability on a wide range of devices
+
+    - This came at a slight performance hit cost - a reason why the images were converted to webP format in the first place.
+    - Ensuring functionality on a wide range of devices takes precedence over a small performance boost. 
+
+
+
+-----
+
+
+
+
+### Tablet Devices 
+
+When testing on a **Sony Xperia Z4 Tablet** (dimensions: 167 × 254 × 6.1 mm; pixels: 2560 x 1600) in landscape mode, the background for the **callout card** on the **About Me** page was cut off half way, meaning the text flowed outside of the card's background.
+
+- This problem is difficult to address as the visual bug does is not visible when in DevTools. 
+
+
+-----
+
+
+### Performance 
+
+On first loading the site, the images can be a little slow to load and sometimes slight stuttering occurs when scrolling down the page. This often stops once the site has had time to load fully. More details were mentioned [here](#page-performance)
