@@ -39,6 +39,8 @@ This website is an online porfolio, or resume, designed to showcase my skills an
 
   - [Features Left to Implement](#features-left-to-implement)
 
+  - [Feature Feedback](#feature-feedback)
+
 - [Technologies Used](#technologies-used)
 
   - [Languages](#languages)
@@ -362,7 +364,7 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
 - A confirmation modal for the contact form.
 - More images to hero image on the homepage (like a carousel).
 
------
+
 
 ### Feature Feedback
 
@@ -437,6 +439,24 @@ When sharing the project with friends and family members, they provided me with 
 
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
   - W3C CSS Validation Service checks the markup validation of web documents. It was used to check my CSS file for errors.
+
+- [Uptrends](https://www.uptrends.com/tools/website-speed-test)
+  - Uptrends is an online web tool used to monitor a website's uptime and optimize performance. It was used to analyse the speed of my website.
+
+- [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+  - PageSpeed Insights analyses the content of a webpage, provides an average speed mark then generates a suggestion to make the page faster. It was used to obtain a second performance result, alongside Uptrends, for my website.
+
+- [ImageOnline.com](https://image.online-convert.com/convert-to-webp)
+  - ImageOnline.com is an online image conversion tool. It was used to convert images from JPEG > PNG, from PNG > WEBP and vice versa. 
+
+- [Convertio](https://convertio.co/png-webp/)
+  - Convertio is an online image conversion tool. It was used to convert images from JPEG > PNG, from PNG > WEBP and vice versa.
+
+- [Zamzar](https://www.zamzar.com/convert/png-to-webp/)
+  - Zamar is an online image conversion tool. It was used to convert images from JPEG > PNG, from PNG > WEBP and vice versa.
+
+- [Ezgif.com](https://ezgif.com/webp-to-png)
+  - Ezgif is an online gif editior and image editor. It was used to convert webP back to PNG format.
 
 -----
 
