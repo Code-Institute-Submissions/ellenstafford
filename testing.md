@@ -1,4 +1,4 @@
-# ![Site Brand](assets/img/logo-raven-black.webp) Testing 
+# ![Site Brand](assets/img/logo_black.png) Testing 
 
 ## Contents
 
@@ -102,7 +102,7 @@ However, the validator did find [these errors](assets/img/CSS-validator.PNG) in 
 
 - W3C's CSS Validation Service flagged **line 175** as an error.
     - The warning: `auto is not defined by any specification as an allowed value for pointer-events, but is supported in multiple browsers`
-    - However, this line is necessary for the functionality of the navbar fullscreen overlay menu - a screenshot of the code can be seen [here](assets/img/codeScreenshot.PNG)
+    - However, this line is necessary for the functionality of the navbar fullscreen overlay menu - a screenshot of the code can be seen [here](assets/img/code_screenshot.PNG)
     - Removing this line breaks the navigation links when on the fullscreen overlay - they will no longer be clickable.
     - Ignoring the warning.
 
@@ -117,20 +117,20 @@ I used [UpTrends](https://www.uptrends.com/tools/website-speed-test) and Google'
 
 The first test resulted in a fairly unsatisfactory score.
 
-![UpTrends Test 1](assets/img/speed-img1-test1.PNG)
+![UpTrends Test 1](assets/img/speed_img1_test1.PNG)
 
 The major impact to the site's performance/speed was due to render-blocking resources, inefficient encode images and improper image sizes. This resulted in a load time of 2.1s and would cause notable stuttering when scrolling down the page on mobile devices. 
 
 
 The following image shows the impact of the the inefficient image sizes to the performance of my site:
 
-![UpTrends Test 1 Image 2](assets/img/speed-img2-test1.PNG)
+![UpTrends Test 1 Image 2](assets/img/speed_img2_test1.PNG)
 
 
 It was imperative, then, that I address the issue concerning the image file sizes. To do this, I used [TinyPNG](https://tinypng.com/)
 
-![TinyPNG Image 1](assets/img/tinypng-img1.PNG)
-![TinyPNG Image 2](assets/img/tinypng-img2.PNG)
+![TinyPNG Image 1](assets/img/tinypng_img1.PNG)
+![TinyPNG Image 2](assets/img/tinypng_img2.PNG)
 
 TinyPNG managed to significantly reduce the size of my images, saving me a total of 16 MB - a 72% difference.
 
@@ -139,7 +139,7 @@ TinyPNG managed to significantly reduce the size of my images, saving me a total
 
 Running the second test, after resizing the images, produced fruitful results:
 
-![UpTrends Test 2](assets/img/speed-img1-test2.PNG)
+![UpTrends Test 2](assets/img/speed_img1_test2.PNG)
 
 This gave me a 23% increase in performance, and reduced the site's load time by 40%, from 2.1s to 1.5s.
 
@@ -150,13 +150,13 @@ However this did not mean the site's performance was at its best. I found that m
 
 | Desktop | Mobile |
 | ------- | ------ |
-| ![PageSpeed Insights Desktop](assets/img/pageInsights-img2-test3.PNG) | ![PageSpeed Insights Mobile](assets/img/pageInsights-img1-test3.PNG) |
+| ![PageSpeed Insights Desktop](assets/img/pageInsights_img2_test3.PNG) | ![PageSpeed Insights Mobile](assets/img/pageInsights_img1_test3.PNG) |
 
 My concern, was the performance impact on mobile, because despite resizing the image files, I still experienced stuttering on mobile devices. Page Insights noted that the images were still impacting performance:
 
 | Desktop | Mobile |
 | ------- | ------ |
-| ![PageSpeed Insights Desktop](assets/img/pageInsights-img4-test3.PNG) | ![PageSpeed Insights Mobile](assets/img/pageInsights-img3-test3.PNG) |
+| ![PageSpeed Insights Desktop](assets/img/pageInsights_img4_test3.PNG) | ![PageSpeed Insights Mobile](assets/img/pageInsights_img3_test3.PNG) |
 
 PageSpeed Insights recommended changing the format of the images from PNG and JPEG to a next-gen format, like webP, which would reduce the screen loading by an estimate of 3.75s on mobile, and 0.67s on desktop. 
 
@@ -432,8 +432,6 @@ There was also the concern of how this would work, if at all, once the website w
         - Google Chrome
         - Brave 
         - Microsoft Edge
-        - Internet Explorer 
-            - doesnt work see [here]
     - iOS
         - Google Chrome
         - Safari

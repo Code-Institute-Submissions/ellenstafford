@@ -1,4 +1,4 @@
-# ![Site Brand](assets/img/logo-raven-black.webp) Porfolio Website: [ellenstafford.com](https://ellenst264.github.io/ellenstafford/)
+# ![Site Brand](assets/img/logo_black.png) Porfolio Website: [ellenstafford.com](https://ellenst264.github.io/ellenstafford/)
 
 [View live project here](https://ellenst264.github.io/ellenstafford/)
 
@@ -109,7 +109,7 @@ The main target audience for this website is recruiters and employers looking fo
 
 ### Typography 
 
-![Psychology Behind Typeface](assets/img/Psychology_Behind_Typeface.jpg)
+![Psychology Behind Typeface](assets/img/psychology_typeface.jpg)
 
 I have imported [Poppins](https://fonts.google.com/specimen/Poppins?query=poppin) and [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans?query=jose) from [Google Fonts](https://fonts.google.com/), which have been consistently used throughout the site. Both fonts have Sans Serif as a fallback font incase the two fonts fail to import. 
 
@@ -126,7 +126,7 @@ I have imported [Poppins](https://fonts.google.com/specimen/Poppins?query=poppin
 
 #### Colour Scheme - Psychology
 
-![Psychology Behinid Color](assets/img/Color-psychology.png)
+![Psychology Behinid Color](assets/img/color_psychology.png)
 
 The four main colours I have used on the site are cyan blue, white, a light pink and violet. 
 
@@ -152,7 +152,7 @@ The four main colours I have used on the site are cyan blue, white, a light pink
 
 #### Colour Scheme - Application
 
-![Colour Palette](assets/img/color-palette.PNG)
+![Colour Palette](assets/img/color_palette.PNG)
 
 - #FFF White:
   - Navbar background colour
@@ -184,7 +184,7 @@ The four main colours I have used on the site are cyan blue, white, a light pink
 
 ### Branding
 
-![Brand Image](assets/img/logo-raven-black.webp)
+![Brand Image](assets/img/logo_black.png)
 
 I created a site brand using [Tailor Brands Studio](https://www.tailorbrands.com/) to make my site both unique and professional. I used visual imagery rather than just text to make the brand more recognisable and easier to remember - we are often quite visual by nature, so I believe this effect would work well. The design choice was not arbitray either, as it is a subtle indication to my personality and interests. I percieve the raven as symbolic of wisdom and intrigue, but they can also have deeply spirtual connotations. 
 
@@ -476,11 +476,11 @@ The website was developed by using [Visual Studio Code](https://code.visualstudi
 ### GitHub Pages 
 
 1. Open **GitHub** in your browser and **sign in** to your GithHub account.
-2. Locate the project's GitHub **repository** - most easily found [here](assets/img/repoLocation.PNG)
-3. At the top of the project's repository (not the top of the screen) select the **'Setting'** button from the menu - as seen [here](assets/img/settingsLocation.PNG)
+2. Locate the project's GitHub **repository** - most easily found [here](assets/img/repo_location.PNG)
+3. At the top of the project's repository (not the top of the screen) select the **'Setting'** button from the menu - as seen [here](assets/img/settings_location.PNG)
 4. On the Settings, scroll down the default page until you locate the **'GitHub Pages'** section (near the bottom of the page). 
-5. Under **'Source'**, click the **dropdown menu** called 'None' and in **'select branch' choose 'master'** - as seen [here](assets/img/githubPageLocation.PNG)
-  - When selected you should see [this](assets/img/sourceMasterBranch.PNG)
+5. Under **'Source'**, click the **dropdown menu** called 'None' and in **'select branch' choose 'master'** - as seen [here](assets/img/github_page_location.PNG)
+  - When selected you should see [this](assets/img/source_masterbranch.PNG)
 6. Click **Save** to confirm your selection. The page will automatically refresh.
 7. Scroll back down to 'GitHub Pages' and you will see a link to your deployed site.
   - It will now look something like [this](assets/img/deployed.PNG)

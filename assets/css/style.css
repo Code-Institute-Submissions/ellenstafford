@@ -152,8 +152,8 @@ html {
     @media (max-width:991.98px) {
         .navbar .navbar-collapse {
             background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(250 250 250 / 0%)), to(rgb(9 9 9 / 97%))), url("../img/navmenu-bg.png");
-            background-image: -o-linear-gradient(rgb(250 250 250 / 0%), rgb(9 9 9 / 97%)), url("../img/navmenu-bg.png");
-            background-image: linear-gradient(rgb(250 250 250 / 0%), rgb(9 9 9 / 97%)), url("../img/navmenu-bg.png");
+            background-image: -o-linear-gradient(rgb(250 250 250 / 0%), rgb(9 9 9 / 97%)), url("../img/navmenu_bg.png");
+            background-image: linear-gradient(rgb(250 250 250 / 0%), rgb(9 9 9 / 97%)), url("../img/navmenu_bg.png");
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
@@ -275,7 +275,7 @@ html {
         was taken from:
         "https://css-tricks.com/perfect-full-page-background-image/" */
 
-    background: url("../img/BW_DSC_0662.png") no-repeat center center fixed;
+    background: url("../img/hero_img.png") no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -438,7 +438,7 @@ html {
 /* ABOUT PAGE */
 
 #profile-img {
-    background: url("../img/BW_Profile_IMG7.png") no-repeat center;
+    background: url("../img/profile.png") no-repeat center;
     background-size: cover;
     
     /* Used the following code to fix disproportionate img sizes: "https://www.sitepoint.com/community/t/how-to-make-an-image-fit-in-a-responsive-div/259263/4" */
@@ -657,43 +657,43 @@ html {
 /* WEB DEVELOPMENT PROJECT IMAGES */
 
 #projectImg-LoveRunning {
-    background: url("../img/LoveRunning-mobile-mockup.png") no-repeat center;
+    background: url("../img/love_running.png") no-repeat center;
     background-size: contain;
 }
 
 #projectImg-WhiskeyDrop {
-    background: url("../img/WhiskeyDrop-laptop-mockup.png") no-repeat center;
+    background: url("../img/Whiskey_drop.png") no-repeat center;
     background-size: contain;
 }
 #projectImg-SkyrimModding {
-    background: url("../img/skyrimSite_mockup.png") no-repeat center;
+    background: url("../img/skyrim_site_mockup.png") no-repeat center;
     background-size: contain;
 }
 
 #projectImg-NextProject {
-    background: url("../img/futureProject_mockup.png") no-repeat center;
+    background: url("../img/future_project_mockup.png") no-repeat center;
     background-size: contain;
 }
 
 /* ACADEMIC PROJECT IMAGES */
 
 #projectImg-KingLear {
-    background: url("../img/king-lear-mockup.png") no-repeat center;
+    background: url("../img/king_lear_mockup.png") no-repeat center;
     background-size: contain;
 }
 
 #projectImg-Translation {
-    background: url("../img/translation-mockup.png") no-repeat center;
+    background: url("../img/translation_mockup.png") no-repeat center;
     background-size: contain;
 }
 
 #projectImg-Hamlet {
-    background: url("../img/hamlet-mockup.png") no-repeat center;
+    background: url("../img/hamlet_mockup.png") no-repeat center;
     background-size: contain;
 }
 
 #projectImg-HenryV {
-    background: url("../img/henry-v-mockup2.png") no-repeat center;
+    background: url("../img/henryv_mockup.png") no-repeat center;
     background-size: contain;
 }
 
