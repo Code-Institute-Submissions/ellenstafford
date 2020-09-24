@@ -342,6 +342,8 @@ There was also the concern of how this would work, if at all, once the website w
 |  3  | `Read More` button - `show` | Click `Read More` button | Will show hidden collapsable content on click | Clicking `Read More` reveals the hidden text | Pass |
 |  4  | `Read More` button - `hide` | Click the same `Read More` button for a second time | Will hide the revealed collapsable content on click | Hides the revealed content | Pass |
 |  5  | Testing `Read More` features on `mobile devices` | See above | See above | Works as expected | Pass |
+|  6  | Song `links` in `Achievements` | Click `Read More` in the **Won Award in Chinese Song Contest** timeline card then click the `links` highlighted in blue | Will open a new tab taking users to a YouTube page for the appropriate song link | Takes users to **YouTube** but **doesn't** open a new tab | Pass & Fail | Need to add `target="_blank"` to anchor tag |
+|  7  | Fix song `links` in `Achievements` | Add `target="_blank"` to both `anchor tags`, save then navigate to the `links` in browser | Will open a **new tab** taking users to a YouTube page for the appropriate song link | Opens a **new tab** taking users to a YouTube | Pass |
 
 
 -----
@@ -480,7 +482,7 @@ This was why I implemented the fullscreen overlay menu to this project, but addi
  
 - Without Javascript, users had to manually close the fullscreen overlay menu after clicking a navlink. 
     - This increased the amount of steps required from users and may have easily caused confusion and irritation. 
-    - Javascript was then added to address this issue and ensure good UX design. 
+    - Added JQuery to address this issue and ensure good UX design. 
 
 However, after adding Javascript new problems arised:
 
@@ -544,7 +546,7 @@ Steps to fix the code:
 - Bootstrap will then re-add the class the next time the navigation menu is opened.
 - Removed the 'active' class as it did not do anything.
     
-    - I thank Scott Kipp from Code Institue for fixing this issue.
+    - A big thank you to Scott Kipp from Code Institue for fixing this issue.
 
 
 -----
@@ -566,7 +568,7 @@ Steps to fix the code:
 
     - Currently the root cause of this problem has not been isolated.
     - It is yet to be fixed.
-    
+
 
 -----
 
