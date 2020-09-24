@@ -45,7 +45,7 @@ This website is an online porfolio, or resume, designed to showcase my skills an
 
   - [Languages](#languages)
 
-  - [Frameworks, Libraries & Programs](#frameworks,-libraries-&-programs)
+  - [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
 
 - [Testing](#testing)
 
@@ -389,7 +389,7 @@ When sharing the project with friends and family members, they provided me with 
 - CSS (3)
 - Javascript
 
-### Frameworks, Libraries & Programs 
+### Frameworks, Libraries and Programs 
 
 - [Bootstrap 4.4.1](https://getbootstrap.com/)
   - Bootstrap was used to aid with responsiveness and to form a foundation for styling the website.
@@ -471,7 +471,7 @@ Testing documentation can be found in this separate [testing.md](testing.md) fil
 
 ## Deployment 
 
-The website was developed by using [Visual Studio Code]() and [Git] to push to GitHub, which hosts the repository. The website was deployed to GitHub Pages using the following steps:
+The website was developed by using [Visual Studio Code](https://code.visualstudio.com/) and [Git](https://git-scm.com/) to push to GitHub, which hosts the repository. The website was deployed to GitHub Pages using the following steps:
 
 ### GitHub Pages 
 
@@ -485,6 +485,26 @@ The website was developed by using [Visual Studio Code]() and [Git] to push to G
 7. Scroll back down to 'GitHub Pages' and you will see a link to your deployed site.
   - It will now look something like [this](assets/img/deployed.PNG)
 
+### Make a Local Clone
+
+1. **Sign in** to your **GitHub** and locate the project's GitHub **repository**.
+2. Under the repository name, click the **green 'Clone' button** - for reference see [here](assets/img/github_clonebutton.PNG)
+3. To clone the repository using **HTTPS**, make sure the **HTTPS** is clicked (it will be underlined in orange) and **copy the link** provided.
+4. Open **Git Bash**
+5. Change your current working directory to the location where you want the cloned directory to be.
+6. In the **terminal** type `git clone` and **paste the URL** you copied in step 3.
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+7. Press **Enter** - your local clone is created.
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
 
 -----
 
