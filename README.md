@@ -440,6 +440,9 @@ When sharing the project with friends and family members, they provided me with 
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
   - W3C CSS Validation Service checks the markup validation of web documents. It was used to check my CSS file for errors.
 
+- [Autoprefixer CSS Online](https://autoprefixer.github.io/)
+  - Autoprefixer is a PostCSS plugin which parses your CSS and adds vendor prefixes. It was used to prefix my main CSS file to ensure greater compatibility on a wide range of devices and browsers. 
+
 - [Uptrends](https://www.uptrends.com/tools/website-speed-test)
   - Uptrends is an online web tool used to monitor a website's uptime and optimize performance. It was used to analyse the speed of my website.
 
