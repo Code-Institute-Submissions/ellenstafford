@@ -520,6 +520,8 @@ The website was developed by using [Visual Studio Code]() and [Git] to push to G
 
 - The code for the colour gradient on the progress bars was based upon this [css guide from CSS Tricks](https://css-tricks.com/css3-progress-bars/)
 
+- The code for the colour gradient hover effects for the Personal Strengths section was based upon this [codepen](https://codepen.io/leocampos/pen/pPwwNR)
+
 - The code for the Experience page's timeline was based upon this [code from Bootstrapious](https://bootstrapious.com/p/timeline)
 
 - The hover overlay text for the project images was based upon this [code from codepen](https://codepen.io/ArnaudBalland/pen/vGZKLr)
