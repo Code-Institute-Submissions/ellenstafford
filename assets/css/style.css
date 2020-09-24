@@ -443,6 +443,7 @@ html {
     }
 }
 
+
 #skills .chapter-content h4 {
     text-transform: uppercase;
     font-weight: 400;
@@ -452,6 +453,19 @@ html {
 
 #skills .my-4 {
     border-top: 2px solid #4a4a4a4a;
+}
+
+#personalStrengths span {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+/* The following code was based upon: "https://codepen.io/leocampos/pen/pPwwNR" */
+#personalStrengths span:hover { 
+    cursor: pointer;
+	background: linear-gradient(to right, #63c6d6e6 0%, #d678fd 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 
