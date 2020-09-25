@@ -95,13 +95,8 @@ The main target audience for this website is recruiters and employers looking fo
 
     - As a returning visitor, I want to see the projects the candidate may have worked on. 
     - Additionally, I want to see their qualifications, relevant work experience and what skills they have.
-    - I want to be able to easily contact the candidate at any point throughout my navigation of the site so that they can answer any question I may have.
+    - I want to be able to easily contact the candidate at any point throughout my navigation of the site so that they can answer any questions I may have.
     - As a returning visitor, I may want to download a CV in PDF format and see references to validate the candidate’s claims.
-    
--  #### Frequent Visitor Goals 
-
-    - As a frequent user I want to check to see if the candidate has added any new features to their online portfolio.
-
 
 -----
 
@@ -117,7 +112,7 @@ I have imported [Poppins](https://fonts.google.com/specimen/Poppins?query=poppin
 
   - As according to the image above regarding the psychology behind type choices, Poppins can be seen as combination of Sans Serif and Modern fonts. Therefore, the connotations and emotions associated with the font include: clean, progressive, modern and reliable.
 
-- Josefin Sans was used for the majority of the site's headers (h1-h6 elements), aswell as the navbar, navbar brand and the button on the homepage and the contact form. It is bolder than the Poppins font, which thus allows for a good visual contrast between titles and content. It also helps to distinguish particular sections from the whole body of the site. 
+- Josefin Sans was used for the majority of the site's headers (h1-h6 elements), aswell as the navbar, navbar brand and the button on the homepage and contact form. It is bolder than the Poppins font, which thus allows for a good visual contrast between titles and content. It also helps to distinguish particular sections from the whole body of the site. 
 
   - Josefin Sans can be seen as a hybrid between Serif, Sans Serif and Modern fonts. As according to the pyschology behind typography, Josefin Sans can evoke a combination of positive associations and emotions, such as: respectability, reliability, stability and strength.
 
@@ -138,7 +133,7 @@ The four main colours I have used on the site are cyan blue, white, a light pink
 
 - The colour blue is symbolic of trust and reliability, which one of the intended responses I wanted from users visiting the site. As the site ultimately functions as an online representation of myself, this reaction is exactly what I want from users.
 
-- I chose a light pink as a substitute of the colour red. While red can incite positive emotional responses, such as passion and energy, it can also trigger undesirable emotional responses, such as danger or urgency, which are not really appropriate reactions for my site. I considered pink to be a happy compromise, as it has that hint of red to suggest passion and energy, while being gentle enough as to not incite undesirable reactions. 
+- I chose a light pink as a substitute of the colour red. While red can incite positive emotional responses, such as passion and energy, it can also trigger undesirable emotional responses, such as danger or urgency, which are not appropriate reactions for my site. I considered pink to be a happy compromise, as it has that hint of red to suggest passion and energy, while being gentle enough as to not incite undesirable reactions. 
 
   - Pink has some positive emotional responses of its own, such as sophistication and sincerity.
 
@@ -158,27 +153,27 @@ The four main colours I have used on the site are cyan blue, white, a light pink
   - Navbar background colour
   - Jumbotron background colour on homepage 
   - Scroll Down arrow
-  - Background colour for 'About Me', 'Projects' and 'Contact' pages and footer
+  - Background colour for About Me, Projects and Contact pages and footer
   - 'Experience' page card's background color
   - Social media links
   - Font colour for coloured backgrounds
 
 - #63C6D6 Middle Blue:
-  - 'About Me' and 'Experience' page background colour 
+  - About Me and Experience page background colour 
   - Homepage 'learn more' button and contact form 'send' button
-  - Linear gradient in progress bars on 'Skills' page
+  - Linear gradient in progress bars on Skills page
   - Footer background
   - Background colour for project images
   - Scroll to top button
   - Navbar hover effects
 
 - #FF3467D4 - 'Radical Red' Pink :
-  - 'Skills' and 'Experience' page background colour
+  - Skills and Experience page background colour
 
 - #D678FD - 'Heliotrope' Violet:
-  - 'Hire me' button on 'About Me' page
-  - Linear gradient in progress bars on 'Skills' page
-  - 'Read more' collapse buttons, hr elements and project link buttons on 'Projects' page 
+  - 'Hire me' button on About Me page
+  - Linear gradient in progress bars on Skills page
+  - 'Read more' collapse buttons, hr elements and project link buttons on Projects page 
   - Hover tooltip for download CV button in footer
 
 
@@ -186,7 +181,7 @@ The four main colours I have used on the site are cyan blue, white, a light pink
 
 ![Brand Image](assets/img/logo_black.png)
 
-I created a site brand using [Tailor Brands Studio](https://www.tailorbrands.com/) to make my site both unique and professional. I used visual imagery rather than just text to make the brand more recognisable and easier to remember - we are often quite visual by nature, so I believe this effect would work well. The design choice was not arbitray either, as it is a subtle indication to my personality and interests. I percieve the raven as symbolic of wisdom and intrigue, but they can also have deeply spirtual connotations. 
+I created a site brand using [Tailor Brands Studio](https://www.tailorbrands.com/) to make my site both unique and professional. I used visual imagery rather than just text to make the brand more recognisable and easier to remember - we are often quite visual by nature, so I believe this effect would work well. The design choice was not arbitrar y either, as it is a subtle indication to my personality and interests. I percieve the raven as symbolic of wisdom and intrigue, but they can also have deeply spirtual connotations. 
 
 If I wish to create more projects in the future, such as a blog, for example, I can use this brand to indicate that it is of my creation -  like a signature or trademark.
 
@@ -249,7 +244,7 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
   - This makes the navbar more interactive and eye-catching and will encourage more user input.
 
 - Dropdown-menu 
-  - A dropdown-menu have been used for the 'Experience' page navbar link and the 'Projects' page navbar link to give users greater control over the navigation of the site.
+  - Used a dropdown-menu for the Experience page navbar link and the Projects page navbar link to give users greater control over the navigation of the site.
   - It declutters the navbar to maintain a clean aesethetic. 
  
 - Hamburger menu for mobile devices
@@ -272,7 +267,7 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
 - Bootstrap jumbotron
   - Outlines the purpose of the site.
   - The jumbotron introduces the site to the user, with 'Hi, I'm Ellen', which is a quick indication to what the site is - an online porfolio. 
-  - The 'learn more' button takes users to the first page - 'about me' - which creates an intuitive experience by giving users different navigational options. 
+  - The 'learn more' button takes users to the first page - About Me - which creates an intuitive experience by giving users different navigational options. 
 
 - Scroll down arrow
   - The bouncing animation highlights that the arrow is clickable by inviting the user to interact with it. 
@@ -289,7 +284,12 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
 - Progress bars
   - Provides an intuitive, highly visual way for users to quickly and easily see my skillset and qualifications.
   - The progress bars have a small transition animation which activates on hover.
-  - The animation increases the user's interactivity with the site and provides an intuitive and engaging experience. 
+  - The animation increases the user's interactivity with the site and provides an intuitive and engaging experience.
+
+- Hover effect for Personal Strengths
+  - When hovering over the text on the Personal Strengths section the font colour will change to a nice colour gradient, which keeps with the site's colour scheme.
+  - Originally, the Personal Strengths section also implemented progress bars but after feedback from friends and family members I deemed it made more semantic sense to remove them. 
+  - Employers expect 100% from these qualities, so if the progress bars were not 100% it would have made a bad impression of myself. But setting all the progress bars at 100% could have looked dishonest. Removing them was the best solution to this problem. 
 
 #### Experience Page
 
@@ -298,6 +298,11 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
   - A great way to separate not only each category but each moment.
   - Allows users to easily navigate through the Experience section. 
   - Places more emphasis on visual imagery rather than bodies of text, which reduces cognitive overload and makes for a better user experience. 
+
+- 'Read More' button
+  - Hides large bodies of text to reduce cognitive overload caused by having too much text on the screen.
+  - Gives users greater control over the website - it doesn't force them to read everything on the page and thus makes for a better user experience. 
+  - Emphasises the visual element of the site. 
 
 #### Projects Page
 
@@ -309,10 +314,10 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
   - Each project image as a scale on hover transition animation to increase its visual appeal, make the text easier to read and create an intuitive experience for the user.
 
 - Overlay menu for desktop devices
-  - When hovering over the image on desktop devices, a overlay meny will activate.
+  - When hovering over the image on desktop devices, a overlay menu will activate.
   - The menu provides brief information about the project, such as its title and summary, in a bold, white font.
   - This means less real estate is taken up with text, providing a cleaner, more spacious aesthetic.
-  - Reduces cognitive overload by not overbearing the user will a lot of text.
+  - Reduces cognitive overload by not overbearing the user with a lot of text.
 
 - Project link icons
   - Under each project image is an link and github icon. 
@@ -321,8 +326,8 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
 
 - Mobile resonsiveness
   - When on mobile, hover effects can compromise the user experience and cause resistance between the user and the site's content.
-  - To ensure the user experience is not negatively effected, text to replace the overlay menu is activated on mobile devices.
-  - This means when on mobile, the user does need to rely on the overlay menu to know the site's title and summary - it will automatically be shown to them as a standard body of text.
+  - To ensure the user experience is not negatively effected text will replace the overlay menu, which is activated on mobile devices.
+  - This means when on mobile, the user does need to rely on the overlay menu to know the project's title and summary - it will automatically be shown to them as a standard body of text.
 
 #### Footer  
 
@@ -362,6 +367,7 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
 - Update social media to direct to my own social media accounts.
 - A toggle dark mode feature which changes the UI colour to a darker colour palette - for users who prefer darker UI.
 - A confirmation modal for the contact form.
+- A 'hover over me' tooltip for the project images.
 - More images to hero image on the homepage (like a carousel).
 
 

@@ -10,7 +10,7 @@
         - [Test 1](#test-1)
         - [Test 2](#test-2)
         - [Test 3](#test-3)
-        - [Unfixable Performance Issues](#unfixable-performance-issues)
+        - [Performance Issues](#performance-issues)
 
 - [Testing User Stories](#testing-user-stories)
 
@@ -150,13 +150,13 @@ However this did not mean the site's performance was at its best. I found that m
 
 | Desktop | Mobile |
 | ------- | ------ |
-| ![PageSpeed Insights Desktop](assets/img/pageInsights_img2_test3.PNG) | ![PageSpeed Insights Mobile](assets/img/pageInsights_img1_test3.PNG) |
+| ![PageSpeed Insights Desktop](assets/img/pageinsights_img2_test3.PNG) | ![PageSpeed Insights Mobile](assets/img/pageinsights_img1_test3.PNG) |
 
 My concern, was the performance impact on mobile, because despite resizing the image files, I still experienced stuttering on mobile devices. Page Insights noted that the images were still impacting performance:
 
 | Desktop | Mobile |
 | ------- | ------ |
-| ![PageSpeed Insights Desktop](assets/img/pageInsights_img4_test3.PNG) | ![PageSpeed Insights Mobile](assets/img/pageInsights_img3_test3.PNG) |
+| ![PageSpeed Insights Desktop](assets/img/pageinsights_img4_test3.PNG) | ![PageSpeed Insights Mobile](assets/img/pageinsights_img3_test3.PNG) |
 
 PageSpeed Insights recommended changing the format of the images from PNG and JPEG to a next-gen format, like webP, which would reduce the screen loading by an estimate of 3.75s on mobile, and 0.67s on desktop. 
 
@@ -166,7 +166,7 @@ PageSpeed Insights recommended changing the format of the images from PNG and JP
 Converting the images didn't have much impact on the Speed Score, however it did drastically reduce the stuttering when scrolling on mobile devices.
 
 
-### Unfixable Performance Issues 
+### Performance Issues 
 
 The remaining performance impact derives from the render-blocking resources primarily caused by Bootstrap and Font Awesome. The only 'fix' to this issue would be to locally load a limited CSS file for both Bootstrap and Font Awesome, which would *only* call the CSS that I need. 
 
@@ -242,7 +242,7 @@ There was also the concern of how this would work, if at all, once the website w
 
     - Users can navigate to the Projects page to see both web development projects and academic work. 
 
-    - The projects are emphaised visually, with the large, eye-catching image to grab the users attention and encourage them to lear more.
+    - The projects are emphaised visually, with the large, eye-catching image to grab the users attention and encourage them to learn more.
 
 2. Additionally, I want to see their qualifications, relevant work experience and what skills they have.
 
@@ -250,13 +250,14 @@ There was also the concern of how this would work, if at all, once the website w
 
 3. I want to be able to easily contact the candidate at any point throughout my navigation of the site so that they can answer any question I may have.
 
-    - Users can navigate to the contact footer by either users the navigation bar or clicking the 'Hire Me' button on the about page. The fixed navbar fulfills this goal by allowing the users to go to the contact section quickly and easily, regardless of where they are in the site.
+    - Users can navigate to the contact footer by either using the navigation bar or clicking the 'Hire Me' button on the about page. 
+    - The fixed navbar fulfills this goal by allowing the users to go to the contact section quickly and easily, regardless of where they are in the site.
 
 4. As a returning visitor, I may want to download a CV in PDF format and see references to validate the candidate’s claims.
 
-    - A download icon for the downloadable CV can be found in the footer with the social media links. A hover tooltip will display on desktop when the user hovers over the icon with their mouse. This tells the users exactly what it is that they will download. 
+    - A download icon for the downloadable CV can be found in the footer with the social media links. A hover tooltip will display when the user hovers over the icon with their mouse on desktop. This tells the users exactly what it is that they will download. 
 
-    - When on mobile devices, a text reading 'Download my CV' will be displayed underneath the download icon in place of the hover tooltip to make the feature easy for the users to understand and use.
+    - When on mobile devices, a text reading 'Download my CV' will be displayed underneath the download icon in place of the hover tooltip to make the feature easy for users to understand and use.
 
 
 
@@ -268,15 +269,15 @@ There was also the concern of how this would work, if at all, once the website w
 
 | No. |   Action    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
 | --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
-|  1  | Navigate to `About Me` | Click the `About Me` nav link | The site will navigate to the `About Me` section | Navigates to `About Me` section | Pass |
-|  2  | Navigate to `Skills` | Click the `Skills` nav link | The site will navigate to the `Skills` section | Navigates to `Skills` section | Pass |
-|  3  | Navigate to `Contact` | Click the `Contact` nav link | The site will navigate to the `Contact` section | Navigates to `Contact` section | Pass |
+|  1  | Navigate to `About Me` | Click the `About Me` nav link | The site will navigate to the `About Me` page | Navigates to `About Me` page | Pass |
+|  2  | Navigate to `Skills` | Click the `Skills` nav link | The site will navigate to the `Skills` page | Navigates to `Skills` page | Pass |
+|  3  | Navigate to `Contact` | Click the `Contact` nav link | The site will navigate to the `Contact` page | Navigates to `Contact` page | Pass |
 |  4  | Navigate to `Homepage` | Click the `Navbar brand` | The site will navigate back up to the `Homepage` when the navbar brand is clicked | Navigates to `Homepage` | Pass |
-|  5  | Navigate to `Experience` - `Education` | Click the `Experience` nav link and then `Education` on the drop-down menu | Upon clicking `Experience` the drop-down menu will be visible. The site will navigate to the `Education` section once clicked | Clicking `Experience` open the drop-down menu. Navigates to `Education` section when `Education` is clicked in drop-down menu | Pass | When navigating to `Education` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#experience-page-navigation) for more details |
-|  6  | Navigate to `Experience` - `Work Experience` | Click the `Experience` nav link and then `Work Experience` on the drop-down menu | Upon clicking `Experience` the drop-down menu will be visible. The site will navigate to the `Work Experience` section once clicked | Clicking `Experience` open the drop-down menu. Navigates to `Work Experience` section when `Education` is clicked in drop-down menu | Pass | When navigating to `Work Experience` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#experience-page-navigation) for more details |
-|  7  | Navigate to `Experience` - `Achievements` | Click the `Experience` nav link and then `Achievements` on the drop-down menu | Upon clicking `Experience` the drop-down menu will be visible. The site will navigate to the `Achievements` section once clicked | Clicking `Experience` open the drop-down menu. Navigates to `Education` section when `Achievements` is clicked in drop-down menu | Pass | 
-|  8  | Navigate to `Projects` - `Web Development` | Click the `Projects` nav link and then `Web Development` on the drop-down menu | Upon clicking `Projects` the drop-down menu will be visible. The site will navigate to the `Web Development` section once clicked | Clicking `Projects` open the drop-down menu. Navigates to `Web Development` section when `Projects` is clicked in drop-down menu | Pass |
-|  9  | Navigate to `Projects` - `Academic Work` | Click the `Projects` nav link and then `Academic Work` on the drop-down menu | Upon clicking `Projects` the drop-down menu will be visible. The site will navigate to the `Academic Work` section once clicked | Clicking `Projects` open the drop-down menu. Navigates to `Academic Work` section when `Projects` is clicked in drop-down menu | Pass |
+|  5  | Navigate to `Experience` - `Education` | Click the `Experience` nav link and then `Education` on the drop-down menu | Upon clicking `Experience` the drop-down menu will be visible. The site will navigate to the `Education` section once clicked | Clicking `Experience` opens the drop-down menu. Navigates to `Education` section when `Education` is clicked in drop-down menu | Pass | When navigating to `Education` when in the `Work Experience` the navlink doesn't work. Refer [here](#experience-page-navigation) for more details|
+|  6  | Navigate to `Experience` - `Work Experience` | Click the `Experience` nav link and then `Work Experience` on the drop-down menu | Upon clicking `Experience` the drop-down menu will be visible. The site will navigate to the `Work Experience` section once clicked | Clicking `Experience` opens the drop-down menu. Navigates to `Work Experience` section when `Education` is clicked in drop-down menu | Pass | When navigating to `Work Experience` when in the `Education` section the navlink doesn't work. Refer [here](#experience-page-navigation) for more details |
+|  7  | Navigate to `Experience` - `Achievements` | Click the `Experience` nav link and then `Achievements` on the drop-down menu | Upon clicking `Experience` the drop-down menu will be visible. The site will navigate to the `Achievements` section once clicked | Clicking `Experience` opens the drop-down menu. Navigates to `Education` section when `Achievements` is clicked in drop-down menu | Pass | 
+|  8  | Navigate to `Projects` - `Web Development` | Click the `Projects` nav link and then `Web Development` on the drop-down menu | Upon clicking `Projects` the drop-down menu will be visible. The site will navigate to the `Web Development` section once clicked | Clicking `Projects` opens the drop-down menu. Navigates to `Web Development` section when `Projects` is clicked in drop-down menu | Pass |
+|  9  | Navigate to `Projects` - `Academic Work` | Click the `Projects` nav link and then `Academic Work` on the drop-down menu | Upon clicking `Projects` the drop-down menu will be visible. The site will navigate to the `Academic Work` section once clicked | Clicking `Projects` opens the drop-down menu. Navigates to `Academic Work` section when `Projects` is clicked in drop-down menu | Pass |
 |  11 | Navbar will transform on scroll | Scroll down the page | The navbar size will shrink on mouse scroll | Upon scrolling down the navbar shrinks in size | Pass |
 
 -----
@@ -286,17 +287,17 @@ There was also the concern of how this would work, if at all, once the website w
 | No. |   Action    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
 | --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
 |  1  | Open navbar fullscreen overlay menu | Click the burger icon | Will open the fullscreen overlay menu, filling the entire screen | Opens the fullscreen overlay menu | Pass |
-|  2  | Navigate to `About Me` | Click the burger icon then click `About Me` nav link in the fullscreen overlay menu | The fullscreen overlay menu will close and navigate to the `About Me` section | Closes the fullscreen overlay menu and navigates to `About Me` section | Pass |
-|  3  | Navigate to `Skills` | Click the burger icon then click `Skills` nav link in the fullscreen overlay menu | The fullscreen overlay menu will close and navigate to the `Skills` section | Closes the fullscreen overlay menu and navigates to `Skills` section | Pass |
-|  4  | Navigate to `Contact` | Click the burger icon then click `Contact` nav link in the fullscreen overlay menu | The fullscreen overlay menu will close and navigate to the `Contact` section | Closes the fullscreen overlay menu and navigates to `Contact` section | Pass |
+|  2  | Navigate to `About Me` | Click the burger icon then click the `About Me` nav link in the fullscreen overlay menu | The fullscreen overlay menu will close and navigate to the `About Me` page | Closes the fullscreen overlay menu and navigates to `About Me` page | Pass |
+|  3  | Navigate to `Skills` | Click the burger icon then click the `Skills` nav link in the fullscreen overlay menu | The fullscreen overlay menu will close and navigate to the `Skills` page | Closes the fullscreen overlay menu and navigates to `Skills` page | Pass |
+|  4  | Navigate to `Contact` | Click the burger icon then click the `Contact` nav link in the fullscreen overlay menu | The fullscreen overlay menu will close and navigate to the `Contact` page | Closes the fullscreen overlay menu and navigates to `Contact` page | Pass |
 |  5  | Navigate to `Homepage` | Click the `Navbar brand` | The site will navigate back up to the `Homepage` when the navbar brand is clicked | Navigates to `Homepage` | Pass |
-|  6  | Navigate to `Experience` - `Education` | Click the burger icon. In the fullscreen screen overlay menu click the `Experience` navlink then `Education` in the dropdown menu | Upon clicking `Experience` the drop-down menu will be visible. Once `Education` is clicked the fullscreen overlay menu will close and navigate to the `Education` section  | Clicking `Experience` opens the drop-down menu, clicking `Education` in the drop-down menu closes the fullscreen overlay and navigates to the `Education` section | Pass | When navigating to `Education` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#experience-page-navigation) for more details |
-|  7  | Navigate to `Experience` - `Work Experience` | Click the burger icon. In the fullscreen screen overlay menu click the `Experience` navlink then `Work Experience` in the dropdown menu | Upon clicking `Experience` the drop-down menu will be visible. Once `Work Experience` is clicked the fullscreen overlay menu will close and navigate to the `Work Experience` section  | Clicking `Experience` opens the drop-down menu, clicking `Work Experience` in the drop-down menu closes the fullscreen overlay and navigates to the `Work Experience` section | Pass | When navigating to `Work Experience` when **already in** another `Experience` section it doesn't always work correctly. Refer [here](#experience-page-navigation) for more details |
+|  6  | Navigate to `Experience` - `Education` | Click the burger icon. In the fullscreen screen overlay menu click the `Experience` navlink then `Education` in the dropdown menu | Upon clicking `Experience` the drop-down menu will be visible. Once `Education` is clicked the fullscreen overlay menu will close and navigate to the `Education` section  | Clicking `Experience` opens the drop-down menu, clicking `Education` in the drop-down menu closes the fullscreen overlay and navigates to the `Education` section | Pass | When navigating to `Education` when in the `Work Experience` the navlink doesn't work. Refer [here](#experience-page-navigation) for more details |
+|  7  | Navigate to `Experience` - `Work Experience` | Click the burger icon. In the fullscreen screen overlay menu click the `Experience` navlink then `Work Experience` in the dropdown menu | Upon clicking `Experience` the drop-down menu will be visible. Once `Work Experience` is clicked the fullscreen overlay menu will close and navigate to the `Work Experience` section  | Clicking `Experience` opens the drop-down menu, clicking `Work Experience` in the drop-down menu closes the fullscreen overlay and navigates to the `Work Experience` section | Pass | When navigating to `Work Experience` when in the `Education` section the navlink doesn't work. Refer [here](#experience-page-navigation) for more details |
 |  8  | Navigate to `Experience` - `Achievements` | Click the burger icon. In the fullscreen screen overlay menu click the `Experience` navlink then `Achievements` in the dropdown menu | Upon clicking `Experience` the drop-down menu will be visible. Once `Achievements` is clicked the fullscreen overlay menu will close and navigate to the `Achievements` section  | Clicking `Experience` opens the drop-down menu, clicking `Achievements` in the drop-down menu closes the fullscreen overlay and navigates to the `Achievements` section | Pass | 
 |  9  | Navigate to `Projects` - `Web Development` | Click the burger icon. In the fullscreen screen overlay menu click the `Projects` navlink then `Web Development` in the dropdown menu | Upon clicking `Projects` the drop-down menu will be visible. Once `Web Development` is clicked the fullscreen overlay menu will close and navigate to the `Web Development` section  | Clicking `Projects` opens the drop-down menu, clicking `Web Development` in the drop-down menu closes the fullscreen overlay and navigates to the `Web Development` section | Pass | 
 |  10 | Navigate to `Projects` - `Academic Work` | Click the burger icon. In the fullscreen screen overlay menu click the `Projects` navlink then `Academic Work` in the dropdown menu | Upon clicking `Projects` the drop-down menu will be visible. Once `Academic Work` is clicked the fullscreen overlay menu will close and navigate to the `Academic Work` section  | Clicking `Projects` opens the drop-down menu, clicking `Academic Work` in the drop-down menu closes the fullscreen overlay and navigates to the `Academic Work` section | Pass | 
 |  11 | Navbar will transform on scroll | Scroll down the page | The navbar size will shrink on mouse scroll | Upon scrolling down the navbar shrinks in size | Pass |
-|  12 | Navbar `hamburger button` - `mobile devices` | In `DevTools` toggle device toolbar and change device to iPhone 6/7/8 | The `hamburger button` should be inline with the navbar to the right hand side of the screen | The `hamburger button` displays underneath the navbar brand rather than beside it | Fail | Will need to modify media queries in css |
+|  12 | Navbar `hamburger button` - `mobile devices` | In `DevTools` toggle device toolbar and change device to iPhone 6/7/8 | The `hamburger button` should be inline with the navbar to the right hand side of the screen | The `hamburger button` displays underneath the navbar brand rather than beside it | Fail | Once the users scrolls, causing the navbar brand and navbar links to shrink, this problem is no longer in effect |
 
 
 ----
@@ -357,7 +358,7 @@ There was also the concern of how this would work, if at all, once the website w
 |  2  | Project `image` and `overlay content` scale transform | Hover mouse over the project `image` | Both the project `image` and its `overlay content` will increase in size with a `transform (scale)` animation on mouse hover | On mouse hover both the `image` and its `overlay content` increase in size with a graceful `transform (scale)` animation | Pass |
 |  3  | `Overlay content` - inactive for  `mobile devices` | Hover mouse or click project `image` | The project `overlay content` will not display on click or hover | The `overlay content` does not activate when hovering over or clicking the project `image` | Pass | The project `overlay content` has a minimum width of 992px, which prevents the feature from activating on mobile devices in order to maintain good UX design |
 |  4  | `Overlay content` - visible content under the project `image` for `mobile devices` | N/A | The `overlay content` will be displayed underneath the project `image` on `mobile devices`, replacing the `overlay content` hover function | The `overlay content` is displayed underneath the project `image` when on `mobile devices` | Pass | This is visible at 992px and above - the point at which the project `overlay` no longer functions on mouse hover |
-|  5  | `Project links` | Click `project link` icon | Clicking the `project link` icon will direct users to a `new tab` containing the appropriate project | Navigates to a `new tab` containing the appropriate project when clicking the `link` icon | Pass | On mouse hover the `project link` icons for the `Web Development` section will display a small hyphen next to icon. This is not intented but causes no real disruptions for the user. I conclude that this is a very minor visual bug |
+|  5  | `Project links` | Click `project link` icon | Clicking the `project link` icon will direct users to a `new tab` containing the appropriate project | Navigates to a `new tab` containing the appropriate project when clicking the `link` icon | Pass | On mouse hover the `project link` icons for the `Web Development` section will display a small hyphen next to icon. This is not intented but causes no real disruptions for the user. This is a very minor visual bug |
 |  5  | Project `GitHub links` | Click project `GitHub` icon | Clicking the project `GitHub` icon will direct users to a `new tab` containing a `GitHub repository` for the appropriate project | Navigates to a `new tab` containing a `GitHub repository` for the appropriate project when clicking the `GitHub` icon | Pass | Only implemented in the `Web Development` section |
 |  6  | Testing `GitHub links` and `project links` on `mobile devices` | See above | See above | Works as expected | Pass |
 
@@ -371,8 +372,8 @@ There was also the concern of how this would work, if at all, once the website w
 |  1  | Automatic image slide | N/A | The `carousel` should slide through images automatically without the need for user input | The `carousel` slides through images automatically without input | Pass |
 |  2  | Manual controls - `next` | Click the `carousel` right arrow button | Upon clicking the right arrow the `carousel` will slide to the `next image` | Slides to the `next carousel image` when the right arrow is clicked | Pass |
 |  3  | Manual controls - `previous` | Click the `carousel` left arrow button | Upon clicking the left arrow the `carousel` will slide to the `previous image` | Slides to the `previous carousel image` when the left arrow is clicked | Pass |
-|  4  | See if all `carousel images` work correctly | Either wait for the `carousel` to automatically slide through every image **or** manually sift through images with the arrow `controls` | Every `image` in the `carousel` will load | `Shakespeare's *King Lear* image` did not load | Fail | Used `DevTools` to locate the source of the error. Discovered that I had used the wrong `image format` in `HTML` |
-|  5  | Fix `Shakspeare's *King Lear* image` for `carousel` | Change `image format` from `png` to `webp`. Save changes in `HTML` and `commit` to `GitHub` | All `carousel images` will load | All `images` loaded | Pass | 
+|  4  | See if all `carousel images` work correctly | Either wait for the `carousel` to automatically slide through every image **or** manually sift through images with the arrow `controls` | Every `image` in the `carousel` will load | `Shakespeare's *King Lear* image` did not load | Fail | Used `DevTools` to locate the source of the error. Discovered that I had used the wrong `image format` in `HTML` - `HTML` was calling a `png` image that did not exist |
+|  5  | Fix `Shakspeare's *King Lear* image` for `carousel` | Change `image format` from `png` to `webp`. Save changes in `HTML` and `commit` to `GitHub` | All `carousel images` will load | All `images` loaded | Pass |
 |  6  | Visible on `desktop` and `tablet devices` | In `DevTools` change device toolbar to `desktop` and `tablet` (Ipad) | The `carousel` will be visible | The `carousel` is visible | Pass | Has a minimum width of 768px |
 |  7  | Hidden on `mobile devices` | In `DevTools` change device toolbar to `mobile` | The `carousel` will be hidden | The `carousel` is hidden | Pass | Hides the `carousel` at 767px |
 
@@ -386,7 +387,7 @@ There was also the concern of how this would work, if at all, once the website w
 | --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
 |  1  | Test `contact form` `text field` | Click a `text field` and `input data` by typing on the keyboard | Users will be able to `input data` into the `text field` of the `contact form` | Can `input data` into the `text field` | Pass | Tested for every `text field` |
 |  2  | Test `required boolean attribute` functionality | Click the `send` button without inputting data | A notification will show by the first empty `required text field` telling the user to `input data`. The `send` function will be blocked until all `requried text fields` are filled out | Displays a notification by the first empty `required text field` (in this case, `first name`) and tells the user to `input data`. The `send` button will not function whilst the `required text fields` are empty | Pass |
-|  3  | Test `requried boolean attribute` functionality with **some** `text fields` filled in | On the `contact form` fill **one or more, but not all, (maximum of 3)** `requried text fields` and click `send` | A notification will show on the first empty `required text field` telling the user to `input data`. The `send` function will be blocked until all `requried text fields` are filled out | Displays a notification by the first empty `required text field` and tells the user to `input data`. The `send` button will not function whilst the `required text fields` are empty | Pass |
+|  3  | Test `requried boolean attribute` functionality with **some** `text fields` filled in | On the `contact form` fill **one or more**, but not all, (maximum of 3) `requried text fields` and click `send` | A notification will show on the first empty `required text field` telling the user to `input data`. The `send` function will be blocked until all `requried text fields` are filled out | Displays a notification by the first empty `required text field` and tells the user to `input data`. The `send` button will not function whilst the `required text fields` are empty | Pass |
 |  4  | Test `email input type` | Click on the `email input field` and input data that **is not** an email (e.g. a 'name' or 'hi') | A notification will show by the `email input field` telling the user to `include a '@' in the email address`. The `send` button will not function until this is resolved | Shows a notification by the `email input field` telling the user to `include a '@' in the email address`. The `send` button is blocked | Pass |
 |  5  | `Send` completed `contact form` | Fill in **at least all** of the  `required text fields` and click `send` | Will `send` the inputted data and `refresh` the `contact form` | Opens your device's email application and automatically composes a new email with the addresse field already filled in. The `contact form` does not refresh unless the site itself is refreshed **manually** | Pass & Fail | The `contact form` passes its **functionality test** but doesn't work how I want it to. In the future, I would like to alter the `contact form` so that it will send the inputted data **automatically** to the email listed in the `mailto form action` without requiring **additional steps** from the user |
 
@@ -420,7 +421,7 @@ There was also the concern of how this would work, if at all, once the website w
     - Desktop PC with a 1600 x 900 monitor
     - HP Spectre x360 Laptop
     - HP Pavilion 14-ce3600sa Laptop
-    - HP Pavilion 14-ce3602sa   
+    - HP Pavilion 14-ce3602sa Laptop
     - Apple MacBook Air 
 
 - Operating Systems
@@ -482,7 +483,7 @@ This was why I implemented the fullscreen overlay menu to this project, but addi
     - This increased the amount of steps required from users and may have easily caused confusion and irritation. 
     - Added JQuery to address this issue and ensure good UX design. 
 
-However, after adding Javascript new problems arised:
+However, after adding JQuery new problems arised:
 
 Although the fullscreen menu would close after clicking a navlink, as intended, when returning to the hamburger button again the overlay would flash and close. Multiple clicks were required to get it to open again. This is explained in depth in the table below:
 
@@ -552,7 +553,7 @@ Steps to fix the code:
 
 ### Experience Page Navigation 
 
-- Navigation via the navbar does not always when navigating to the **Education** or **Work Experience** section once in the Experience page. 
+- Navigation via the navbar does not always work when navigating to the **Education** or **Work Experience** section once in the Experience page. 
 
 - The characteristics of this bug is illustrated bellow (a **fail** means there is no response when the link is clicked):
 
@@ -590,7 +591,7 @@ When sharing the website with friends and family members, those who used Safari 
 
 - None of the site's images would load.
 
-    - After research the problem was linked to the image format: webP
+    - After research it was discovered that the problem was linked to the image format: webP
     - Apple have only just added support for webP images for the first time in Safari - for Safari 14 **only**
     - Apple users with a version lower than **Safari 14** would not see the images
         - A iPhone 7 user and an MacBook Air user reported that none of the site's images loaded on their device
