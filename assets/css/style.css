@@ -12,15 +12,16 @@ body {
 }
 
 html {
-    /*  Used to offset the anchor tags when 
-        the fixed navbar would overlaps the anchor tag header.
-        ----
-        The code was taken from: "https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors/28824157#28824157"  */
 
-    scroll-padding-top: 52px; /* height of fixed navbar */
+    /*  
+    Used to offset the anchor tags when 
+    the fixed navbar would overlaps the anchor tag header.
+    ----
+    The code was taken from: "https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors/28824157#28824157"  
+    */
 
-    /* To create a smooth scrolling effect */
-    scroll-behavior: smooth;
+    scroll-padding-top: 52px;   /* height of fixed navbar */
+    scroll-behavior: smooth;    /* To create a smooth scrolling effect */
 }
 
 /* NAVBAR */
@@ -37,231 +38,242 @@ html {
     padding-bottom: 0;
 }
 
-    /* BOTTOM BORDER HOVER ANIMATION */
+/* BOTTOM BORDER HOVER ANIMATION */
 
-    /* The following code was based upon: "https://stackoverflow.com/questions/28623446/hover-effect-expand-bottom-border"  */
+/* The following code was based upon: "https://stackoverflow.com/questions/28623446/hover-effect-expand-bottom-border"  */
 
-    .nav-link:after {
-        content: "";
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-        height: 2px ;
-        border-bottom: solid 3px #63c6d6e6;
-        -webkit-transform: scaleX(0);
-            -ms-transform: scaleX(0);
-                transform: scaleX(0);
-        -webkit-transition: -webkit-transform 1s ease-in-out;
-        transition: -webkit-transform 1s ease-in-out;
-        -o-transition: transform 1s ease-in-out;
-        transition: transform 1s ease-in-out;
-        transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-    }
+.nav-link:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 2px ;
+    border-bottom: solid 3px #63c6d6e6;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    -o-transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
 
-    .dropdown-toggle::after {
-        border-top: 0px !important;     /* Prevents Bootstrap from overwriting the hover effects */
-    }
+.dropdown-toggle::after {
+    border-top: 0px !important;     /* Prevents Bootstrap from overwriting the hover effects */
+}
 
-    .nav-link:hover:after {   
-        -webkit-transform: scaleX(1);   
-            -ms-transform: scaleX(1);   
-                transform: scaleX(1);
-    }
+.nav-link:hover:after {   
+    -webkit-transform: scaleX(1);   
+        -ms-transform: scaleX(1);   
+            transform: scaleX(1);
+}
 
-    /* HOVER COLOR TRANSITION */
+/* / BOTTOM BORDER HOVER ANIMATION */
 
-    .navbar-light .navbar-nav .nav-link {
-        -webkit-transition: color 1s;
-        -o-transition: color 1s;
-        transition: color 1s;
-    }
+/* HOVER COLOR TRANSITION */
 
-    .navbar-light .navbar-nav .nav-link:hover {
-        color: #63c6d6e6;
-    }
+.navbar-light .navbar-nav .nav-link {
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+}
 
-    /* NAVBAR TRANSITION  */
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #63c6d6e6;
+}
 
-    /* The following code was based upon: "https://www.codeply.com/go/62Roy6RDOa" */
+/* / HOVER COLOR TRANSITION */
 
-    .navbar, .navbar-brand { 
-        -webkit-transition:padding 0.2s ease; 
-        -o-transition:padding 0.2s ease;        
-        transition:padding 0.2s ease;
-        
-        transition: font-size 0.2s linear;
-        -webkit-transition: font-size 0.2s linear;
-        -moz-transition: font-size 0.2s linear;
-        -o-transition: font-size 0.2s linear;
-    }
+/* NAVBAR TRANSITION  */
+
+/* The following code was based upon: "https://www.codeply.com/go/62Roy6RDOa" */
+
+.navbar, .navbar-brand { 
+    -webkit-transition:padding 0.2s ease; 
+    -o-transition:padding 0.2s ease;        
+    transition:padding 0.2s ease;
     
-    .affix {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-        -webkit-transition:padding 0.2s linear;  
-        -o-transition:padding 0.2s linear;         
-        transition:padding 0.2s linear;  
+    transition: font-size 0.2s linear;
+    -webkit-transition: font-size 0.2s linear;
+    -moz-transition: font-size 0.2s linear;
+    -o-transition: font-size 0.2s linear;
+}
 
-        font-size: 18px;
-        transition: font-size 0.2s linear;
-        -webkit-transition: font-size 0.2s linear;
-        -moz-transition: font-size 0.2s linear;
-        -o-transition: font-size 0.2s linear;
-    }
-    
-    section {
-        min-height:calc(100% - 70px);
-    }
+.affix {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    -webkit-transition:padding 0.2s linear;  
+    -o-transition:padding 0.2s linear;         
+    transition:padding 0.2s linear;  
 
-    /* NAVBAR BRAND */
+    font-size: 18px;
+    transition: font-size 0.2s linear;
+    -webkit-transition: font-size 0.2s linear;
+    -moz-transition: font-size 0.2s linear;
+    -o-transition: font-size 0.2s linear;
+}
 
+section {
+    min-height:calc(100% - 70px);
+}
+
+/* / NAVBAR TRANSITION  */
+
+/* NAVBAR BRAND */
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@media (max-width:375px) {
     .navbar-brand {
+        font-size: 15px;
+    }
+    
+    .navbar-brand img {
+        width: 100px;
+        height: 50px;
+    }
+}
+
+@media (max-width:320px) {
+    .navbar-brand {
+        font-size: 14px;
+    }
+    .navbar-brand img {
+        width: 80px;
+        height: 40px;
+    }
+}
+
+/* / NAVBAR BRAND */
+
+/* NAVBAR FULLSCREEN OVERLAY */
+
+/* The following code was based upon: "https://stackoverflow.com/questions/57429572/how-to-style-fullscreen-menu-under-default-bootstrap-toggler" */
+
+.navbar .navbar-toggler {
+    z-index: 5;
+}
+
+@media (max-width:991.98px) {
+    .navbar .navbar-collapse {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(250 250 250 / 0%)), to(rgb(9 9 9 / 97%))), url("../img/navmenu-bg.png");
+        background-image: -o-linear-gradient(rgb(250 250 250 / 0%), rgb(9 9 9 / 97%)), url("../img/navmenu_bg.png");
+        background-image: linear-gradient(rgb(250 250 250 / 0%), rgb(9 9 9 / 97%)), url("../img/navmenu_bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        -webkit-transition: 0.35s ease;
+        -o-transition: 0.35s ease;
+        transition: 0.35s ease;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        text-align: center !important;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .navbar .navbar-collapse.collapse {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        opacity: 0;
+        pointer-events: none
+    }
+
+    .navbar .navbar-collapse.collapsing[style*="height"] {
+        opacity: 1;
+        height: 100vh !important
+    }
+
+    .navbar .navbar-collapse.collapsing {
+        opacity: 0;
+        height: 100vh
+    }
+
+    .navbar .navbar-collapse.collapse.show {
+        opacity: 1;
+        pointer-events: auto
+    }
+
+    .navbar .navbar-collapse .navbar-nav {
+        margin-right: initial !important;
+        margin-top: auto;
+        margin-bottom: auto
+    }
+
+    .navbar-nav {
+        margin-left: initial !important; 
+    }
+
+    /* FULLSCREEN NAV-MENU STYLING */
+
+    .navbar-collapse ul {
+        background: -webkit-gradient(linear, left top, left bottom, from(rgb(0 0 0 / 0%)), to(rgb(51 51 51 / 32%)));
+        background: -o-linear-gradient(rgb(0 0 0 / 0%), rgb(51 51 51 / 32%));
+        background: linear-gradient(rgb(0 0 0 / 0%), rgb(51 51 51 / 32%));
+        padding: 10%;
+    }
+
+    .navbar-collapse .nav-link {
+        font-size: 28px;
+        letter-spacing: 3px;
+        font-weight: 700;
+        padding-bottom: 30px;
+        color: #fff !important;
+    }
+
+    .navbar-nav .dropdown-menu {
+        background: -webkit-gradient(linear, left top, left bottom, from(rgb(255 255 255 / 70%)), to(rgb(255 255 255 / 8%)));
+        background: -o-linear-gradient(rgb(255 255 255 / 70%), rgb(255 255 255 / 8%));
+        background: linear-gradient(rgb(255 255 255 / 70%), rgb(255 255 255 / 8%));
+
+        font-size: 24px;
         text-transform: uppercase;
         font-weight: 700;
+        letter-spacing: 2px;
     }
 
-    @media (max-width:375px) {
-        .navbar-brand {
-            font-size: 15px;
-        }
-        
-        .navbar-brand img {
-            width: 100px;
-            height: 50px;
-        }
+    .dropdown-item {
+        color: black !important;
+        padding-bottom: 10%;
+        text-align: center;
     }
 
-    @media (max-width:320px) {
-        .navbar-brand {
-            font-size: 14px;
-        }
-        .navbar-brand img {
-            width: 80px;
-            height: 40px;
-        }
+    /* Makes the dropmenu flush with the navlink, while maintaining a good amount of space between each navlink */
+    #experienceDropdownMenu {
+        padding-bottom: 0px;
     }
 
-    /* NAVBAR FULLSCREEN OVERLAY */
-
-    /* The following code was based upon: "https://stackoverflow.com/questions/57429572/how-to-style-fullscreen-menu-under-default-bootstrap-toggler" */
-
-    .navbar .navbar-toggler {
-        z-index: 5;
+    #projectsDropdownMenu {
+        padding-top: 38px;
+        padding-bottom: 0px;
     }
 
-    @media (max-width:991.98px) {
-        .navbar .navbar-collapse {
-            background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(250 250 250 / 0%)), to(rgb(9 9 9 / 97%))), url("../img/navmenu-bg.png");
-            background-image: -o-linear-gradient(rgb(250 250 250 / 0%), rgb(9 9 9 / 97%)), url("../img/navmenu_bg.png");
-            background-image: linear-gradient(rgb(250 250 250 / 0%), rgb(9 9 9 / 97%)), url("../img/navmenu_bg.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            -webkit-transition: 0.35s ease;
-            -o-transition: 0.35s ease;
-            transition: 0.35s ease;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column;
-            -ms-flex-line-pack: center;
-                align-content: center;
-            text-align: center !important;
-            overflow-y: scroll;
-            overflow-x: hidden;
-        }
-
-        .navbar .navbar-collapse.collapse {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            opacity: 0;
-            pointer-events: none
-        }
-
-        .navbar .navbar-collapse.collapsing[style*="height"] {
-            opacity: 1;
-            height: 100vh !important
-        }
-
-        .navbar .navbar-collapse.collapsing {
-            opacity: 0;
-            height: 100vh
-        }
-
-        .navbar .navbar-collapse.collapse.show {
-            opacity: 1;
-            pointer-events: auto
-        }
-
-        .navbar .navbar-collapse .navbar-nav {
-            margin-right: initial !important;
-            margin-top: auto;
-            margin-bottom: auto
-        }
-
-        .navbar-nav {
-            margin-left: initial !important; 
-        }
-
-        /* FULLSCREEN NAV-MENU STYLING */
-
-        .navbar-collapse ul {
-            background: -webkit-gradient(linear, left top, left bottom, from(rgb(0 0 0 / 0%)), to(rgb(51 51 51 / 32%)));
-            background: -o-linear-gradient(rgb(0 0 0 / 0%), rgb(51 51 51 / 32%));
-            background: linear-gradient(rgb(0 0 0 / 0%), rgb(51 51 51 / 32%));
-            padding: 10%;
-        }
-
-        .navbar-collapse .nav-link {
-            font-size: 28px;
-            letter-spacing: 3px;
-            font-weight: 700;
-            padding-bottom: 30px;
-            color: #fff !important;
-        }
-
-        .navbar-nav .dropdown-menu {
-            background: -webkit-gradient(linear, left top, left bottom, from(rgb(255 255 255 / 70%)), to(rgb(255 255 255 / 8%)));
-            background: -o-linear-gradient(rgb(255 255 255 / 70%), rgb(255 255 255 / 8%));
-            background: linear-gradient(rgb(255 255 255 / 70%), rgb(255 255 255 / 8%));
-
-            font-size: 24px;
-            text-transform: uppercase;
-            font-weight: 700;
-            letter-spacing: 2px;
-        }
-
-        .dropdown-item {
-            color: black !important;
-            padding-bottom: 10%;
-            text-align: center;
-        }
-
-        /* Makes dropmenu flush with the navlink, while maintaining a good amount of space between each navlink */
-        
-        #experienceDropdownMenu {
-            padding-bottom: 0px;
-        }
-
-        #projectsDropdownMenu {
-            padding-top: 38px;
-            padding-bottom: 0px;
-        }
-
-        #contactFooterNav {
-            padding-top: 38px;
-        }
+    #contactFooterNav {
+        padding-top: 38px;
     }
-    
+
+    /* / FULLSCREEN NAV-MENU STYLING */
+}
+
+/* / NAVBAR FULLSCREEN OVERLAY */
+
 /* HOMEPAGE */
 
 /* HERO IMAGE */
@@ -278,6 +290,7 @@ html {
     background: url("../img/hero_img.png") no-repeat center center fixed;
     background-size: cover;
 }
+/* / HERO IMAGE */
 
 /* JUMBOTRON */
 
@@ -298,18 +311,19 @@ html {
     font-size: 20px;
 }
 
-    /* The following code was based upon: "https://stackoverflow.com/questions/22196587/how-to-vertically-center-a-container-in-bootstrap" */
+/* / JUMBOTRON */
 
-    .vertical-center {
-        min-height: 95%;
-        min-height: 95vh;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-    }
+    /* The following code was based upon: "https://stackoverflow.com/questions/22196587/how-to-vertically-center-a-container-in-bootstrap" */
+.vertical-center {
+    min-height: 95%;
+    min-height: 95vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
 
 /* SCROLL DOWN BUTTON */
 
@@ -319,42 +333,47 @@ html {
     bottom: 30px;
 }
 
+/* BOUNCE ANIMATION */
+
     /* The following code was taken from: "https://codepen.io/bisaillonyannick/pen/pvZeGg"  */
 
-    .bounce {
-        -webkit-animation: bounce 2s infinite;
-        animation: bounce 2s infinite;
-        }
-        
-        @-webkit-keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
-            -webkit-transform: translateY(0);
-                    transform: translateY(0);
-        }
-        40% {
-            -webkit-transform: translateY(-30px);
-                    transform: translateY(-30px);
-        }
-        60% {
-            -webkit-transform: translateY(-15px);
-                    transform: translateY(-15px);
-        }
-        }
-        
-        @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
-            -webkit-transform: translateY(0);
-                    transform: translateY(0);
-        }
-        40% {
-            -webkit-transform: translateY(-30px);
-                    transform: translateY(-30px);
-        }
-        60% {
-            -webkit-transform: translateY(-15px);
-                    transform: translateY(-15px);
-        }
-        }
+.bounce {
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+    }
+    
+    @-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+                transform: translateY(-30px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+                transform: translateY(-15px);
+    }
+    }
+    
+    @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+                transform: translateY(-30px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+                transform: translateY(-15px);
+    }
+}
+
+/* / BOUNCE ANIMATION */
+/* / SCROLL DOWN BUTTON */
 
 /* PAGE CONFIGURATION */
 
@@ -419,21 +438,25 @@ html {
     background-color: #ff3467d4;
 }
 
-    /* SCALE ON HOVER */
+/* / PAGE CONFIGURATION */
 
-    /* The following code snippet was taken from the following source: "https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/" */
+/* SCALE ON HOVER */
 
-    .grow {
-        -webkit-transition: all .2s ease-in-out;
-        -o-transition: all .2s ease-in-out;
-        transition: all .2s ease-in-out;
-    }
+/* The following code snippet was taken from the following source: "https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/" */
 
-    .grow:hover {
-        -webkit-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-                transform: scale(1.1);
-    }
+.grow {
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+/* / SCALE ON HOVER */
 
 /* ABOUT PAGE */
 
@@ -474,6 +497,8 @@ html {
     color: #6f6f6f;
 }
 
+/* / ABOUT PAGE */
+
 /* EXPERIENCE PAGE */
 
 #experience .chapter-content h2 {
@@ -493,11 +518,13 @@ html {
     padding-top: 10%;
 }
 
+/* / EXPERIENCE PAGE */
+
 /* SKILLS PAGE */
 
 /* PROGRESS BAR */
 
-/* Colour gradient based from the following source: "https://css-tricks.com/css3-progress-bars/" */
+    /* Colour gradient based from the following source: "https://css-tricks.com/css3-progress-bars/" */
 
 .progress-bar {
     background-color: #63c6d6e6;
@@ -520,6 +547,7 @@ html {
     }
 }
 
+/* / PROGRESS BAR */
 
 #skills .chapter-content h4 {
     text-transform: uppercase;
@@ -532,12 +560,15 @@ html {
     border-top: 2px solid #4a4a4a4a;
 }
 
+/* PERSONAL STRENGTHS */
+
 #personalStrengths span {
     text-transform: uppercase;
     font-size: 18px;
 }
 
-/* The following code was based upon: "https://codepen.io/leocampos/pen/pPwwNR" */
+    /* The following code was based upon: "https://codepen.io/leocampos/pen/pPwwNR" */
+
 #personalStrengths span:hover { 
     cursor: pointer;
 	background: -webkit-gradient(linear, left top, right top, from(#63c6d6e6), to(#d678fd));
@@ -547,73 +578,75 @@ html {
 	-webkit-text-fill-color: transparent;
 }
 
+/* / PERSONAL STRENGTHS */
+/* / SKILLS PAGE */
+
+/* TIMELINE */
 
 /* The following code was based upon: "https://bootstrapious.com/p/timeline" */
-/* TIMELINE */
 
 .timeline {
     position: relative;
     padding-left: 2.5rem;
 }
+/* VERTICAL LINE */
 
-    /* VERTICAL LINE */
+.timeline:before {
+    content: ' ';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    top: -20px;             /* Centers the content cards with the vertical line */
+    left: 16px;
+    width: 4px;
+    height: 100%;
+    z-index: 400;
+    border-radius: 1rem;
+}
+.timeline-item {
+    margin: 20px 0;
+}
 
-    .timeline:before {
-        content: ' ';
-        background: #fff;
-        display: inline-block;
-        position: absolute;
-        top: -20px;             /* Centers the content cards with the vertical line */
-        left: 16px;
-        width: 4px;
-        height: 100%;
-        z-index: 400;
-        border-radius: 1rem;
-    }
+/* / VERTICAL LINE */
 
-    .timeline-item {
-        margin: 20px 0;
-    }
+/* ITEM ARROW */
+.timeline-arrow {
+    border-top: 0.5rem solid transparent;
+    border-right: 0.5rem solid #fff;
+    border-bottom: 0.5rem solid transparent;
+    display: block;
+    position: absolute;
+    left: 2rem;
+}
+/* / ITEM ARROW */
+/* CIRCLE MARKER */
+.timeline-item::before {
+    content: ' ';
+    background: #ddd;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    left: 11px;
+    width: 14px;
+    height: 14px;
+    z-index: 400;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+/* / CIRCLE MARKER */
+/* CONTENT CARD */
+.timeline-item .card {
+    position: relative;
+    top: -25px;
+}
+/* / CONTENT CARD */
 
-    /* ITEM ARROW */
-
-    .timeline-arrow {
-        border-top: 0.5rem solid transparent;
-        border-right: 0.5rem solid #fff;
-        border-bottom: 0.5rem solid transparent;
-        display: block;
-        position: absolute;
-        left: 2rem;
-    }
-
-    /* CIRCLE MARKER */
-
-    .timeline-item::before {
-        content: ' ';
-        background: #ddd;
-        display: inline-block;
-        position: absolute;
-        border-radius: 50%;
-        border: 3px solid #fff;
-        left: 11px;
-        width: 14px;
-        height: 14px;
-        z-index: 400;
-        -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    }
-
-    /* CONTENT CARD */
-
-    .timeline-item .card {
-        position: relative;
-        top: -25px;
-    }
+/* / TIMELINE */
 
 /* PROJECTS */
 
 /* PROJECT IMG SIZING */
-
 @media (max-width:768px) {
     .card-img-top .project-img {
         min-height: 300px;
@@ -641,6 +674,7 @@ html {
         min-width: 375px;
     }
 }
+/* / PROJECT IMG SIZING */
 
 /* PROJECT CARD */
 
@@ -653,6 +687,8 @@ html {
     margin: auto;
     padding: 0px;
 }
+
+/* / PROJECT CARD */
 
 /* WEB DEVELOPMENT PROJECT IMAGES */
 
@@ -675,6 +711,8 @@ html {
     background-size: contain;
 }
 
+/* / WEB DEVELOPMENT PROJECT IMAGES */
+
 /* ACADEMIC PROJECT IMAGES */
 
 #projectImg-KingLear {
@@ -696,6 +734,8 @@ html {
     background: url("../img/henryv_mockup.png") no-repeat center;
     background-size: contain;
 }
+
+/* / ACADEMIC PROJECT IMAGES */
 
 /* PROJECT OVERLAY */
 
@@ -787,7 +827,6 @@ html {
 }
 
 /* PROJECT OVERLAY MOBILE DEVICES */
-
 @media (max-width:991px) {
 
     .projectOverlay-content h3 {
@@ -817,8 +856,10 @@ html {
         visibility: visible;
     }
 }
+/* / PROJECT OVERLAY MOBILE DEVICES */
+/* / PROJECT OVERLAY */
 
-/* PAGE STYLING */
+/* PROJECT PAGE STYLING */
 
 #projects_AW {
     padding-bottom: 12rem;
@@ -858,10 +899,11 @@ html {
 }
 
 /* The following code based upon: "https://fontawesome.com/how-to-use/on-the-web/styling/stacking-icons" */
-
 .fa-stack { 
     font-size: 1.5rem; 
 }
+
+/* / PROJECT PAGE STYLING */
 
 /* PROJECT CONTENT (MOBILE DEVICES) */
 
@@ -902,6 +944,8 @@ html {
         left: calc(-30vw + 30%);
     }
 }
+
+/* / PROJECT CONTENT (MOBILE DEVICES) */
 
 /* CAROUSEL */
 
@@ -945,8 +989,9 @@ html {
 
 }
 
+/* / CAROUSEL */
 
-/* CONTACT FOOTER */
+/* CONTACT */
 
 @media (max-width:768px) {
     #contact-footer .jumbotron {
@@ -1002,6 +1047,8 @@ html {
     font-weight: 500;
 }
 
+/* / JUMBOTRON */
+
 /* FORM */
 
 #contact-footer form {
@@ -1019,24 +1066,32 @@ html {
     font-weight: 900;
 }
 
+/* / FORM */
+
+/* SCROLL TO TOP */
+
+.scrollUp a {
+    color: #17a2b8;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@media (max-width: 991px) {
     .scrollUp a {
-        color: #17a2b8;
-        display: block;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 700;
+        position: relative;
+        bottom: 24px;
     }
+}
 
-    @media (max-width: 991px) {
-        .scrollUp a {
-            position: relative;
-            bottom: 24px;
-        }
-    }
+.scrollUp a:hover {
+    text-decoration: none;
+}
 
-    .scrollUp a:hover {
-        text-decoration: none;
-    }
+/* / SCROLL TO TOP */
+
+/* / CONTACT */
 
 /* FOOTER */
 
@@ -1109,3 +1164,7 @@ footer .fa-stack {
 .CV_download:hover .downloadHover-text {
     visibility: visible;
 }
+
+/* / CV TOOLTIP */
+
+/* / FOOTER */
