@@ -615,6 +615,7 @@ section {
     left: 2rem;
 }
 /* / ITEM ARROW */
+
 /* CIRCLE MARKER */
 .timeline-item::before {
     content: ' ';
@@ -631,6 +632,7 @@ section {
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 /* / CIRCLE MARKER */
+
 /* CONTENT CARD */
 .timeline-item .card {
     position: relative;
@@ -643,33 +645,49 @@ section {
 /* PROJECTS */
 
 /* PROJECT IMG SIZING */
-@media (max-width:768px) {
-    .card-img-top .project-img {
-        min-height: 300px;
-        min-width: 300px;
+
+@media (min-width:992px) {
+    .project-img {
+        max-width: 375px;
+        max-height: 320px;
     }
 }
 
-@media (max-width:375px) {
-    .card-img-top .project-img {
-        min-height: 280px !important;
-        min-width: 280px !important;
+@media (max-width:991px) {
+    .project-img {
+        max-width: 320px;
+        max-height: 275px;
     }
 }
 
-@media (max-width:1110px) {
-    .card-img-top .project-img {
-        min-height: 320px;
-        min-width: 320px;
+@media (max-width:776px) {
+    .project-img {
+        max-width: 375px;
+        max-height: 320px;
     }
 }
 
-@media (min-width:1110px) {
-    .card-img-top .project-img {
-        min-height: 375px;
-        min-width: 375px;
+@media (max-width:446px) {
+    .project-img {
+        max-width: 320px;
+        max-height: 275px;
     }
 }
+
+@media (max-width:376px) {
+    .project-img {
+        max-width: 300px;
+        max-height: 255px;
+    }
+}
+
+@media (max-width:321px) {
+    .project-img {
+        max-width: 260px;
+        max-height: 205px;
+    }
+}
+
 /* / PROJECT IMG SIZING */
 
 /* PROJECT CARD */
@@ -688,7 +706,7 @@ section {
 
 /* WEB DEVELOPMENT PROJECT IMAGES */
 
-#projectImg-LoveRunning {
+/* #projectImg-LoveRunning {
     background: url("../img/love_running.png") no-repeat center;
     background-size: contain;
 }
@@ -705,13 +723,13 @@ section {
 #projectImg-NextProject {
     background: url("../img/future_project_mockup.png") no-repeat center;
     background-size: contain;
-}
+} */
 
 /* / WEB DEVELOPMENT PROJECT IMAGES */
 
 /* ACADEMIC PROJECT IMAGES */
 
-#projectImg-KingLear {
+/* #projectImg-KingLear {
     background: url("../img/king_lear_mockup.png") no-repeat center;
     background-size: contain;
 }
@@ -729,7 +747,7 @@ section {
 #projectImg-HenryV {
     background: url("../img/henryv_mockup.png") no-repeat center;
     background-size: contain;
-}
+} */
 
 /* / ACADEMIC PROJECT IMAGES */
 
@@ -802,13 +820,13 @@ section {
         text-transform: uppercase;
     }
 
-    .projectOverlay-content h4 {
-        font-size: 16px;
+    .projectOverlay-content h3 {
+        font-size: 22px;
     }
 
     .projectOverlay-content p {
         color: #fff;
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     .projectOverlay-content .my-4 {
