@@ -461,17 +461,13 @@ section {
 /* ABOUT PAGE */
 
 #profile-img {
-    background: url("../img/profile.png") no-repeat center;
-    background-size: cover;
-    
-    /* Used the following code to fix disproportionate img sizes: "https://www.sitepoint.com/community/t/how-to-make-an-image-fit-in-a-responsive-div/259263/4" */
     max-width: 250px;
+    max-height: 250px;
     min-width: 250px;
     min-height: 250px;
-    max-height: 250px;
-    width: 100%;
-    height: auto;
-
+    margin-left: auto; 
+    margin-right: auto;
+    width: 50%;
     border-radius: 50%;
     border: 3px solid #444; 
 }
@@ -698,7 +694,7 @@ section {
 }
 
 #projectImg-WhiskeyDrop {
-    background: url("../img/Whiskey_drop.png") no-repeat center;
+    background: url("../img/whiskey_drop_mockup.png") no-repeat center;
     background-size: contain;
 }
 #projectImg-SkyrimModding {
