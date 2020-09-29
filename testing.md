@@ -197,7 +197,7 @@ There was also the concern of how this would work, if at all, once the website w
 
     - Upon entering the site users are greeted with a clean, user friendly navigation bar at the top of the screen, which they can use to go to a page of their choice. Underneath is a hero-image and jumbotron, with the text 'Hi, I'm Ellen. I'm a University Graduate & Freelancer in Software Development' and a button that says 'Learn More' bellow.
 
-        - ![Homepage jumbotron](assets/img/userstory_purpose_jumbotron.png)
+    ![Homepage jumbotron](assets/img/userstory_purpose_jumbotron.png)
 
     - The main purpose of the site is made clear with the hero image and jumbotron - it tells the user that this site is about, me, with 'Hi, I'm Ellen [...]' and that the site's purpose is to serve as an online porfolio to advertise myself.
 
@@ -205,25 +205,25 @@ There was also the concern of how this would work, if at all, once the website w
 
     - The navigation bar is clear, readable and easy to use. It is fixed which means the user can easily navigate to different parts of the site's page quickly and effortlessly, no matter where they are on the page at that given moment.
 
-        - | Desktop | Mobile |
-          | ------- | ------ |
-          | ![Navbar Desktop](assets/img/userstory_navbar.png) | ![Navbar Mobile](assets/img/userstory_navbar_mobile.png)
+    | Desktop | Mobile |
+    | ------- | ------ |
+    | ![Navbar Desktop](assets/img/userstory_navbar.png) | ![Navbar Mobile](assets/img/userstory_navbar_mobile.png)
     
     - The fullscreen overlay menu for the navigation bar provides greater and easier usability for users on smaller touch screen devices. 
 
-        - ![Navbar fullscreen overlay menu](assets/img/userstory_navbar_fullscreenmenu.png)
+    ![Navbar fullscreen overlay menu](assets/img/userstory_navbar_fullscreenmenu.png)
 
 3. I do not want to decode the site's features to be able to use them - no features should be hard to find or hard to perceive as a feature.
 
     - Every button that is clickable is an imperative, which tells the user that it is clickable and that they should interact with it. 
 
-        - | Learn More Button | Hire Me Button | Read More Button | Send Button | 
-          | ----------------- | -------------- | ---------------- | ----------- | ------------- |
-          | ![Learn more button](assets/img/userstory_buttons_learnmore.png) | ![Hire me button](assets/img/userstory_buttons_hireme.png) | ![Hire me button](assets/img/userstory_buttons_readmore.png) | ![Hire me button](assets/img/userstory_buttons_send.png) | 
+    | Learn More Button | Hire Me Button | Read More Button | Send Button | 
+    | ----------------- | -------------- | ---------------- | ----------- | 
+    | ![Learn more button](assets/img/userstory_buttons_learnmore.png) | ![Hire me button](assets/img/userstory_buttons_hireme.png) | ![Read More button](assets/img/userstory_buttons_readmore.png) | ![Send button](assets/img/userstory_buttons_send.png) | 
 
     - No information is hidden, with exception to the project image overlay, which is visible when the mouse hovers over it. Due to the image size, it is unlikely that the user would overlook this feature, particularly as it follows conventions seen on other sites. Nevertheless, a small indication, like a 'hover over me' text, to encourage the user to interact with the image could be added to further improve user experience. 
 
-        - ![Project overlay](assets/img/userstory_projectoverlay.png)
+    ![Projects page - project images](assets/img/userstory_projects.gif)
 
 4. I want to easily find information about the potential candidate I may hire.
 
@@ -241,31 +241,31 @@ There was also the concern of how this would work, if at all, once the website w
 
     - Social media links are provided in the site's footer. There are also references available in the downloadable CV file. 
 
-        - ![Social media links](assets/img/userstory_socialmedia.png)
+    ![Social media links](assets/img/userstory_socialmedia.png)
 
 7. Most significantly, as a first-time visitor, I want to *like* the site so that I will revisit it again.
 
     - The site encourages user interactivity and reguarly responds to the user's input. 
 
-        - ![Navbar hover effects](assets/img/userstory_navbar.gif)
+    ![Navbar hover effects](assets/img/userstory_navbar.gif)
     
     - The scroll-down and scroll-up arrow buttons give a visually stimulating and effective way for users to navigate through the site, as a navigational feature other than the navbar.
 
-        - | Scroll Down | Scroll to Top |
-          | ------- | ------ |
-          | ![Scroll Down Gif](assets/img/userstory_scrolldown.gif) | ![Scroll to Top Gif](assets/img/userstory_scrollup.gif) 
+    | Scroll Down | Scroll to Top |
+    | ------- | ------ |
+    | ![Scroll Down Gif](assets/img/userstory_scrolldown.gif) | ![Scroll to Top Gif](assets/img/userstory_scrollup.gif) 
 
     - Buttons encourage users to enage with the site.
 
-        - | Learn More Button | Hire Me Button | Read More Button | Send Button | Project Links |
-          | ----------------- | -------------- | ---------------- | ----------- | ------------- |
-          | ![Learn more button](assets/img/userstory_buttons_learnmore.png) | ![Hire me button](assets/img/userstory_buttons_hireme.png) | ![Hire me button](assets/img/userstory_buttons_readmore.png) | ![Hire me button](assets/img/userstory_buttons_send.png) | ![Hire me button](assets/img/userstory_buttons_projectlinks.png) |
+    | Learn More Button | Hire Me Button | Read More Button | Send Button | Project Links |
+    | ----------------- | -------------- | ---------------- | ----------- | ------------- |
+    | ![Learn more button](assets/img/userstory_buttons_learnmore.png) | ![Hire me button](assets/img/userstory_buttons_hireme.png) | ![Read more button](assets/img/userstory_buttons_readmore.png) | ![Send button](assets/img/userstory_buttons_send.png) | ![Project links button](assets/img/userstory_buttons_projectlinks.png) |
 
     - The implementation of a contact form, alongside contact links, makes the user experience more personal and intuitive. 
 
     - The image carousel is visually stimulating and unqiue to this genre of website, which may make the site more memorable and encourage users to visit again.
 
-        - ![Image carousel](assets/img/userstory_carousel.gif)
+    ![Image carousel](assets/img/userstory_carousel.gif)
 
 
 ### Returning Visitor Goals 
@@ -275,8 +275,6 @@ There was also the concern of how this would work, if at all, once the website w
     - Users can navigate to the Projects page to see both web development projects and academic work. 
 
     - The projects are emphaised visually, with the large, eye-catching image to grab the users attention and encourage them to learn more.
-
-        - ![Projects page - project images](assets/img/userstory_projects.gif)
 
 2. Additionally, I want to see their qualifications, relevant work experience and what skills they have.
 
@@ -294,9 +292,9 @@ There was also the concern of how this would work, if at all, once the website w
 
     - When on mobile devices, a text reading 'Download my CV' will be displayed underneath the download icon in place of the hover tooltip to make the feature easy for users to understand and use.
 
-        - | CV in PDF Format - Desktop | CV in PDF Format - Mobile |
-          | ------- | ------ |
-          | ![CV Hover Tooltip](assets/img/userstory_hovertooltip.png) | ![CV on mobile devices](assets/img/userstory_cv_mobile.png) 
+    | CV in PDF Format - Desktop | CV in PDF Format - Mobile |
+    | ------- | ------ |
+    | ![CV Hover Tooltip](assets/img/userstory_hovertooltip.png) | ![CV on mobile devices](assets/img/userstory_cv_mobile.png) 
 
 
 
