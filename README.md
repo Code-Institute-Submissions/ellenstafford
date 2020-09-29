@@ -147,7 +147,7 @@ The four main colours I have used on the site are cyan blue, white, a light pink
 
 #### Colour Scheme - Application
 
-![Colour Palette](assets/img/color_palette.png)
+![Colour Palette](assets/img/mycolor_palette.png)
 
 - #FFF White:
   - Navbar background colour
@@ -482,19 +482,19 @@ The website was developed by using [Visual Studio Code](https://code.visualstudi
 ### GitHub Pages 
 
 1. Open **GitHub** in your browser and **sign in** to your GithHub account.
-2. Locate the project's GitHub **repository** - most easily found [here](assets/img/repo_location.png)
-3. At the top of the project's repository (not the top of the screen) select the **'Setting'** button from the menu - as seen [here](assets/img/settings_location.png)
+2. Locate the project's GitHub **repository** - most easily found [here](assets/img/find_repo.png)
+3. At the top of the project's repository (not the top of the screen) select the **'Setting'** button from the menu - as seen [here](assets/img/repo_settings.png)
 4. On the Settings, scroll down the default page until you locate the **'GitHub Pages'** section (near the bottom of the page). 
-5. Under **'Source'**, click the **dropdown menu** called 'None' and in **'select branch' choose 'master'** - as seen [here](assets/img/github_page_location.png)
-  - When selected you should see [this](assets/img/source_masterbranch.png)
+5. Under **'Source'**, click the **dropdown menu** called 'None' and in **'select branch' choose 'master'** - as seen [here](assets/img/github_pages_location.png)
+  - When selected you should see [this](assets/img/githubpages_source_masterbranch.png)
 6. Click **Save** to confirm your selection. The page will automatically refresh.
 7. Scroll back down to 'GitHub Pages' and you will see a link to your deployed site.
-  - It will now look something like [this](assets/img/deployed.png)
+  - It will now look something like [this](assets/img/github_deployed.png)
 
 ### Make a Local Clone
 
 1. **Sign in** to your **GitHub** and locate the project's GitHub **repository**.
-2. Under the repository name, click the **green 'Clone' button** - for reference see [here](assets/img/github_clonebutton.png)
+2. Under the repository name, click the **green 'Clone' button** - for reference see [here](assets/img/repo_clonebutton.png)
 3. To clone the repository using **HTTPS**, make sure the **HTTPS** is clicked (it will be underlined in orange) and **copy the link** provided.
 4. Open **Git Bash**
 5. Change your current working directory to the location where you want the cloned directory to be.
