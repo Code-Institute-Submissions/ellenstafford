@@ -313,7 +313,7 @@ section {
 
 /* / JUMBOTRON */
 
-    /* The following code was based upon: "https://stackoverflow.com/questions/22196587/how-to-vertically-center-a-container-in-bootstrap" */
+/* The following code was based upon: "https://stackoverflow.com/questions/22196587/how-to-vertically-center-a-container-in-bootstrap" */
 .vertical-center {
     min-height: 95%;
     min-height: 95vh;
@@ -335,14 +335,14 @@ section {
 
 /* BOUNCE ANIMATION */
 
-    /* The following code was taken from: "https://codepen.io/bisaillonyannick/pen/pvZeGg"  */
+/* The following code was taken from: "https://codepen.io/bisaillonyannick/pen/pvZeGg"  */
 
 .bounce {
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
     }
     
-    @-webkit-keyframes bounce {
+@-webkit-keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         -webkit-transform: translateY(0);
                 transform: translateY(0);
@@ -355,9 +355,9 @@ section {
         -webkit-transform: translateY(-15px);
                 transform: translateY(-15px);
     }
-    }
+}
     
-    @keyframes bounce {
+@keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         -webkit-transform: translateY(0);
                 transform: translateY(0);
@@ -373,6 +373,7 @@ section {
 }
 
 /* / BOUNCE ANIMATION */
+
 /* / SCROLL DOWN BUTTON */
 
 /* PAGE CONFIGURATION */
@@ -520,7 +521,7 @@ section {
 
 /* PROGRESS BAR */
 
-    /* Colour gradient based from the following source: "https://css-tricks.com/css3-progress-bars/" */
+/* Colour gradient based from the following source: "https://css-tricks.com/css3-progress-bars/" */
 
 .progress-bar {
     background-color: #63c6d6e6;
@@ -563,7 +564,7 @@ section {
     font-size: 18px;
 }
 
-    /* The following code was based upon: "https://codepen.io/leocampos/pen/pPwwNR" */
+/* The following code was based upon: "https://codepen.io/leocampos/pen/pPwwNR" */
 
 #personalStrengths span:hover { 
     cursor: pointer;
@@ -575,6 +576,7 @@ section {
 }
 
 /* / PERSONAL STRENGTHS */
+
 /* / SKILLS PAGE */
 
 /* TIMELINE */
@@ -704,55 +706,6 @@ section {
 
 /* / PROJECT CARD */
 
-/* WEB DEVELOPMENT PROJECT IMAGES */
-
-/* #projectImg-LoveRunning {
-    background: url("../img/love_running.png") no-repeat center;
-    background-size: contain;
-}
-
-#projectImg-WhiskeyDrop {
-    background: url("../img/whiskey_drop_mockup.png") no-repeat center;
-    background-size: contain;
-}
-#projectImg-SkyrimModding {
-    background: url("../img/skyrim_site_mockup.png") no-repeat center;
-    background-size: contain;
-}
-
-#projectImg-NextProject {
-    background: url("../img/future_project_mockup.png") no-repeat center;
-    background-size: contain;
-} */
-
-/* / WEB DEVELOPMENT PROJECT IMAGES */
-
-/* ACADEMIC PROJECT IMAGES */
-
-/* #projectImg-KingLear {
-    background: url("../img/king_lear_mockup.png") no-repeat center;
-    background-size: contain;
-}
-
-#projectImg-Translation {
-    background: url("../img/translation_mockup.png") no-repeat center;
-    background-size: contain;
-}
-
-#projectImg-Hamlet {
-    background: url("../img/hamlet_mockup.png") no-repeat center;
-    background-size: contain;
-}
-
-#projectImg-HenryV {
-    background: url("../img/henryv_mockup.png") no-repeat center;
-    background-size: contain;
-} */
-
-/* / ACADEMIC PROJECT IMAGES */
-
-/* PROJECT OVERLAY */
-
 /* The following code was based upon: "https://codepen.io/ArnaudBalland/pen/vGZKLr" */
 
 @media (min-width:992px) {
@@ -841,6 +794,7 @@ section {
 }
 
 /* PROJECT OVERLAY MOBILE DEVICES */
+
 @media (max-width:991px) {
 
     .projectOverlay-content h3 {
@@ -851,7 +805,7 @@ section {
 
     .projectOverlay-content p {
         font-size: 0.8em;
-        clear: both;    /* So that the text doesn't go to the right of the hr */
+        clear: both;        /* So that the text doesn't go to the right of the hr */
     }
 
     .projectOverlay-content .my-4 {
@@ -871,6 +825,7 @@ section {
     }
 }
 /* / PROJECT OVERLAY MOBILE DEVICES */
+
 /* / PROJECT OVERLAY */
 
 /* PROJECT PAGE STYLING */
