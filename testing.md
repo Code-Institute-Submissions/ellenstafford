@@ -56,6 +56,8 @@
 
     - [Carousel Page Jump Bug](#carousel-page-jump-bug)
 
+    - [Carousel Horizontal Scrollbar Bug](#carousel-horizontal-scrollbar-bug)
+
     - [iOS Safari](#ios-safari)
 
     - [Tablet Devices](#tablet-devices)
@@ -195,17 +197,33 @@ There was also the concern of how this would work, if at all, once the website w
 
     - Upon entering the site users are greeted with a clean, user friendly navigation bar at the top of the screen, which they can use to go to a page of their choice. Underneath is a hero-image and jumbotron, with the text 'Hi, I'm Ellen. I'm a University Graduate & Freelancer in Software Development' and a button that says 'Learn More' bellow.
 
+        - ![Homepage jumbotron](assets/img/userstory_purpose_jumbotron.png)
+
     - The main purpose of the site is made clear with the hero image and jumbotron - it tells the user that this site is about, me, with 'Hi, I'm Ellen [...]' and that the site's purpose is to serve as an online porfolio to advertise myself.
 
-2. I want to easily navigate through the site's content.
+2. I want to easily navigate through the site's content. 
 
-    - The navigation bar is clear, readable and easy to use. It is fixed which means the user can easily navigate to different parts of the site's page quickly and effortlessly, no matter where they are on the page at that given moment. 
+    - The navigation bar is clear, readable and easy to use. It is fixed which means the user can easily navigate to different parts of the site's page quickly and effortlessly, no matter where they are on the page at that given moment.
+
+        - | Desktop | Mobile |
+          | ------- | ------ |
+          | ![Navbar Desktop](assets/img/userstory_navbar.png) | ![Navbar Mobile](assets/img/userstory_navbar_mobile.png)
+    
+    - The fullscreen overlay menu for the navigation bar provides greater and easier usability for users on smaller touch screen devices. 
+
+        - ![Navbar fullscreen overlay menu](assets/img/userstory_navbar_fullscreenmenu.png)
 
 3. I do not want to decode the site's features to be able to use them - no features should be hard to find or hard to perceive as a feature.
-    
+
     - Every button that is clickable is an imperative, which tells the user that it is clickable and that they should interact with it. 
 
+        - | Learn More Button | Hire Me Button | Read More Button | Send Button | 
+          | ----------------- | -------------- | ---------------- | ----------- | ------------- |
+          | ![Learn more button](assets/img/userstory_buttons_learnmore.png) | ![Hire me button](assets/img/userstory_buttons_hireme.png) | ![Hire me button](assets/img/userstory_buttons_readmore.png) | ![Hire me button](assets/img/userstory_buttons_send.png) | 
+
     - No information is hidden, with exception to the project image overlay, which is visible when the mouse hovers over it. Due to the image size, it is unlikely that the user would overlook this feature, particularly as it follows conventions seen on other sites. Nevertheless, a small indication, like a 'hover over me' text, to encourage the user to interact with the image could be added to further improve user experience. 
+
+        - ![Project overlay](assets/img/userstory_projectoverlay.png)
 
 4. I want to easily find information about the potential candidate I may hire.
 
@@ -223,17 +241,31 @@ There was also the concern of how this would work, if at all, once the website w
 
     - Social media links are provided in the site's footer. There are also references available in the downloadable CV file. 
 
+        - ![Social media links](assets/img/userstory_socialmedia.png)
+
 7. Most significantly, as a first-time visitor, I want to *like* the site so that I will revisit it again.
 
     - The site encourages user interactivity and reguarly responds to the user's input. 
+
+        - ![Navbar hover effects](assets/img/userstory_navbar.gif)
     
-    - The scroll-down and scroll-up arrow buttons give a visually stimulating and effective way for users to navigate through the site, as a navigational feature other than the navbar. 
+    - The scroll-down and scroll-up arrow buttons give a visually stimulating and effective way for users to navigate through the site, as a navigational feature other than the navbar.
+
+        - | Scroll Down | Scroll to Top |
+          | ------- | ------ |
+          | ![Scroll Down Gif](assets/img/userstory_scrolldown.gif) | ![Scroll to Top Gif](assets/img/userstory_scrollup.gif) 
 
     - Buttons encourage users to enage with the site.
+
+        - | Learn More Button | Hire Me Button | Read More Button | Send Button | Project Links |
+          | ----------------- | -------------- | ---------------- | ----------- | ------------- |
+          | ![Learn more button](assets/img/userstory_buttons_learnmore.png) | ![Hire me button](assets/img/userstory_buttons_hireme.png) | ![Hire me button](assets/img/userstory_buttons_readmore.png) | ![Hire me button](assets/img/userstory_buttons_send.png) | ![Hire me button](assets/img/userstory_buttons_projectlinks.png) |
 
     - The implementation of a contact form, alongside contact links, makes the user experience more personal and intuitive. 
 
     - The image carousel is visually stimulating and unqiue to this genre of website, which may make the site more memorable and encourage users to visit again.
+
+        - ![Image carousel](assets/img/userstory_carousel.gif)
 
 
 ### Returning Visitor Goals 
@@ -244,6 +276,8 @@ There was also the concern of how this would work, if at all, once the website w
 
     - The projects are emphaised visually, with the large, eye-catching image to grab the users attention and encourage them to learn more.
 
+        - ![Projects page - project images](assets/img/userstory_projects.gif)
+
 2. Additionally, I want to see their qualifications, relevant work experience and what skills they have.
 
     - Users can navigate to the Skills page and the Experience page to see my qualifications and skillsets. Both are represented visually - with progress bars and a timeline. This makes it quicker for users to take in all the information and offers the information to them in an intuitive way that diminishes the risk of cognitive overload.
@@ -251,6 +285,7 @@ There was also the concern of how this would work, if at all, once the website w
 3. I want to be able to easily contact the candidate at any point throughout my navigation of the site so that they can answer any question I may have.
 
     - Users can navigate to the contact footer by either using the navigation bar or clicking the 'Hire Me' button on the about page. 
+
     - The fixed navbar fulfills this goal by allowing the users to go to the contact section quickly and easily, regardless of where they are in the site.
 
 4. As a returning visitor, I may want to download a CV in PDF format and see references to validate the candidate’s claims.
@@ -258,6 +293,10 @@ There was also the concern of how this would work, if at all, once the website w
     - A download icon for the downloadable CV can be found in the footer with the social media links. A hover tooltip will display when the user hovers over the icon with their mouse on desktop. This tells the users exactly what it is that they will download. 
 
     - When on mobile devices, a text reading 'Download my CV' will be displayed underneath the download icon in place of the hover tooltip to make the feature easy for users to understand and use.
+
+        - | CV in PDF Format - Desktop | CV in PDF Format - Mobile |
+          | ------- | ------ |
+          | ![CV Hover Tooltip](assets/img/userstory_hovertooltip.png) | ![CV on mobile devices](assets/img/userstory_cv_mobile.png) 
 
 
 
@@ -575,13 +614,74 @@ Steps to fix the code:
 
 ### Carousel Page Jump Bug
 
-When transitioning to the **Skyrim carousel image** it causes the whole webpage to jump.
+Transitioning to the **Skyrim carousel image** caused the whole webpage to jump.
 
-- Likely caused by the image's difference in height.
-    - However, changing the image size with online tools like [PicResize](https://picresize.com/) doesn't fix the page jumping.
-    - Might have to change the image completely to something with dimension sizes that are similar to the other carousel images.
+The bug wasn't fixed completely but was drastically minimised.
 
+- Each carousel item has top and bottom padding added to it via inline css. 
+    
+    - Not every carousel image is the same height, but to ensure minimal page jumping each carousel image must have a total height of 250px. Therefore, padding was added to each image so that its total height was the sum of 250px.
 
+    - To find the correct padding for each carousel item I made the following calculation: `250px - *height of image* / 2 = value for padding top and padding bottom`
+
+    - Bellow is sample of my HTML code to further illustrate this method:
+
+    ```
+    <div class="carousel-item">
+        <img src="assets/img/dracula.png" alt="Seventh slide: Bram Stoker's Dracula logo" class="d-block"
+        style="padding-top: 50px; padding-bottom: 50px;">
+        <div class="carousel-caption">
+            <h3>Dracula</h3>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="assets/img/great_gatsby.png" alt="Eighth slide: The Great Gatsby logo (text)" class="d-block"
+        style="padding-top: 52px; padding-bottom: 52px;">
+        <div class="carousel-caption">
+            <h3>The Great Gatsby</h3>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="assets/img/jane_eyre.png" alt="Ninth slide: Jayne Eyre custom logo" class="d-block"
+        style="padding-top: 38px; padding-bottom: 38px;">
+        <div class="carousel-caption">
+            <h3>Jane Eyre</h3>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="assets/img/red_dead_redemption.png" alt="Tenth slide: Red Dead Redemption game logo" class="d-block"
+        style="padding-top: 72px; padding-bottom: 72px;">
+        <div class="carousel-caption">
+            <h3>Red Dead Redemption</h3>
+        </div>
+    </div>
+    ```
+- The problem was that the padding for the Skyrim icon was too big, causing the whole webpage to jump. 
+
+    - Changing the padding from 25px for the top and bottom padding to 14px helped minimise the problem. 
+
+-----
+
+### Carousel Horizontal Scrollbar Bug
+
+When transitioning to the next or previous slide a visual bug occured, where the horizontal scrollbar flashes at the bottom of the screen, as seen here:
+
+| Before Fix | After Fix |
+| ---------- | --------- |
+| ![Carousel horizontal scrollbar visual bug screen recording](assets/img/carousel_scrollbar_bug.gif) | ![Carousel fixed screen recording](assets/img/carousel_scrollbar_fixed.gif) |
+
+- The problem was caused by the following line of CSS code:
+
+    ```
+    .carousel-inner {
+        overflow: visible;
+    }
+    ```
+    - Removing this line of code completely **fixed** the issue.
+
+    - Changing the code to: `overflow: hidden;` also fixed the issue, but it didn't seem to do anything else beyond that.
+       
+        - Removing the code was the most efficient solution.
 
 -----
 
