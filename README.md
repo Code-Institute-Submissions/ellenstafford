@@ -349,6 +349,7 @@ Each wireframe can be viewed via the links below:
   - This is an intuitive, fun way for user's to learn more about me as a person - offering more than my qualifications, experience and skillset.
   - It allows users to see my likes and interests, which will help formulate their overall opinion of me. 
   - The carousel will transition through its images automatically, but arrow keys are also there to give users the control to navigate through the carousel themselves.
+  - I decided to hide the carousel when on mobile devices, as it may have easily cluttered the screen on smaller mobile devices (causing cognitive overload) and could have negatively impacted the user's experience. 
 
 - Scroll to Top
   - Gives users an easy way of returning to the top of the page.
