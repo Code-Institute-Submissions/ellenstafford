@@ -199,7 +199,17 @@ Each page is split into half - depending on the screen size of your device this 
 Furthermore, the layout provides a distinct method of distinguishing titles from their content. This has been referred to in commit messages and syntax as the 'page chapters' and 'page content'.
 
 
+-----
+
 ### Wireframes
+
+All my wireframes were prepared in [Balsamiq](https://balsamiq.com/). Balsamiq allowed me to visualise the site's aesthetic before any of the code was created and helped with the construction of the surface plane. 
+
+Each page has a wireframe for both desktop and mobile devices. I did not include a tablet wireframe in the design phase because I wanted the site to look nearly identical on tablet and desktop devices. Particularly as many laptops now can also function as a touchscreen tablet, I thought it was important that there were no stark differences between desktop and tablet as this may have compromised good UX design. 
+
+The only difference between tablet and desktop is the collapsible navbar with the hamburger icon. However, as this alteration is represented in the mobile wireframe, I deemed it unnessary to add a tablet wireframe *just* to convey this feature alone.
+
+Each wireframe can be viewed via the links below:
 
 - [Home](assets/wireframes/homepage.png)
 - [About Me](assets/wireframes/about-me.png)
@@ -510,7 +520,7 @@ When sharing the project with friends and family members, they provided me with 
   - Zamar is an online image conversion tool. It was used to convert images from JPEG > PNG, from PNG > WEBP and vice versa.
 
 - [Ezgif.com](https://ezgif.com/webp-to-png)
-  - Ezgif is an online gif editior and image editor. It was used to convert webP back to PNG format.
+  - Ezgif is an online gif editior and image editor. It was used to convert webP back to PNG format and resize gif images.
 
 -----
 
