@@ -41,6 +41,8 @@ This website is an online porfolio, or resume, designed to showcase my skills an
 
   - [Feature Feedback](#feature-feedback)
 
+- [Accessibility](#accessibility)
+
 - [Technologies Used](#technologies-used)
 
   - [Languages](#languages)
@@ -366,9 +368,10 @@ Furthermore, the layout provides a distinct method of distinguishing titles from
 - A blog page.
 - Update social media to direct to my own social media accounts.
 - A toggle dark mode feature which changes the UI colour to a darker colour palette - for users who prefer darker UI.
-- A confirmation modal for the contact form.
 - A 'hover over me' tooltip for the project images.
 - More images to hero image on the homepage (like a carousel).
+- Add functionaility to the contact form with PHP script.
+- A confirmation modal for the contact form.
 
 
 
@@ -386,6 +389,31 @@ When sharing the project with friends and family members, they provided me with 
 
 ------
 
+## Accessibility 
+
+- All image tags have been given meaningful alt attributes in order to conform to accessibility guidlines. 
+
+- Originally, the profile image in the About Me page and the project images in the Projects page were loaded as background images via CSS.
+  
+  - These images were changed to HTML image tags by executing the following steps:
+
+  - Profile image:
+
+    1. Removed the background-image property from CSS
+    2. Added the image tag inside the div
+    3. Assigned the image tag an ID attribute so that CSS could properly style it
+
+  - Project images:
+
+    1. Removed the background-image property from CSS for each project image
+    2. Removed the `projectIMG-*projectName*` ID attribute from the div in HTML
+    3. Created an image tag inside that same div and imported the image with `src`
+    4. Moved the `project-img` class from the div to the image tag
+    5. Assigned the Bootrstrap class `text-center` to the div
+    6. Altered the media queries in CSS to fit the new images (loading from the image tag rather than the background-image property effected the image size)
+    7. Reduced the font size of the project overlay content to fit the new dimensions set by the media queries
+
+-----
 
 ## Technologies Used
 
