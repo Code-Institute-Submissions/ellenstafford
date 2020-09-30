@@ -46,6 +46,8 @@
 
     - [Mobile Devices](#mobile-devices)
 
+- [Peer Review](#peer-review)
+
 - [Known Bugs](#known-bugs)
 
     - [Navigation Bar Fullscreen Overlay](#navigation-bar-fullscreen-overlay)
@@ -430,7 +432,7 @@ There was also the concern of how this would work, if at all, once the website w
 |  2  | Test `required boolean attribute` functionality | Click the `send` button without inputting data | A notification will show by the first empty `required text field` telling the user to `input data`. The `send` function will be blocked until all `requried text fields` are filled out | Displays a notification by the first empty `required text field` (in this case, `first name`) and tells the user to `input data`. The `send` button will not function whilst the `required text fields` are empty | Pass |
 |  3  | Test `requried boolean attribute` functionality with **some** `text fields` filled in | On the `contact form` fill **one or more**, but not all, (maximum of 3) `requried text fields` and click `send` | A notification will show on the first empty `required text field` telling the user to `input data`. The `send` function will be blocked until all `requried text fields` are filled out | Displays a notification by the first empty `required text field` and tells the user to `input data`. The `send` button will not function whilst the `required text fields` are empty | Pass |
 |  4  | Test `email input type` | Click on the `email input field` and input data that **is not** an email (e.g. a 'name' or 'hi') | A notification will show by the `email input field` telling the user to `include a '@' in the email address`. The `send` button will not function until this is resolved | Shows a notification by the `email input field` telling the user to `include a '@' in the email address`. The `send` button is blocked | Pass |
-|  5  | `Send` completed `contact form` | Fill in **at least all** of the  `required text fields` and click `send` | Will `send` the inputted data and `refresh` the `contact form` | Refreshes the page, refreshing the `contact form`, which imitates that the form has been sent | Pass | For now, the form is static but in the future I would like to add further functionality to it. See the [Features Left To Implement](README.md#features-left-to-implement) section [here](README.md#contents) for more details |
+|  5  | `Send` completed `contact form` | Fill in **at least all** of the  `required text fields` and click `send` | Will `send` the inputted data and `refresh` the `contact form` | Refreshes the page, refreshing the `contact form`, which imitates that the form has been sent | Pass | For now, the form is static but in the future I would like to add further functionality to it. See the [Features Left To Implement](README.md#features-left-to-implement) section in the [README](README.md#contents) for more details |
 
 
 -----
@@ -509,6 +511,23 @@ There was also the concern of how this would work, if at all, once the website w
         - Safari 
             - Bug noted, see [here](#ios-safari)
 
+
+-----
+
+## Peer Review 
+
+- The project was posted on Slack's **Peer Review** channel, and the feedback I recieved from other students helped me isolate some final bugs. 
+
+    - The bug that was noted was the **carousel bug** mentioned [here](#carousel-horizontal-scrollbar-bug). It was noted that this bug was impacting the fixed navbar. The student was kind enough to document the bug, as seen here:
+
+![Carousel fixed navbar visual bug](assets/img/carousel_peer_review_bug.gif)
+
+- When trying to replicate the bug with DevTools, I discovered that it was linked to the horizontal scrollbar bug that was documented [here](#carousel-horizontal-scrollbar-bug), however the fixed navbar would only move in the way seen above when on tablet devices. 
+
+- Fixing the horizontal scrollbar bug also fixed this, but without the feedback from Peer Review I may overlooked this bug and not addressed the issue. 
+
+
+-----
 
 ## Known Bugs 
 
