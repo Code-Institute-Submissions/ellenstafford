@@ -648,7 +648,7 @@ section {
 
 /* PROJECT IMG SIZING */
 
-@media (min-width:992px) {
+@media (min-width:991px) {
     .project-img {
         max-width: 375px;
         max-height: 320px;
