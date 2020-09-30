@@ -41,6 +41,8 @@ This website is an online porfolio, or resume, designed to showcase my skills an
 
   - [Feature Feedback](#feature-feedback)
 
+- [Areas of Improvement](#areas-of-improvement)
+
 - [Accessibility](#accessibility)
 
 - [Technologies Used](#technologies-used)
@@ -383,11 +385,26 @@ When sharing the project with friends and family members, they provided me with 
   - Usually, employers will want to find out everything there is to know **first, then** contact the candidate for hire.
 
 - Remove the **progress bars** from the **Personal Strengths** subheading in the **Skills** page.
+  - This alteration was made after feedback - progress bars were **removed** from the Personal Strengths section, with text added in its place.
 
 - Add an email address *and* phone number that is **text based** rather that just an icon.
   - It was recommended by the same user that a fixed footer may be beneficial, although this would take up a lot of real estate and could potentially compromise good UX design. 
 
+
 ------
+
+## Areas of Improvement
+
+- To make the site's navigation more clear and user friendly, the site could have benefitted from having separate pages on the site. 
+  - The site has a lot of content, and because of this it nearly compromises the user's experience. 
+  - If I was to do the site again, or make big alterations to the site, I would add the Experience page as a **separate page** to further enhance the UX design. 
+    - Nevertheless, the Scroll to Top arrow button at the bottom of the screen helps promote a clear and user friendly navigation and ensures the sites UX is not wholly compromised. 
+
+- A big improvement that can be made to the site is its level of performance. 
+  - Bootstrap's CDN had a major impact of the site's performance, so if I were to do it again, I would limit the amount of Bootstrap that I would use. Meaning that I would only load the Bootstrap that was essential (like the grid system, for example) and add more of my own custom CSS to help reduce render blocking resources. This was mentioned in more detail [here](testing.md#performance-issues)
+  - Additionally, implementing separate pages could have greatly helped with the site's performance, and is something I shall keep in mind for future improvements and also future projects. 
+
+-----
 
 ## Accessibility 
 
