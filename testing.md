@@ -73,6 +73,8 @@
 
 ### W3C Markup Validation Service
 
+![W3C Markup Validation Service Screenshot](assets/img/w3c_validator.png)
+
 Found only minor errors, such as hanging end tags that I had forgot to remove, and typos in the code. 
 
 The validator noted that an ID attribute was called twice, due to me labelling two sections with the same ID by mistake, whilst fixing code. I quickly rectified the issue.
@@ -83,6 +85,8 @@ No major errors were found.
 
 
 ### W3C CSS Validation Service
+
+![W3C CSS Validation Service Screenshot](assets/img/w3c_css.png)
 
 Found no errors.
 
@@ -426,7 +430,7 @@ There was also the concern of how this would work, if at all, once the website w
 |  2  | Test `required boolean attribute` functionality | Click the `send` button without inputting data | A notification will show by the first empty `required text field` telling the user to `input data`. The `send` function will be blocked until all `requried text fields` are filled out | Displays a notification by the first empty `required text field` (in this case, `first name`) and tells the user to `input data`. The `send` button will not function whilst the `required text fields` are empty | Pass |
 |  3  | Test `requried boolean attribute` functionality with **some** `text fields` filled in | On the `contact form` fill **one or more**, but not all, (maximum of 3) `requried text fields` and click `send` | A notification will show on the first empty `required text field` telling the user to `input data`. The `send` function will be blocked until all `requried text fields` are filled out | Displays a notification by the first empty `required text field` and tells the user to `input data`. The `send` button will not function whilst the `required text fields` are empty | Pass |
 |  4  | Test `email input type` | Click on the `email input field` and input data that **is not** an email (e.g. a 'name' or 'hi') | A notification will show by the `email input field` telling the user to `include a '@' in the email address`. The `send` button will not function until this is resolved | Shows a notification by the `email input field` telling the user to `include a '@' in the email address`. The `send` button is blocked | Pass |
-|  5  | `Send` completed `contact form` | Fill in **at least all** of the  `required text fields` and click `send` | Will `send` the inputted data and `refresh` the `contact form` | Opens your device's email application and automatically composes a new email with the addresse field already filled in. The `contact form` does not refresh unless the site itself is refreshed **manually** | Pass & Fail | The `contact form` passes its **functionality test** but doesn't work how I want it to. In the future, I would like to alter the `contact form` so that it will send the inputted data **automatically** to the email listed in the `mailto form action` without requiring **additional steps** from the user |
+|  5  | `Send` completed `contact form` | Fill in **at least all** of the  `required text fields` and click `send` | Will `send` the inputted data and `refresh` the `contact form` | Refreshes the page, refreshing the `contact form`, which imitates that the form has been sent | Pass | For now, the form is static but in the future I would like to add further functionality to it. See the [Features Left To Implement](README.md#features-left-to-implement) section [here](README.md#contents) for more details |
 
 
 -----
