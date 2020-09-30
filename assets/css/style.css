@@ -1128,8 +1128,12 @@ footer .fa-stack {
     border-color: #d678fd transparent transparent transparent;
 }
 
-.CV_download:hover .downloadHover-text {
-    visibility: visible;
+@media (min-width: 991px) {
+    .cv_download .downloadHover-text,
+    .cv_download .downloadHover-text::after,
+    .CV_download:hover .downloadHover-text {
+        visibility: visible;
+    }
 }
 
 /* / CV TOOLTIP */
