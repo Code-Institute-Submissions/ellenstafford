@@ -20,9 +20,9 @@
 
 - [Manual Testing](#manual-testing)
 
-    - [Navigation Bar - Desktop](#navigation-bar-desktop)
+    - [Navigation Bar - Desktop](#navigation-bar---desktop)
 
-    - [Navigation Bar - Mobile Devices](#navigation-bar-mobile-devices)
+    - [Navigation Bar - Mobile Devices](#navigation-bar---mobile-devices)
 
     - [Homepage](#homepage)
 

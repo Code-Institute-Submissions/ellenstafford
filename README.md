@@ -23,9 +23,9 @@ This website is an online portfolio, or resume, designed to showcase my skills a
 
   - [Colour Scheme](#colour-scheme)
 
-  - [Colour Scheme - Psychology](#colour-scheme-psychology)
+  - [Colour Scheme - Psychology](#colour-scheme---psychology)
 
-  - [Colour Scheme - Application](#colour-scheme-application)
+  - [Colour Scheme - Application](#colour-scheme---application)
 
   - [Branding](#branding)
 
@@ -352,6 +352,7 @@ Each wireframe can be viewed via the links below:
   - It allows users to see my likes and interests, which will help construct their overall opinion of me. 
   - The carousel will transition through its images automatically, but arrow keys are also there to give users the control to navigate through the carousel themselves.
   - I hid the carousel when on mobile devices, as it may have easily cluttered the screen on smaller mobile devices (causing cognitive overload) and could have negatively impacted the user's experience. 
+    - The carousel was not excluded from mobile devices during the inital design process, as seen in the wireframes, I decided to make this alteration while constructing the site. 
 
 - Scroll to Top
   - Gives users an simple way of returning to the top of the page.
