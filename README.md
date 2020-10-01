@@ -443,6 +443,9 @@ When sharing the project with friends and family members, they provided me with 
     6. Altered the media queries in CSS to fit the new images (loading from the image tag rather than the background-image property affected the image size)
     7. Reduced the font size of the project overlay content to fit the new dimensions set by the media queries
 
+- All the text is a relatively large font size to cater for audiences who rely on glasses or have problems with their eye sight. 
+  - There is good contrast between background and foreground colours to ensure all the content is readable. 
+
 -----
 
 ## Technologies Used
